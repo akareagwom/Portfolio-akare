@@ -1,6 +1,7 @@
 import { Box, Heading, AspectRatio,iframe} from "@chakra-ui/react";
 import Nav from "./components/nav";
 import Article from "./components/article";
+import Video from "./components/video";
 
 
 export default function Home() {
@@ -8,7 +9,6 @@ export default function Home() {
     <>
       <Box>
         <Box 
-        h='50vh'
         w='100%'
         // backgroundImage={'port2.jpg'} 
         // backgroundRepeat={'no-repeat'}
@@ -21,6 +21,9 @@ export default function Home() {
               
             
            </Box>
+           <Box>
+            <Video/>
+           </Box>
         </Box>
         <Box bg={'#051622'} p={'5%'}>
           <Article/>
@@ -28,14 +31,11 @@ export default function Home() {
           <Article/>
           <Article/>
         </Box>
-        {/* // This video will have equal sides
-<AspectRatio maxW='560px' ratio={1}>
-  <iframe
-    title='naruto'
-    src='motion.mp4'
-    allowFullScreen
-  />
-</AspectRatio> */}
+
+
+
+
+
       </Box>
     </>
   )

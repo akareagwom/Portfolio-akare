@@ -4,7 +4,7 @@ const Article = () => {
     return ( 
         <>
         <Box>
-            <Card bg={'#1BA098'} w={'50%'} display={'block'} m={'25%'} >
+            <Card bg={'#1BA098'} w={'80%'} display={'block'} m={'10%'} >
                 <Image src="preview.jpg" filter='auto' brightness='20%' />
                 <CardHeader textAlign={'center'}>
                     Project
