@@ -25,7 +25,7 @@ export default function Home() {
             <Video/>
            </Box>
         </Box>
-        <Box bg={'#051622'} p={'5%'}>
+        <Box bg={'#051622'} mt={'50%'}  p={'5%'}>
           <Article/>
           <Article/>
           <Article/>

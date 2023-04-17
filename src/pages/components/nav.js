@@ -7,7 +7,7 @@ const Nav = () => {
                 <Box>
                 <Heading fontSize={'1.5rem'} color='#DEB992' fontFamily={'Gruppo'} >Akare</Heading>
                 </Box>
-                <Tabs>
+                <Tabs variant={'unstyled'}>
                     <TabList color='#1BA098'>
                         <Tab _selected={{color:'#DEB992',borderBottomColor:'#DEB992'}}>Home</Tab>
                         <Tab _selected={{color:'#DEB992',borderBottomColor:'#DEB992'}}>About</Tab>
