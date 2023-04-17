@@ -3,16 +3,16 @@ import { Box, Heading, TabList, Tabs,Tab, Flex } from "@chakra-ui/react";
 const Nav = () => {
     return ( 
         <>
-            <Flex fontFamily={'fantasy'} justify={'space-between'}>
+            <Flex fontFamily={'sans-serif'} background={'#051622'} justify={'space-between'}>
                 <Box>
-                <Heading>Akare</Heading>
+                <Heading fontSize={'1.5rem'} color='#DEB992' fontFamily={'Gruppo'} >Akare</Heading>
                 </Box>
                 <Tabs>
-                    <TabList>
-                        <Tab>Home</Tab>
-                        <Tab>About</Tab>
-                        <Tab>Project</Tab>
-                        <Tab>Contact</Tab>
+                    <TabList color='#1BA098'>
+                        <Tab _selected={{color:'#DEB992',borderBottomColor:'#DEB992'}}>Home</Tab>
+                        <Tab _selected={{color:'#DEB992',borderBottomColor:'#DEB992'}}>About</Tab>
+                        <Tab _selected={{color:'#DEB992',borderBottomColor:'#DEB992'}}>Project</Tab>
+                        <Tab _selected={{color:'#DEB992',borderBottomColor:'#DEB992'}}>Contact</Tab>
                     </TabList>
                 </Tabs>
             </Flex>
