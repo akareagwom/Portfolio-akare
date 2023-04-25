@@ -4,12 +4,13 @@ const Article = () => {
     return ( 
         <>
         <Box>
-            <Card bg={'#1BA098'} w={'80%'} display={'block'} m={'10%'} >
-                <Image src="preview.jpg" filter='auto' brightness='20%' />
+            <Card variant={'unstyled'} bg={'#DEB992'} w={{base:'80%',md:'95%'}} m={{base:'10%',md:'7%'}} >
+                <Image src="preview.jpg" filter='auto' borderTopRadius={'3%'} brightness='20%' />
                 <CardHeader textAlign={'center'}>
                     Project
                 </CardHeader>
-                <CardBody color={'#DEB992'} display='flex' justifyContent='space-around'>
+                <Text textAlign={'center'}>blah blah blah blah blah blah blah blah blah</Text>
+                <CardBody color={'black'} display='flex' justifyContent='space-around'>
                     
                     <Text>
                         preview

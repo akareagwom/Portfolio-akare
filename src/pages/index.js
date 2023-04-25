@@ -26,10 +26,12 @@ export default function Home() {
            </Box>
         </Box>
         <Box bg={'#051622'} mt={'50%'}  p={'5%'}>
+          <Box display={{md:'flex',base:'block'}}>
           <Article/>
           <Article/>
           <Article/>
           <Article/>
+          </Box>
         </Box>
 
 

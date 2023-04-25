@@ -14,10 +14,10 @@ const Video = () => {
                 allow='autoplay'
                 src="backg.mp4"/>
             </Box>
-            <Box pos={'absolute'} px={'30%'} color={'red.400'}>
-                <Heading textAlign={'center'} color={'#1BA098'}>Welcome</Heading>
+            <Box pos={'absolute'} px={'25%'} py={'10%'} textAlign={'center'} color={'red.400'}>
+                <Heading  color={'#1BA098'} fontSize={'6rem'} >Welcome</Heading>
                 {/* <Text>Akare Azikang Agwom</Text> */}
-                <Button>Get Started</Button>
+                <Button color={'#1BA098'} bgGradient='linear(to-r, #1BA098, #051622)'>Get Started</Button>
             </Box>
                 
        </Box>
