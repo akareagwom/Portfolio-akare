@@ -1,4 +1,4 @@
-const Skills = () => {
+const Todo = () => {
     return ( 
         <>
         
@@ -6,4 +6,4 @@ const Skills = () => {
      );
 }
  
-export default Skills;
+export default Todo;

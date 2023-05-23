@@ -7,7 +7,8 @@ import Video from "./components/video";
 export default function Home() {
   return (
     <>
-      <Box>
+      <Box
+      bgGradient="linear(to-l,#FF9CD4,#9EC2FF)">
         <Box 
         w='100%'
         // backgroundImage={'port2.jpg'} 
@@ -16,12 +17,8 @@ export default function Home() {
         // backgroundSize={'cover'}
         // brightness={'40%'}
          >
-           <Box>
-            <Nav />
-              
-            
-           </Box>
-           <Box>
+           <Box
+           m='0px'>
             <Video/>
            </Box>
         </Box>
