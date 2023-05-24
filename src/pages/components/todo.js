@@ -20,19 +20,19 @@ const Todo = () => {
                 <Box>
                     <Icon color={'black'} borderRadius='100%' w="5%" h="20%" bg='white' as={RiVoiceprintLine}/>
                     <Text>
-                    Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                    Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                     </Text>
                 </Box>
                 <Box>
                     <Icon color={'black'} borderRadius='100%' w="5%" h="20%" bg='white' as={RiVoiceprintLine}/>
                     <Text>
-                    Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                    Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                     </Text>
                 </Box>
                 <Box>
                     <Icon color={'black'} borderRadius='100%' w="5%" h="20%" bg='white' as={RiVoiceprintLine}/>
                     <Text>
-                    Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                    Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                     </Text>
                 </Box>
             </Box>

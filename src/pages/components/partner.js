@@ -21,7 +21,7 @@ const Partner = () => {
                 >
                     <CardBody>
                         <Text>
-                        Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                        Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                         </Text>
                     </CardBody>
                 </Card>
@@ -39,7 +39,7 @@ const Partner = () => {
                 >
                     <CardBody>
                         <Text>
-                        Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                        Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                         </Text>
                     </CardBody>
                 </Card>
@@ -57,7 +57,7 @@ const Partner = () => {
                 >
                     <CardBody>
                         <Text>
-                        Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                        Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                         </Text>
                     </CardBody>
                 </Card>
@@ -75,7 +75,7 @@ const Partner = () => {
                 >
                     <CardBody>
                         <Text>
-                        Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                        Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                         </Text>
                     </CardBody>
                 </Card>
@@ -93,7 +93,7 @@ const Partner = () => {
                 >
                     <CardBody>
                         <Text>
-                        Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                        Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                         </Text>
                     </CardBody>
                 </Card>
@@ -111,7 +111,7 @@ const Partner = () => {
                 >
                     <CardBody>
                         <Text>
-                        Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+                        Put your static files e.g., HTML, CSS, JS in your app's deploy directory the default is "public". Then, run this command from your app's root directory:
                         </Text>
                     </CardBody>
                 </Card>
