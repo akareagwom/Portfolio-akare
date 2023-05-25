@@ -38,18 +38,62 @@ const Talk = () => {
                         //     'linear(to-b, #FF9CD4,#9EC2FF)',
                         //   ]}
                         //   bgClip="text"
+                        columns={2}
+                        // gap={10}
+                        columnGap={2}
                         
                           >
-                            <Icon  as={BsTelephoneFill}/>
-                            <Icon  as={BsTelephoneFill}/>
-                            <Icon  as={BsTelephoneFill}/>
-                            <Icon  as={BsTelephoneFill}/>
+                            <Box
+                            display="flex"
+                            lineHeight="24px"
+                            alignItems="baseline"
+                            >
+                                <Icon  as={BsTelephoneFill}/>
+                                <Text>+234 905 681 7953</Text>
+                            </Box>
+                            <Box
+                            display="flex"
+                            lineHeight="24px"
+                            alignItems="baseline"
+                            >
+                            <Icon  as={BsGithub}/>
+                            <Text>https://github.com/akareagwom</Text>
+                            <Text></Text>
+                            </Box>
+                            <Box
+                            display="flex"
+                            lineHeight="24px"
+                            alignItems="baseline"
+                            >
+                            <Icon  as={BsLinkedin}/>
+                            <Text>@akareagwom</Text>
+                            </Box>
+                            <Box
+                            display="flex"
+                            lineHeight="24px"
+                            alignItems="baseline"
+                            >
+                            <Icon  as={BsSendFill}/>
+                            <Text>akareazikang20@gmail.com</Text>
+                            </Box>
+                            <Box
+                            display="flex"
+                            lineHeight="24px"
+                            alignItems="baseline"
+                            >
+                            <Icon  as={BsTwitter}/> 
+                            <Text>@akareagwom</Text>
+                            </Box>
+                            <Box
+                            display="flex"
+                            lineHeight="24px"
+                            alignItems="baseline"
+                            >
+                            <Icon  as={BsInstagram}/> 
+                            <Text>@beebela03</Text>
+                            </Box>
                             {/* <BsTelephoneFill/> */}
                         </SimpleGrid>
-                        <Text
-                        fontSize="2rem">
-                            I am a Frontend Developer, I build User Interfaces.
-                        </Text>
                         <Box
                         mt="10%"
                         >
