@@ -1,11 +1,17 @@
-import { Box, Heading, TabList, Tabs,Tab, Flex } from "@chakra-ui/react";
+import { Box, Heading, TabList, Tabs,Tab, Flex,Image } from "@chakra-ui/react";
 
 const Nav = () => {
     return ( 
         <>
-            <Flex fontFamily={'sans-serif'}  justify={'space-between'}>
+            <Flex fontFamily={'sans-serif'} justify={'space-between'}
+            w="100%">
                 <Box>
-                <Heading fontSize={'1.5rem'} color='#000' fontFamily={'Gruppo'} >Akare</Heading>
+                <Box fontSize={'1.5rem'}  color='#000' fontFamily={'Gruppo'} >
+                    <Image 
+                    w="50%"
+                    ml="80%"
+                     src="logo1.jpg" alt=""/>
+                </Box>
                 </Box>
                 <Tabs variant={'unstyled'}>
                     <TabList color='#000'>

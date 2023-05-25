@@ -5,13 +5,16 @@ const Partner = () => {
         <Box>
             <SimpleGrid
              columns={3}
-             spacing={10}
+             spacing={3}
+             px="6%"
+            //  gap={0.5}
+             columnGap={3}
              >
                <Box
                border="2px solid white"
                borderStyle="dashed"
                borderRadius="20px"
-               w="30%"
+               w="100%"
                color="#000">
                <Card
                 p="8%"
@@ -30,7 +33,7 @@ const Partner = () => {
                border="2px solid white"
                borderStyle="dashed"
                borderRadius="20px"
-               w="30%"
+               w="100%"
                color="#000">
                <Card
                p="8%"
@@ -48,7 +51,7 @@ const Partner = () => {
                border="2px solid white"
                borderStyle="dashed"
                borderRadius="20px"
-               w="30%"
+               w="100%"
                color="#000">
                <Card
                p="8%"
@@ -66,7 +69,7 @@ const Partner = () => {
                border="2px solid white"
                borderStyle="dashed"
                borderRadius="20px"
-               w="30%"
+               w="100%"
                color="#000">
                <Card
                p="8%"
@@ -84,7 +87,7 @@ const Partner = () => {
                border="2px solid white"
                borderStyle="dashed"
                borderRadius="20px"
-               w="30%"
+               w="100%"
                color="#000">
                <Card
                p="8%"
@@ -102,7 +105,7 @@ const Partner = () => {
                border="2px solid white"
                borderStyle="dashed"
                borderRadius="20px"
-               w="30%"
+               w="100%"
                color="#000">
                <Card
                p="8%"

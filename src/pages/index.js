@@ -5,6 +5,7 @@ import Video from "./components/video";
 import Todo from "./components/todo";
 import Portfolio from "./components/portfolio";
 import Partner from "./components/partner";
+import Talk from "./components/talk";
 
 
 export default function Home() {
@@ -43,16 +44,10 @@ export default function Home() {
            <Box>
             <Partner/>
            </Box>
+           <Box>
+            <Talk/>
+           </Box>
         </Box>
-        <Box bg={'#051622'} mt={'50%'}  p={'5%'}>
-          <Box display={{md:'flex',base:'block'}}>
-          <Article/>
-          <Article/>
-          <Article/>
-          <Article/>
-          </Box>
-        </Box>
-
 
 
 
