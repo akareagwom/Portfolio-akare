@@ -1,4 +1,4 @@
-import { Box, Heading, AspectRatio,iframe} from "@chakra-ui/react";
+import { Box, Button, Heading, AspectRatio,iframe, useColorMode,useColorModeValue} from "@chakra-ui/react";
 import Nav from "./components/nav";
 import Article from "./components/article";
 import Video from "./components/video";
@@ -6,9 +6,11 @@ import Todo from "./components/todo";
 import Portfolio from "./components/portfolio";
 import Partner from "./components/partner";
 import Talk from "./components/talk";
+import Resume from "./components/resume";
 
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
       <Box
@@ -21,6 +23,9 @@ export default function Home() {
         // backgroundSize={'cover'}
         // brightness={'40%'}
          >
+           <Button onClick={toggleColorMode}>
+        Toggle {colorMode === "light" ? "Dark" : "Light"}
+      </Button>
            <Box
            m='0px'>
             <Video/>
@@ -46,6 +51,9 @@ export default function Home() {
            </Box>
            <Box>
             <Talk/>
+           </Box>
+           <Box>
+            <Resume/>
            </Box>
         </Box>
 
