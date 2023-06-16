@@ -1,7 +1,14 @@
 import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text} from "@chakra-ui/react";
+import { useRef } from "react";
 import Nav from "./nav";
 
 const Video = () => {
+    const ref = useRef(null);
+
+
+    const handleClick =()=>{
+        ref.current?.scrollIntoView({behavior: "smooth"})
+    }
     return ( 
         <>
         <Box
@@ -14,7 +21,7 @@ const Video = () => {
             borderRadius="20px"
             >
                 <CardHeader>
-                    <Nav></Nav>
+                    <Nav handleClick={handleClick} />
                 </CardHeader>
                 <CardBody
                 display="flex"
