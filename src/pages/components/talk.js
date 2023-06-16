@@ -12,7 +12,9 @@ const Talk = () => {
     return ( 
         <Box
         ml="5%"
-        py="5%">
+        py="5%"
+        id="contact"
+        >
             <Card
             w="94%"
             h="80vh"
