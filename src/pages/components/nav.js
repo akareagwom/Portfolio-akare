@@ -1,5 +1,6 @@
 import { Box,Button, Heading, TabList, Tabs,Tab, Flex,Image, useColorMode,useColorModeValue } from "@chakra-ui/react";
 import { CiLight, CiDark } from "react-icons/ci";
+import { Link } from "react-scroll";
 
 const Nav = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -21,10 +22,19 @@ const Nav = () => {
                 </Box>
                 <Tabs variant={'unstyled'}>
                     <TabList color='#000'>
+                        <Link to="">
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Home</Tab>
+                        </Link>
+                        <Link to="">
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>About</Tab>
+                        </Link>
+                        <Link to="">
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Project</Tab>
+                        </Link>
+                        <Link to="">
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Contact</Tab>
+                        </Link>
+                        
                         <Button onClick={toggleColorMode}>
                             {toggleColorMode ? <CiLight/>:<CiDark/>}
                         </Button>
