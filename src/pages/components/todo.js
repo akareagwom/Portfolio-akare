@@ -6,7 +6,9 @@ const Todo = () => {
         <>
         <Box
         color="#fff"
-        p="6%">
+        p="6%"
+        
+        >
             <Heading
             fontSize="26px"
             >

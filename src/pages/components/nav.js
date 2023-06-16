@@ -22,16 +22,19 @@ const Nav = () => {
                 </Box>
                 <Tabs variant={'unstyled'}>
                     <TabList color='#000'>
-                        <Link to="">
+                        <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Home</Tab>
                         </Link>
-                        <Link to="">
+
+                        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>About</Tab>
                         </Link>
-                        <Link to="">
-                        <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Project</Tab>
+
+                        <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}>
+                        <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Portfolio</Tab>
                         </Link>
-                        <Link to="">
+
+                        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Contact</Tab>
                         </Link>
                         
