@@ -7,7 +7,7 @@ const Todo = () => {
         <Box
         color="#fff"
         p="6%"
-        
+        id="about"
         >
             <Heading
             fontSize="26px"
