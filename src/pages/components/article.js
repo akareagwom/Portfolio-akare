@@ -6,18 +6,27 @@ const Article = () => {
         <Box>
         <Card variant={'unstyled'} bg={'#fff'} borderRadius="20px" h="50vh" w={{base:'80%',md:'87%'}} m={{base:'10%',md:'7%'}} >
                 {/* <Image src="preview.jpg" filter='auto' borderTopRadius={'3%'} brightness='20%' /> */}
-                <CardHeader textAlign={'center'}>
+                <CardHeader>
                     Project
                 </CardHeader>
-                <Text textAlign={'center'}>blah blah blah blah blah blah blah blah blah</Text>
-                <CardBody color={'black'} display='flex' justifyContent='space-around'>
+                <CardBody color={'black'} display='flex' justifyContent='space-between'>
                     
+                    <Box>
                     <Text>
                         preview
                     </Text>
                     <Text>
                         live
                     </Text>
+                    </Box>
+                    <Box>
+                        <Image src="lendsqr.png" alt="assets" 
+                        ml="45%"
+                        border="1px solid black"
+                        borderRadius="10px"
+                        w="50%"
+                        />
+                    </Box>
                 </CardBody>
             </Card>
         </Box>
