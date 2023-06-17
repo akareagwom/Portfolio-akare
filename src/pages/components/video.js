@@ -48,7 +48,8 @@ const Video = () => {
                     borderRadius="50%">
                         <Image
                          borderRadius="50%"
-                         src="port1.jpg"/>
+                         src="port1.jpg"
+                         alt="asset"/>
                     </Box>
                 </CardBody>
             </Card>

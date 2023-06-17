@@ -26,16 +26,6 @@ export default function Home() {
               <Todo/>
            </Box>
            <Box>
-           <Heading
-            fontSize="26px"
-            color="#ffff"
-            ml="6%"
-            >
-                Portfolio
-            </Heading>
-            <Portfolio/>
-            <Portfolio/>
-            <Portfolio/>
             <Portfolio/>
            </Box>
            <Box>

@@ -133,7 +133,8 @@ const Talk = () => {
                     borderRadius="50%">
                         <Image
                          borderRadius="50%"
-                         src="port1.jpg"/>
+                         src="port1.jpg"
+                         alt="assets"/>
                     </Box>
                 </CardBody>
             </Card>

@@ -4,8 +4,8 @@ const Article = () => {
     return ( 
         <>
         <Box>
-            <Card variant={'unstyled'} bg={'#DEB992'} w={{base:'80%',md:'95%'}} m={{base:'10%',md:'7%'}} >
-                <Image src="preview.jpg" filter='auto' borderTopRadius={'3%'} brightness='20%' />
+        <Card variant={'unstyled'} bg={'#fff'} borderRadius="20px" h="50vh" w={{base:'80%',md:'87%'}} m={{base:'10%',md:'7%'}} >
+                {/* <Image src="preview.jpg" filter='auto' borderTopRadius={'3%'} brightness='20%' /> */}
                 <CardHeader textAlign={'center'}>
                     Project
                 </CardHeader>
