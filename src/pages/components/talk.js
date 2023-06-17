@@ -32,7 +32,7 @@ const Talk = () => {
                     fontSize='6xl'
                     fontWeight='extrabold'
                     >
-                    Let's talk
+                    Let&apos;s talk
                     </Text>
                 </CardHeader>
                 <CardBody
