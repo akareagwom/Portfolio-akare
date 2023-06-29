@@ -48,7 +48,9 @@ const Video = () => {
                     borderRadius="50%">
                         <Image
                          borderRadius="50%"
-                         src="port1.jpg"
+                         w="290px"
+                         h="70%"
+                         src="akare.jpg"
                          alt="asset"/>
                     </Box>
                 </CardBody>
