@@ -10,7 +10,7 @@ const Video = () => {
         id="home"
         >
             <Card
-            w="94%"
+            w={{base:"44%", lg:"94%"}}
             h="80vh"
             borderRadius="20px"
             >
