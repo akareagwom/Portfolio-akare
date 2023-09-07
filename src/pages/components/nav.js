@@ -1,5 +1,6 @@
 import { Box,Button, Heading, TabList, Tabs,Tab, Flex,Image, useColorMode,useColorModeValue } from "@chakra-ui/react";
 import { CiLight, CiDark } from "react-icons/ci";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 
 const Nav = () => {
@@ -9,7 +10,7 @@ const Nav = () => {
     const color = useColorModeValue("white", "gray.800")
     return ( 
         <>
-            <Flex fontFamily={'sans-serif'} justify={'space-between'}
+            <Flex alignItems={'center'} fontFamily={'sans-serif'} justify={'space-between'}
             w="100%">
      
                 <Box>
@@ -20,8 +21,12 @@ const Nav = () => {
                      src="logo1.jpg" alt=""/>
                 </Box>
                 </Box>
-                <Tabs variant={'unstyled'}>
-                    <TabList color='#000'>
+                <Tabs
+                
+                 variant={'unstyled'}>
+                    <TabList 
+                    visibility={{base:"hidden",lg:"visible"}}
+                    color='#000'>
                         <Link to="home" spy={true} smooth={true} offset={5} duration={500}>
                         <Tab _selected={{color:'#9EC2FF',borderBottomColor:'#9EC2FF'}}>Home</Tab>
                         </Link>
@@ -42,6 +47,7 @@ const Nav = () => {
                             {toggleColorMode ? <CiLight/>:<CiDark/>}
                         </Button>
                     </TabList>
+                    <RxHamburgerMenu/>
                 </Tabs>
             </Flex>
         </>

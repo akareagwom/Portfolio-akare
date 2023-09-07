@@ -10,7 +10,7 @@ const Video = () => {
         id="home"
         >
             <Card
-            w={{base:"44%", lg:"94%"}}
+            w={{base:"74%", lg:"94%"}}
             h="80vh"
             borderRadius="20px"
             >
@@ -18,15 +18,24 @@ const Video = () => {
                     <Nav></Nav>
                 </CardHeader>
                 <CardBody
-                display="flex"
+                display={{base:"block",lg:"flex"}}
                 justifyContent="space-evenly">
                     <Box
-                    w="40%">
+                    borderRadius="50%">
+                        <Image
+                         borderRadius="50%"
+                         w={{base:"150px",lg:"290px"}}
+                         h={{base:"150px",lg:"70%"}}
+                         src="akare.jpg"
+                         alt="asset"/>
+                    </Box>
+                    <Box
+                    w={{base:"70%",lg:"40%"}}>
                         <Text>
                             Hello I am Akare
                         </Text>
                         <Text
-                        fontSize="2rem">
+                        fontSize={{base:"16px",lg:"2rem"}}>
                             I am a Frontend Developer, I build User Interfaces.
                         </Text>
                         <Box
@@ -43,15 +52,6 @@ const Video = () => {
                                 RESUME
                             </Button>
                         </Box>
-                    </Box>
-                    <Box
-                    borderRadius="50%">
-                        <Image
-                         borderRadius="50%"
-                         w="290px"
-                         h="70%"
-                         src="akare.jpg"
-                         alt="asset"/>
                     </Box>
                 </CardBody>
             </Card>
