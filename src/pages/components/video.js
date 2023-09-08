@@ -10,7 +10,7 @@ const Video = () => {
         id="home"
         >
             <Card
-            w={{base:"74%", lg:"94%"}}
+            w={{base:"94%", lg:"94%"}}
             h="80vh"
             borderRadius="20px"
             >
@@ -18,8 +18,12 @@ const Video = () => {
                     <Nav></Nav>
                 </CardHeader>
                 <CardBody
-                display={{base:"block",lg:"flex"}}
-                justifyContent="space-evenly">
+                display={{base:"flex",lg:"flex"}}
+                flexDir={{base:"column",lg:"row"}}
+                justifyContent={{base:"center",lg:"space-evenly"}}
+                alignItems={'center'}
+                >
+                
                     <Box
                     borderRadius="50%">
                         <Image
@@ -30,7 +34,8 @@ const Video = () => {
                          alt="asset"/>
                     </Box>
                     <Box
-                    w={{base:"70%",lg:"40%"}}>
+                    textAlign={{base:"center"}}
+                    w={{base:"100%",lg:"40%"}}>
                         <Text>
                             Hello I am Akare
                         </Text>
