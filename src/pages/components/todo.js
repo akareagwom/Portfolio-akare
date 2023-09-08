@@ -8,6 +8,7 @@ const Todo = () => {
         color="#fff"
         p="6%"
         id="about"
+        textAlign={{base:"center",lg:"start"}}
         >
             <Heading
             fontSize="26px"
@@ -15,7 +16,7 @@ const Todo = () => {
                 What I Do
             </Heading>
             <Box
-            display="flex"
+            display={{base:"block",lg:"flex"}}
             justifyContent="space-evenly"
             mt="4%"
             >
