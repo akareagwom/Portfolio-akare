@@ -4,7 +4,7 @@ const Partner = () => {
     return ( 
         <Box>
             <SimpleGrid
-             columns={3}
+             columns={{base:1,lg:3}}
              spacing={3}
              px="6%"
             //  gap={0.5}
