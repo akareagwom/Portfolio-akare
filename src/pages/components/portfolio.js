@@ -8,6 +8,7 @@ const Portfolio = () => {
         >
             <Heading
             fontSize="26px"
+            textAlign={{base:"center",lg:"start"}}
             color="#ffff"
             ml="6%"
             >
