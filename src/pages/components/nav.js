@@ -1,10 +1,12 @@
 import { Box,Button, Heading, TabList, Tabs,Tab, Flex,Image, useColorMode,useColorModeValue } from "@chakra-ui/react";
+import { useState } from "react";
 import { CiLight, CiDark } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 
 const Nav = () => {
-    const { colorMode, toggleColorMode } = useColorMode()
+    const { colorMode, toggleColorMode } = useColorMode();
+    const [show,setShow]= useState();
 
     const bg = useColorModeValue("red.500", "red.200")
     const color = useColorModeValue("white", "gray.800")
