@@ -2,11 +2,15 @@ import { Box, Card, CardBody, SimpleGrid, Text } from "@chakra-ui/react";
 
 const Partner = () => {
     return ( 
-        <Box>
+        <Box
+        mt="5%"
+        mb="5%"
+        >
             <SimpleGrid
              columns={{base:1,lg:3}}
              spacing={3}
              px="6%"
+             
             //  gap={0.5}
              columnGap={3}
              >

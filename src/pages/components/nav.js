@@ -5,27 +5,25 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 
 const Nav = () => {
-    const { colorMode, toggleColorMode } = useColorMode();
-    // const [show,setShow]= useState();
     const {isOpen,onToggle}= useDisclosure();
 
-    const bg = useColorModeValue("red.500", "red.200")
-    const color = useColorModeValue("white", "gray.800")
+    
     return ( 
         <>
-            <Flex alignItems={'center'} fontFamily={'sans-serif'} justify={'space-between'}
+            <Flex alignItems={'center'}  fontFamily={'sans-serif'} justify={'space-between'}
             w="100%">
      
-                <Box>
+                <Box mt="2">
                 <Box fontSize={'1.5rem'}  color='white' fontFamily={'Gruppo'} >
                     <Image 
-                    w="40%"
-                    ml="20%"
+                    w="30%"
+                    ml="80%"
                     backgroundBlendMode={'color-burn'}
-                     src="logo1.png" alt=""/>
+                     src="logo3.png" alt=""/>
                 </Box>
                 </Box>
                 <Tabs
+                mt="2"
                  pos={{base:"absolute"}}
                  w={{base:"90%"}}
                  left={{base:"15%",lg:'60%'}}
@@ -51,9 +49,7 @@ const Nav = () => {
                         <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Contact</Tab>
                         </Link>
                         
-                        <Button onClick={toggleColorMode}>
-                            {toggleColorMode ? <CiLight/>:<CiDark/>}
-                        </Button>
+                        
                     </TabList>
                     {/* mobile Navigation */}
                     {isOpen &&(
