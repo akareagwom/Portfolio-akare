@@ -28,16 +28,16 @@ export default function Home() {
            m='0px'>
             <Video/>
            </Box>
-           <Box>
+           <Box borderTop={"0.5px solid gray"}>
               <Todo/>
            </Box>
-           <Box>
+           <Box borderTop={"0.5px solid gray"}>
             <Portfolio/>
            </Box>
-           <Box>
+           <Box borderTop={"0.5px solid gray"}>
             <Partner/>
            </Box>
-           <Box>
+           <Box borderTop={"0.5px solid gray"}>
             <Talk/>
            </Box>
            <Box>

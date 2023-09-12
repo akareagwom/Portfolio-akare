@@ -1,6 +1,7 @@
 import { Box, Heading, Text, Icon } from "@chakra-ui/react";
-import { RiVoiceprintLine } from "react-icons/ri";
-
+import { BsFillWebcamFill } from "react-icons/bs";
+import {FaGlobe} from 'react-icons/fa';
+import {FiGitMerge} from 'react-icons/fi'
 const Todo = () => {
     return ( 
         <>
@@ -21,21 +22,21 @@ const Todo = () => {
             mt="4%"
             >
                 <Box>
-                    <Icon color={'black'} borderRadius='100%' w="5%" h="20%" bg='white' as={RiVoiceprintLine}/>
+                    <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={BsFillWebcamFill}/>
                     <Text>
-                    positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
+                    Implement the user interface (UI) design provided by UX/UI designers. Ensure that the design is responsive and works well across different devices and screen sizes.
                     </Text>
                 </Box>
                 <Box>
-                    <Icon color={'black'} borderRadius='100%' w="5%" h="20%" bg='white' as={RiVoiceprintLine}/>
+                    <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={FaGlobe}/>
                     <Text>
-                    positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
+                    Enhance user experience by adding interactivity and dynamic behavior using JavaScript and JavaScript libraries or frameworks like React
                     </Text>
                 </Box>
                 <Box>
-                    <Icon color={'black'} borderRadius='100%' w="5%" h="20%" bg='white' as={RiVoiceprintLine}/>
+                    <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={FiGitMerge}/>
                     <Text>
-                    positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
+                    Use version control systems like Git to collaborate with other developers and keep track of code changes.
                     </Text>
                 </Box>
             </Box>

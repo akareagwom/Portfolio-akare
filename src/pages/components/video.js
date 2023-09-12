@@ -22,16 +22,13 @@ const Video = () => {
                 
                 
                     <Box
+                        border="3px solid #08830D"
                     >
                         <Image
                         //  borderRadius="50%"
                         w={{base:"150px",lg:"290px"}}
                         h={{base:"150px",lg:"300px"}}
                         src="akare.jpg"
-                        // boxShadow= "0 0 8px 8px gray"
-                        //  filter='auto'
-                        // brightness={'50%'}
-                        border
                         filter = "grayscale(100%)"
                         mixBlendMode={""}
                          alt="asset"/>
@@ -50,10 +47,9 @@ const Video = () => {
                         mt="10%"
                         >
                             <Button
-                            color="#FF9CD4"
-                            w="30%">RESUME</Button>
-                            <Button
-                            bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
+                            // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
+                            bg="transparent"
+                            border="3px solid #08830D"
                             color="#ffff"
                             w="30%"
                             ml="5%">
