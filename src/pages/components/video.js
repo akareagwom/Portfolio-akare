@@ -9,28 +9,31 @@ const Video = () => {
         pt="5%"
         id="home"
         >
-            <Card
+            <Box
             w={{base:"94%", lg:"94%"}}
             h="80vh"
             borderRadius="20px"
-            >
-                <CardHeader>
-                    <Nav></Nav>
-                </CardHeader>
-                <CardBody
                 display={{base:"flex",lg:"flex"}}
                 flexDir={{base:"column",lg:"row"}}
                 justifyContent={{base:"center",lg:"space-evenly"}}
                 alignItems={'center'}
-                >
+            >
+                
+                
                 
                     <Box
-                    borderRadius="50%">
+                    >
                         <Image
-                         borderRadius="50%"
-                         w={{base:"150px",lg:"290px"}}
-                         h={{base:"150px",lg:"70%"}}
-                         src="akare.jpg"
+                        //  borderRadius="50%"
+                        w={{base:"150px",lg:"290px"}}
+                        h={{base:"150px",lg:"300px"}}
+                        src="akare.jpg"
+                        // boxShadow= "0 0 8px 8px gray"
+                        //  filter='auto'
+                        // brightness={'50%'}
+                        border
+                        filter = "grayscale(100%)"
+                        mixBlendMode={""}
                          alt="asset"/>
                     </Box>
                     <Box
@@ -58,27 +61,10 @@ const Video = () => {
                             </Button>
                         </Box>
                     </Box>
-                </CardBody>
-            </Card>
-        </Box>
-       {/* <Box position={'relative'}>
-            <Box  filter='auto' 
-                brightness='20%'
-                pos={'absolute'}>
-            <video autoPlay muted loop
-             
-                top={'-20%'}
-                as='video'
-                allow='autoplay'
-                src="backg.mp4"/>
-            </Box>
-            <Box pos={'absolute'} px={'25%'} py={'10%'} textAlign={'center'} color={'red.400'}>
-                <Heading  color={'#1BA098'} fontSize={'6rem'} >Welcome</Heading>
-                <Text>Akare Azikang Agwom</Text>
-                <Button color={'#1BA098'} bgGradient='linear(to-r, #1BA098, #051622)'>Get Started</Button>
-            </Box>
                 
-       </Box> */}
+            </Box>
+        </Box>
+       
         </>
      );
 }

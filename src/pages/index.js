@@ -7,6 +7,7 @@ import Portfolio from "./components/portfolio";
 import Partner from "./components/partner";
 import Talk from "./components/talk";
 import Resume from "./components/resume";
+import Navbar from "./components/topbar";
 
 
 export default function Home() {
@@ -14,10 +15,15 @@ export default function Home() {
   return (
     <>
       <Box
-      bgGradient="linear(to-l,#FF9CD4,#9EC2FF)">
+      // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
+      bg="black"
+      color="white"
+      >
+        
         <Box 
         w='100%'
          >
+          <Nav/>
            <Box
            m='0px'>
             <Video/>

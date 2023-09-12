@@ -11,105 +11,105 @@ const Partner = () => {
              columnGap={3}
              >
                <Box
-               border="2px solid white"
+               border="2px solid #08830D"
                borderStyle="dashed"
                borderRadius="20px"
                w="100%"
-               color="#000">
+               color="white">
                <Card
                 p="8%"
-                opacity="50%"
+                bg="black"
                 borderRadius="20px"
                 
                 >
                     <CardBody>
-                        <Text>
+                        <Text color="white">
                         positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
                         </Text>
                     </CardBody>
                 </Card>
                </Box>
                <Box
-               border="2px solid white"
+               border="2px solid #08830D"
                borderStyle="dashed"
                borderRadius="20px"
                w="100%"
-               color="#000">
+               color="white">
                <Card
                p="8%"
-                opacity="50%"
+                bg="black"
                 borderRadius="20px"
                 >
                     <CardBody>
-                        <Text>
+                        <Text color="white">
                         positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
                         </Text>
                     </CardBody>
                 </Card>
                </Box>
                <Box
-               border="2px solid white"
+               border="2px solid #08830D"
                borderStyle="dashed"
                borderRadius="20px"
                w="100%"
-               color="#000">
+               color="white">
                <Card
                p="8%"
-                opacity="50%"
+                bg="black"
                 borderRadius="20px"
                 >
                     <CardBody>
-                        <Text>
+                        <Text color="white">
                         positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
                         </Text>
                     </CardBody>
                 </Card>
                </Box>
                <Box
-               border="2px solid white"
+               border="2px solid #08830D"
                borderStyle="dashed"
                borderRadius="20px"
                w="100%"
-               color="#000">
+               color="white">
                <Card
                p="8%"
-                opacity="50%"
+                bg="black"
                 borderRadius="20px"
                 >
                     <CardBody>
-                        <Text>
+                        <Text color="white">
                         positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
                         </Text>
                     </CardBody>
                 </Card>
                </Box>
                <Box
-               border="2px solid white"
+               border="2px solid #08830D"
                borderStyle="dashed"
                borderRadius="20px"
                w="100%"
-               color="#000">
+               color="white">
                <Card
                p="8%"
-                opacity="50%"
+                bg="black"
                 borderRadius="20px"
                 >
                     <CardBody>
-                        <Text>
+                        <Text color="white">
                         positive impact in their communities will be invited to attend a life-changing week of skills development, networking and capacity building alongside 50
                         </Text>
                     </CardBody>
                 </Card>
                </Box>
                <Box
-               border="2px solid white"
+               border="2px solid #08830D"
                borderStyle="dashed"
                borderRadius="20px"
                w="100%"
-               color="#000">
+               color="white">
                <Card
                p="8%"
-                opacity="50%"
+                bg="black"
                 borderRadius="20px"
                 >
                     <CardBody>
