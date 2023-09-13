@@ -31,6 +31,8 @@ const Video = () => {
                         src="akare.jpg"
                         filter = "grayscale(100%)"
                         mixBlendMode={""}
+                        transition='transform 2s'
+                        _hover={{transform:" scale(1.2)"}}
                          alt="asset"/>
                     </Box>
                     <Box

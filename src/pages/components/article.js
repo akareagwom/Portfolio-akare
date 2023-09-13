@@ -50,7 +50,7 @@ const Article = () => {
                         </Heading>
                         <Text fontSize={{base:"14px"}}>{project.desc}</Text>
                         <Flex justifyContent={'space-between'} ml={'74%'} w={{base:"80%"}}>
-                            <Link textAlign={'right'} color={'#08830D'}>
+                            <Link href={project.url} isExternal textAlign={'right'} color={'#08830D'}>
                                 live
                                 <Icon as={BsBoxArrowUpRight}/>
                             </Link>
