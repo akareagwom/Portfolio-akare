@@ -1,4 +1,4 @@
-import { Box, Card, CardBody, CardHeader, Heading, Image, Text  } from "@chakra-ui/react";
+import { Box, Card, CardBody, CardHeader, Flex, Heading, Image, Text  } from "@chakra-ui/react";
 import Article from "./article";
 
 const Portfolio = () => {
@@ -14,7 +14,7 @@ const Portfolio = () => {
             color="#ffff"
             ml="6%"
             >
-                Portfolio
+                Project
             </Heading>
             <Box
             display={{lg:'flex'}}
@@ -33,11 +33,9 @@ const Portfolio = () => {
                 >
 
                 </Box>
-            <Article/>
-            <Article/>
-            <Article/>
-            <Article/>
-
+                <Flex>
+                    <Article/>
+                </Flex>
             </Box>
             <Box
                 borderBottom={'4px solid #08830D'}

@@ -1,6 +1,7 @@
 import { Box, Card, CardBody, CardHeader, Image, Text,Flex, Heading,Icon,Button, Link } from "@chakra-ui/react";
 import {MdPreview} from "react-icons/md";
-import {BsBoxArrowUpRight} from "react-icons/bs"
+import {BsBoxArrowUpRight} from "react-icons/bs";
+import {Project} from '../api/data'
 
 const Article = () => {
     return ( 
@@ -8,9 +9,9 @@ const Article = () => {
         <Box>
         <Card variant={'unstyled'} mt="2" bg={'#323232'} borderRadius="none" h="50vh" w={{base:'87%',md:'77%'}}  >
                 
-                
+                {Project.map((project)=>
                 <CardBody 
-                
+                key={project.title}
                 
                 // display='flex'
                 // flexDir={{base:"column",lg:"row"}} 
@@ -18,11 +19,11 @@ const Article = () => {
                 >
                     
                     <Box>
-                        <Image src="lendsqr.png" alt="assets" 
+                        <Image src={project.image} alt="assets" 
                         // mt={'6'}
                         // ml={{base:"10%", lg:"45%"}}
                         filter='auto'
-                        brightness={'70%'}
+                        brightness={'50%'}
                         // borderRadius="10px"
                         w={{base:"80%",lg:"100%"}}
                         />
@@ -36,9 +37,9 @@ const Article = () => {
 
                     >
                         <Heading fontSize={{base:"20px"}}>
-                            clock
+                            {project.title}
                         </Heading>
-                        <Text fontSize={{base:"14px"}}>tells time whenever its needed it is in am and pm utc area bllllaaaccckk</Text>
+                        <Text fontSize={{base:"14px"}}>{project.desc}</Text>
                         <Flex justifyContent={'space-between'} ml={'74%'} w={{base:"80%"}}>
                             <Link textAlign={'right'} color={'#08830D'}>
                                 live
@@ -47,6 +48,7 @@ const Article = () => {
                         </Flex>
                     </Box>
                 </CardBody>
+                )}
             </Card>
         </Box>
         </>

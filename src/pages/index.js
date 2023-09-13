@@ -7,7 +7,7 @@ import Portfolio from "./components/portfolio";
 import Partner from "./components/partner";
 import Talk from "./components/talk";
 import Resume from "./components/resume";
-import Navbar from "./components/topbar";
+import Skills from "./components/skills";
 
 
 export default function Home() {
@@ -33,6 +33,9 @@ export default function Home() {
            </Box>
            <Box borderTop={"0.5px solid gray"}>
             <Portfolio/>
+           </Box>
+           <Box borderTop={"0.5px solid gray"}>
+            <Skills/>
            </Box>
            <Box borderTop={"0.5px solid gray"}>
             <Partner/>
