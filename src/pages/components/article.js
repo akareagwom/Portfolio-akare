@@ -1,4 +1,4 @@
-import { Box, Card, CardBody, CardHeader, Image, Text,Flex, Heading,Icon,Button, Link } from "@chakra-ui/react";
+import { Box, Card, CardBody, CardHeader, Image, Text,Flex, Heading,Icon,Button, Link, SimpleGrid } from "@chakra-ui/react";
 import {MdPreview} from "react-icons/md";
 import {BsBoxArrowUpRight} from "react-icons/bs";
 import {Project} from '../api/data'
@@ -6,14 +6,23 @@ import {Project} from '../api/data'
 const Article = () => {
     return ( 
         <>
-        <Box>
-        <Card variant={'unstyled'} mt="2" bg={'#323232'} borderRadius="none" h="50vh" w={{base:'87%',md:'77%'}}  >
+        <SimpleGrid
+        columns={{base:1,lg:4}}
+        spacing={2}
+        >
                 
                 {Project.map((project)=>
+        <Card variant={'unstyled'} display='flex' mt="2" bg={'transparent'} borderRadius="none" h="30vh"  >
                 <CardBody 
+                transition='transform 2s'
+                _hover={{transform:" scale(1.2)"}}
+                bg={'#323232'}
+                w={{lg:'80%'}}
+                mt='2'
+
                 key={project.title}
                 
-                // display='flex'
+                
                 // flexDir={{base:"column",lg:"row"}} 
                 // justifyContent={{lg:'space-between'}}
                 >
@@ -48,9 +57,9 @@ const Article = () => {
                         </Flex>
                     </Box>
                 </CardBody>
-                )}
             </Card>
-        </Box>
+                )}
+        </SimpleGrid>
         </>
      );
 }

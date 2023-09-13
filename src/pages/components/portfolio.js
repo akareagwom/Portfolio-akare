@@ -18,6 +18,7 @@ const Portfolio = () => {
             </Heading>
             <Box
             display={{lg:'flex'}}
+            flexDir={'row'}
             pl={{lg:"5%"}}
             py={{lg:"6%"}}
             // flexWrap={'wrap'}
@@ -34,7 +35,7 @@ const Portfolio = () => {
 
                 </Box>
                 <Flex>
-                    <Article/>
+                    <Article />
                 </Flex>
             </Box>
             <Box
