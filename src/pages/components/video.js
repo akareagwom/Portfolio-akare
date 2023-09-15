@@ -1,4 +1,11 @@
-import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text} from "@chakra-ui/react";
+import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text,Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverHeader,
+    PopoverBody,
+    PopoverFooter,
+    PopoverArrow,
+    PopoverCloseButton,} from "@chakra-ui/react";
 import Nav from "./nav";
 
 const Video = () => {
@@ -48,15 +55,23 @@ const Video = () => {
                         <Box
                         mt="10%"
                         >
-                            <Button
-                            // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
+                           
+                        <Popover>
+                        <PopoverTrigger>
+                            <Button 
                             bg="transparent"
                             border="3px solid #08830D"
                             color="#ffff"
                             w="30%"
-                            ml="5%">
-                                RESUME
-                            </Button>
+                            ml="5%">RESUME</Button>
+                        </PopoverTrigger>
+                        <PopoverContent>
+                            <PopoverArrow />
+                            <PopoverCloseButton />
+                            <PopoverHeader>Confirmation!</PopoverHeader>
+                            <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
+                        </PopoverContent>
+                        </Popover>
                         </Box>
                     </Box>
                 

@@ -1,11 +1,4 @@
-import { Box, Button, Card, CardBody, CardHeader, Heading, Icon, Image, SimpleGrid, Text,Popover,
-    PopoverTrigger,
-    PopoverContent,
-    PopoverHeader,
-    PopoverBody,
-    PopoverFooter,
-    PopoverArrow,
-    PopoverCloseButton, } from "@chakra-ui/react";
+import { Box, Button, Card, CardBody, CardHeader, Heading, Icon, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import {BsTelephoneFill, BsSendFill, BsGithub, BsLinkedin, BsInstagram, BsTwitter,} from "react-icons/bs" 
 
 const Talk = () => {
@@ -18,6 +11,7 @@ const Talk = () => {
             <Card
             w="94%"
             h="80vh"
+            bg="transparent"
             borderRadius="20px"
             >
                 <CardHeader>
@@ -116,17 +110,7 @@ const Talk = () => {
                             ml="5%">
                                 RESUME
                             </Button>
-                            <Popover>
-  <PopoverTrigger>
-    <Button>Trigger</Button>
-  </PopoverTrigger>
-  <PopoverContent>
-    <PopoverArrow />
-    <PopoverCloseButton />
-    <PopoverHeader>Confirmation!</PopoverHeader>
-    <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
-  </PopoverContent>
-</Popover>
+                           
                         </Box>
                     </Box>
                     <Box
