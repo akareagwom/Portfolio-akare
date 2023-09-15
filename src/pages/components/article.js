@@ -12,7 +12,7 @@ const Article = () => {
         >
                 
                 {Project.map((project)=>
-        <Card variant={'unstyled'} display='flex' mt="2" bg={'transparent'} borderRadius="none" h="30vh"  >
+        <Card key={project.title} variant={'unstyled'} display='flex' mt="2" bg={'transparent'} borderRadius="none" h="30vh"  >
                 <CardBody 
                 transition='transform 2s'
                 _hover={{transform:" scale(1.2)"}}
