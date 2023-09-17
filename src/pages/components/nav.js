@@ -16,6 +16,8 @@ const Nav = () => {
                 <Box mt="2">
                 <Box fontSize={'1.5rem'}  color='white' fontFamily={'Gruppo'} >
                     <Image 
+                    transform={'translateX(0px)'}
+                    animation={'float 6s ease-out infinite'}
                     w="30%"
                     ml="80%"
                     backgroundBlendMode={'color-burn'}
