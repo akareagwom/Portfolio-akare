@@ -2,6 +2,8 @@ import { Box, Card, CardBody, CardHeader, Image, Text,Flex, Heading,Icon,Button,
 import {MdPreview} from "react-icons/md";
 import {BsBoxArrowUpRight} from "react-icons/bs";
 import {Project} from '../api/data'
+import NextLink from 'next/link'
+// import { Link } from '@chakra-ui/react'
 
 const Article = () => {
     return ( 
@@ -13,8 +15,9 @@ const Article = () => {
                 
                 {Project.map((project)=>
         <Card key={project.title} variant={'unstyled'} display='flex' mt="2" bg={'transparent'} borderRadius="none" h="25vh"  >
+            <Link as={NextLink} href={project.url} isExternal>
                 <CardBody 
-                transition='transform 2s'
+                transition='transform 4s'
                 _hover={{transform:" scale(1.2)"}}
                 bg={'#323232'}
                 w={{lg:'80%'}}
@@ -32,6 +35,7 @@ const Article = () => {
                         display={'block'}
                         />
                     </Box>
+                    
                     <Box
                     textAlign={'center'}
                     pt='6'
@@ -53,8 +57,10 @@ const Article = () => {
                         <Text fontSize={{base:"14px"}}>{project.desc}</Text>
                         <Flex justifyContent={'space-between'} ml={'74%'} w={{base:"80%"}}>
                         </Flex>
+                        
                     </Box>
                 </CardBody>
+                </Link>
             </Card>
                 )}
         </SimpleGrid>
