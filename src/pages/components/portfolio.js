@@ -14,7 +14,7 @@ const Portfolio = () => {
             color="#ffff"
             ml="6%"
             >
-                Project
+               Recent Project
             </Heading>
             <Box
             display={{lg:'flex'}}

@@ -35,19 +35,23 @@ const Nav = () => {
                     visibility={{base:"hidden",md:"visible",lg:"visible"}}
                     p={{base:"0"}}
                     color='white'>
-                        <Link to="home" spy={true} smooth={true} offset={5} duration={500}>
+                        <Link to="home" spy={true} smooth={true} offset={5} duration={700}>
                         <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Home</Tab>
                         </Link>
 
-                        <Link to="about" spy={true} smooth={true} offset={5} duration={500}>
+                        <Link to="about" spy={true} smooth={true} offset={5} duration={700}>
                         <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>About</Tab>
                         </Link>
 
-                        <Link to="portfolio" spy={true} smooth={true} offset={5} duration={500}>
+                        <Link to="portfolio" spy={true} smooth={true} offset={5} duration={700}>
                         <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Portfolio</Tab>
                         </Link>
 
-                        <Link to="contact" spy={true} smooth={true} offset={5} duration={500}>
+                        <Link to="skills" spy={true} smooth={true} offset={5} duration={700}>
+                        <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Skills</Tab>
+                        </Link>
+
+                        <Link to="contact" spy={true} smooth={true} offset={5} duration={700}>
                         <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Contact</Tab>
                         </Link>
                         
@@ -66,19 +70,23 @@ const Nav = () => {
 
                         //   visibility={{base:"hidden",lg:"visible"}}
                           color='white'>
-                              <Link to="home" spy={true} smooth={true} offset={5} duration={500}>
+                              <Link to="home" spy={true} smooth={true} offset={5} duration={700}>
                               <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>Home</Tab>
                               </Link>
       
-                              <Link to="about" spy={true} smooth={true} offset={5} duration={500}>
+                              <Link to="about" spy={true} smooth={true} offset={5} duration={700}>
                               <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>About</Tab>
                               </Link>
       
-                              <Link to="portfolio" spy={true} smooth={true} offset={5} duration={500}>
+                              <Link to="portfolio" spy={true} smooth={true} offset={5} duration={700}>
                               <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>Portfolio</Tab>
                               </Link>
+
+                            <Link to="skills" spy={true} smooth={true} offset={5} duration={700}>
+                            <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Skills</Tab>
+                            </Link>
       
-                              <Link to="contact" spy={true} smooth={true} offset={5} duration={500}>
+                              <Link to="contact" spy={true} smooth={true} offset={5} duration={700}>
                               <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>Contact</Tab>
                               </Link>
                               

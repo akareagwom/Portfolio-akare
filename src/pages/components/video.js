@@ -56,7 +56,7 @@ const Video = () => {
                         mt="10%"
                         >
                            
-                        <Popover>
+                        <Popover colorScheme="#08830D">
                         <PopoverTrigger>
                             <Button 
                             bg="transparent"
@@ -65,11 +65,11 @@ const Video = () => {
                             w="30%"
                             ml="5%">RESUME</Button>
                         </PopoverTrigger>
-                        <PopoverContent>
+                        <PopoverContent border="3px solid #08830D" bg="black">
                             <PopoverArrow />
                             <PopoverCloseButton />
-                            <PopoverHeader>Confirmation!</PopoverHeader>
-                            <PopoverBody>Are you sure you want to have that milkshake?</PopoverBody>
+                            <PopoverHeader fontSize={'12px'}>Unlocking the Art of Exceptional Web Design!</PopoverHeader>
+                            <PopoverBody fontSize={'12px'}>What does exceptional web design look like? Explore my portfolio to find out.</PopoverBody>
                         </PopoverContent>
                         </Popover>
                         </Box>
