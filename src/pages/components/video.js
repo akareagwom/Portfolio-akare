@@ -63,7 +63,7 @@ const Video = () => {
                             border="3px solid #08830D"
                             color="#ffff"
                             w="30%"
-                            ml="5%">RESUME</Button>
+                            ml="5%">INTRO</Button>
                         </PopoverTrigger>
                         <PopoverContent border="3px solid #08830D" bg="black">
                             <PopoverArrow />

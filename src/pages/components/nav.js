@@ -19,7 +19,7 @@ const Nav = () => {
                     transform={'translateX(0px)'}
                     animation={'float 6s ease-out infinite'}
                     w="30%"
-                    ml="80%"
+                    ml={{base:'20%',lg:"80%"}}
                     backgroundBlendMode={'color-burn'}
                      src="logo3.png" alt=""/>
                 </Box>
@@ -71,15 +71,15 @@ const Nav = () => {
                         //   visibility={{base:"hidden",lg:"visible"}}
                           color='white'>
                               <Link to="home" spy={true} smooth={true} offset={5} duration={700}>
-                              <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>Home</Tab>
+                              <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Home</Tab>
                               </Link>
       
                               <Link to="about" spy={true} smooth={true} offset={5} duration={700}>
-                              <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>About</Tab>
+                              <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>About</Tab>
                               </Link>
       
                               <Link to="portfolio" spy={true} smooth={true} offset={5} duration={700}>
-                              <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>Portfolio</Tab>
+                              <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Portfolio</Tab>
                               </Link>
 
                             <Link to="skills" spy={true} smooth={true} offset={5} duration={700}>
@@ -87,12 +87,12 @@ const Nav = () => {
                             </Link>
       
                               <Link to="contact" spy={true} smooth={true} offset={5} duration={700}>
-                              <Tab _selected={{color:'#9EC2FF',borderBottomColor:'2px solid #9EC2FF'}}>Contact</Tab>
+                              <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Contact</Tab>
                               </Link>
                               
-                              <Button onClick={toggleColorMode}>
+                              {/* <Button onClick={toggleColorMode}>
                                   {toggleColorMode ? <CiLight/>:<CiDark/>}
-                              </Button>
+                              </Button> */}
                           </TabList>
                     )}
 
@@ -104,7 +104,7 @@ const Nav = () => {
             onClick={onToggle}
             icon={<RxHamburgerMenu/>}
             variant="outline"
-            color="black"
+            color="#08830D"
             border="none"
             aria-label="Toggle menu"
           />

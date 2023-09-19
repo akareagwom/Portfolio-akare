@@ -1,8 +1,8 @@
 export const Project =[
     {
-        title:"Bank",
-        desc:"Bank app",
-        url:"",
+        title:"Movie Box",
+        desc:"Recent Movies",
+        url:"https://warm-seahorse-bd1a7b.netlify.app/",
         image:"lendsqr.png"
     },
 
@@ -14,10 +14,10 @@ export const Project =[
     },
 
     {
-        title:"Custom Wordle",
-        desc:"word game",
-        url:"",
-        image:"pandora.png"
+        title:"Lendsqr",
+        desc:"Lendsqr Challenge",
+        url:"https://delicate-melomakarona-b9d7e3.netlify.app/",
+        image:"lendsqr.png"
     },
 
     {
