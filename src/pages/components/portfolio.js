@@ -5,8 +5,8 @@ const Portfolio = () => {
     return ( 
         <Box
         id="portfolio"
-        mb={'5%'}
-        mt={'5%'}
+        mb={{base:'10%',lg:'5%'}}
+        mt={{base:'10%',lg:'5%'}}
         >
             <Heading
             fontSize="26px"

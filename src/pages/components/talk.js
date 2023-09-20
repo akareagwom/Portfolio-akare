@@ -38,9 +38,9 @@ const Talk = () => {
                     
                     <Text
                     bgGradient={[
-                        'linear(to-tr, #FFFF,#9EC2FF)',
-                        'linear(to-t, #FF9CD4,#9EC2FF)',
-                        'linear(to-b, #FF9CD4,#9EC2FF)',
+                        'linear(to-tr, #FFFF,#08830D)',
+                        'linear(to-t, #08830D,#08830D)',
+                        'linear(to-b, #FFFF,#08830D)',
                       ]}
                     bgClip='text'
                     fontSize='6xl'

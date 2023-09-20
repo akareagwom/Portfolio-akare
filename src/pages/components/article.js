@@ -30,7 +30,7 @@ const Article = () => {
                         <Image src={project.image} alt="assets" 
                         filter='auto'
                         brightness={'50%'}
-                        w={{base:"80%",lg:"100%"}}
+                        w={{base:"100%",lg:"100%"}}
                         h={'25vh'}
                         display={'block'}
                         />
