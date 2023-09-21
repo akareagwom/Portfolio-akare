@@ -12,8 +12,8 @@ const Video = () => {
     return ( 
         <>
         <Box
-        ml="5%"
-        pt="5%"
+        // ml='-32'
+        mt="2%"
         id="home"
         >
             <Box
@@ -22,24 +22,24 @@ const Video = () => {
             borderRadius="20px"
                 display={{base:"flex",lg:"flex"}}
                 flexDir={{base:"column",lg:"row"}}
-                justifyContent={{base:"center",lg:"space-evenly"}}
+                justifyContent={{base:"center",lg:"space-between"}}
                 alignItems={'center'}
             >
                 
                 
                 
                     <Box
-                        border="3px solid #08830D"
                     >
                         <Image
+                        // border="3px solid #08830D"
                         //  borderRadius="50%"
-                        w={{base:"150px",lg:"290px"}}
-                        h={{base:"150px",lg:"300px"}}
+                        w={{base:"150px",lg:"550px"}}
+                        h={{base:"150px",lg:"85vh"}}
                         src="akare.jpg"
-                        filter = "grayscale(100%)"
+                        // filter = "grayscale(100%)"
                         mixBlendMode={""}
-                        transition='transform 2s'
-                        _hover={{transform:" scale(1.2)"}}
+                        // transition='transform 2s'
+                        // _hover={{transform:" scale(1.2)"}}
                          alt="asset"/>
                     </Box>
                     <Box
