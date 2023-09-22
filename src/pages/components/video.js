@@ -18,7 +18,7 @@ const Video = () => {
         >
             <Box
             w={{base:"94%", lg:"94%"}}
-            h="80vh"
+            h="90vh"
             borderRadius="20px"
                 display={{base:"flex",lg:"flex"}}
                 flexDir={{base:"column",lg:"row"}}
@@ -33,16 +33,17 @@ const Video = () => {
                         <Image
                         // border="3px solid #08830D"
                         //  borderRadius="50%"
-                        w={{base:"150px",lg:"550px"}}
-                        h={{base:"150px",lg:"85vh"}}
-                        src="akare.jpg"
-                        // filter = "grayscale(100%)"
+                        w={{base:"150px",lg:"600px"}}
+                        h={{base:"150px",lg:"90vh"}}
+                        src="folio.jpg"
+                        filter = "grayscale(100%)"
                         mixBlendMode={""}
                         // transition='transform 2s'
                         // _hover={{transform:" scale(1.2)"}}
                          alt="asset"/>
                     </Box>
                     <Box
+                    
                     textAlign={{base:"center"}}
                     w={{base:"100%",lg:"40%"}}>
                         <Text>

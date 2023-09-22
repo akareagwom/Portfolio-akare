@@ -7,6 +7,7 @@ const Todo = () => {
         <>
         <Box
         color="#fff"
+        
         p="6%"
         id="about"
         textAlign={{base:"center",lg:"start"}}
