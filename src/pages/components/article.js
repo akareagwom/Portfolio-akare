@@ -1,29 +1,45 @@
 import { Box, Card, CardBody, CardHeader, Image, Text,Flex, Heading,Icon,Button, Link, SimpleGrid } from "@chakra-ui/react";
+
 import {MdPreview} from "react-icons/md";
 import {BsBoxArrowUpRight} from "react-icons/bs";
+
 import {Project} from '../api/data'
 import NextLink from 'next/link'
-import { Carousel } from "react-responsive-carousel";
 // import { Link } from '@chakra-ui/react'
+
+
+import {Swiper, SwiperSlide} from "swiper/react";
+import "swiper/css"
+import "swiper/css/effect-coverflow"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+
+import { EffectCoverflow,Pagination,Navigation } from "swiper";
+
+
 
 const Article = () => {
     return ( 
         <>
-        <Carousel>
-            <SimpleGrid
-            columns={{base:1,lg:4}}
-            spacing={2}
-            >
-                    
-                    {Project.map((project)=>
-            <Card key={project.title} variant={'unstyled'} display='flex' mt="2" bg={'transparent'} borderRadius="none" h="25vh"  >
+        {/* <Swiper
+        spaceBetween={10}
+        slidesPerView={3}
+        effect={"coverflow"}
+        loop={true}
+        autoplay={{ delay: 3000 }}
+        > */}
+        
+                {Project.map((project)=>
+                
+                <Box key={project.title} variant={'unstyled'} display='flex' mt="2" borderRadius="none" h="25vh"  >
                 <Link as={NextLink} href={project.url} isExternal>
-                    <CardBody 
+                    <Box 
                     transition='transform 4s'
                     _hover={{transform:" scale(1.2)"}}
                     bg={'#323232'}
                     w={{lg:'80%'}}
                     mt='2'
+                    
                     pos="relative"
                     key={project.id} 
                     >
@@ -35,6 +51,7 @@ const Article = () => {
                             w={{base:"100%",lg:"100%"}}
                             h={'25vh'}
                             display={'block'}
+                            
                             />
                         </Box>
                         
@@ -61,12 +78,14 @@ const Article = () => {
                             </Flex>
                             
                         </Box>
-                    </CardBody>
+                    </Box>
                     </Link>
-                </Card>
-                    )}
-            </SimpleGrid>
-        </Carousel>
+                </Box>
+                
+                )}
+            {/* </Swiper> */}
+            
+            
         </>
      );
 }
