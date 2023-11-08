@@ -25,31 +25,29 @@ const Video = () => {
                 justifyContent={{base:"center",lg:"space-between"}}
                 alignItems={'center'}
             >
-                
-                
-                
-                    <Box
-                    >
+                    <Box>
                         <Image
-                        // border="3px solid #08830D"
-                        //  borderRadius="50%"
                         w={{base:"150px",lg:"600px"}}
                         h={{base:"150px",lg:"90vh"}}
-                        src="folio.jpg"
+                        src="homme.png"
                         filter = "grayscale(100%)"
                         mixBlendMode={""}
-                        // transition='transform 2s'
-                        // _hover={{transform:" scale(1.2)"}}
+                        transition='transform 2s'
+                        animation={'animate 4s linear infinite'}
+                        _hover={{transform:" rotate(20deg)",animation:'animate 4s linear infinite'}}
                          alt="asset"/>
                     </Box>
                     <Box
                     
                     textAlign={{base:"center"}}
                     w={{base:"100%",lg:"40%"}}>
-                        <Text>
+                        <Text
+                        fontFamily={'monospace'}
+                        >
                             Hello I am Akare
                         </Text>
                         <Text
+                        fontFamily={'monospace'}
                         fontSize={{base:"16px",lg:"2rem"}}>
                             I am a Frontend Developer, I build User Interfaces.
                         </Text>
