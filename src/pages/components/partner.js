@@ -43,6 +43,7 @@ const Partner = () => {
                         display={'block'}>
                             <Text fontSize={'2xl'} color={'white'}>thick</Text>
                         </Box>
+                        
                         <Box
                         pos={'absolute'}
                         top="15"
@@ -58,6 +59,7 @@ const Partner = () => {
                         </Text>
                         </Box>
                     </CardBody>
+
                 </Card>
                </Box>
             )}
