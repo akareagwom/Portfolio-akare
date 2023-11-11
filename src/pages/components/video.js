@@ -7,6 +7,7 @@ import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text,Popover,
     PopoverArrow,
     PopoverCloseButton,} from "@chakra-ui/react";
 import Nav from "./nav";
+import '../../styles/Home.module.css'
 
 const Video = () => {
     return ( 
@@ -35,7 +36,7 @@ const Video = () => {
                         mixBlendMode={""}
                         transition='transform 2s'
                         animation={'animate 4s linear infinite'}
-                        _hover={{transform:" rotate(20deg)",animation:'animate 4s linear infinite'}}
+                        _hover={{transform:" translateY(-40px)",animation:'animate 4s linear infinite'}}
                          alt="asset"/>
                     </Box>
                     <Box
@@ -44,7 +45,9 @@ const Video = () => {
                     w={{base:"100%",lg:"40%"}}>
                         <Text
                         fontFamily={'monospace'}
-                        fontSize={{base:"16px",lg:"1.5rem"}}
+                        fontSize={{base:"16px",lg:"3rem"}}
+                        color="black"
+                        className="text-stroke"
                         >
                             Hello I am Akare
                         </Text>
