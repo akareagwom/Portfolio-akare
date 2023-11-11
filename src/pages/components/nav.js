@@ -10,7 +10,7 @@ const Nav = () => {
     
     return ( 
         <>
-            <Flex bg="black" alignItems={'center'}  fontFamily={'sans-serif'} justify={'space-between'}
+            <Flex alignItems={'center'}  fontFamily={'sans-serif'} justify={'space-between'}
             w="100%">
      
                 <Box mt="2">

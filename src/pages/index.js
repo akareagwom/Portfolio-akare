@@ -16,8 +16,8 @@ export default function Home() {
     <>
       <Box
       // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
-      bg="white"
-      color="black"
+      bg="black"
+      color="white"
       >
         
         <Box 
