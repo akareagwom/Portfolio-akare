@@ -7,13 +7,15 @@ import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text,Popover,
     PopoverArrow,
     PopoverCloseButton,} from "@chakra-ui/react";
 import Nav from "./nav";
+import '../../styles/Home.module.css'
 
 const Video = () => {
     return ( 
         <>
         <Box
-        // ml='-32'
-        mt="2%"
+        // bgGradient='linear(to-r, #008080, #FFFF)'
+        bg="black"
+        mt="0%"
         id="home"
         >
             <Box
@@ -34,7 +36,7 @@ const Video = () => {
                         mixBlendMode={""}
                         transition='transform 2s'
                         animation={'animate 4s linear infinite'}
-                        _hover={{transform:" rotate(20deg)",animation:'animate 4s linear infinite'}}
+                        _hover={{transform:" translateY(-40px)",animation:'animate 4s linear infinite'}}
                          alt="asset"/>
                     </Box>
                     <Box
@@ -43,28 +45,31 @@ const Video = () => {
                     w={{base:"100%",lg:"40%"}}>
                         <Text
                         fontFamily={'monospace'}
+                        fontSize={{base:"16px",lg:"3rem"}}
+                        color="black"
+                        className="text-stroke"
                         >
                             Hello I am Akare
                         </Text>
                         <Text
                         fontFamily={'monospace'}
                         fontSize={{base:"16px",lg:"2rem"}}>
-                            I am a Frontend Developer, I build User Interfaces.
+                            I MIGHT BE THE DEVELOPER YOU ARE LOOKING FOR
                         </Text>
                         <Box
                         mt="10%"
                         >
                            
-                        <Popover colorScheme="#08830D">
+                        <Popover colorScheme="#008080">
                         <PopoverTrigger>
                             <Button 
                             bg="transparent"
-                            border="3px solid #08830D"
+                            border="3px solid #008080"
                             color="#ffff"
                             w="30%"
                             ml="5%">INTRO</Button>
                         </PopoverTrigger>
-                        <PopoverContent border="3px solid #08830D" bg="black">
+                        <PopoverContent border="3px solid #008080" bg="white">
                             <PopoverArrow />
                             <PopoverCloseButton />
                             <PopoverHeader fontSize={'12px'}>Unlocking the Art of Exceptional Web Design!</PopoverHeader>
