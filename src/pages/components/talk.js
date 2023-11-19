@@ -5,13 +5,27 @@ import { Box, Button, Card, CardBody, CardHeader,FormControl,
     Grid,
     GridItem,
     FormErrorMessage,
-    FormHelperText, Heading, Icon, Image, SimpleGrid, Text, Flex } from "@chakra-ui/react";
+    FormHelperText, Heading, Icon, Image, SimpleGrid, Text, Flex,keyframes,usePrefersReducedMotion } from "@chakra-ui/react";
 import {BsTelephoneFill, BsSendFill, BsGithub, BsLinkedin, BsInstagram, BsTwitter,} from "react-icons/bs" 
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import "../../styles/Home.module.css"
+
+
+
+
+const spin = keyframes`
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+`
 
 const Talk = () => {
     const form = useRef();
+    const prefersReducedMotion = usePrefersReducedMotion();
+
+    const myAnimation= prefersReducedMotion
+    ? undefined
+    : `${spin}infinite 4s`
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,266 +38,23 @@ const Talk = () => {
       });
   };
 
+
     return ( 
         <Box
         // ml="5%"
         py="5%"
         px="1%"
         id="contact"
+        
         >
-            <Flex flexWrap={'wrap'} gap={1}>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                <Box w={'5%'} h={10} bg="" boxShadow="100px 80px 40px 20px 08830D" _hover={{bg:"#08830D",transform:"scale(1)", transition:"2s",boxShadow:"120px 80px 40px 20px #08830D"}} border={"1px solid white"}></Box>
-                
-            </Flex>
+           
             <Card
+            
             w="94%"
             h="80vh"
-            bg=""
+            bg="transparent"
             borderRadius="20px"
+            className="contact-card"
             >
                 <CardHeader>
                     
@@ -302,10 +73,18 @@ const Talk = () => {
                 </CardHeader>
                 <CardBody
                 display="flex"
-                justifyContent="space-evenly">
+                justifyContent="center"
+                alignItems="center"
+                >
                 
                     <Box
-                    borderRadius="50%">
+                     display="flex"
+                     justifyContent="center"
+                     alignItems="center"
+                    borderRadius="50%"
+                    animation={myAnimation}
+                    _before={{content:'""',position:"absolute",w:"150px",h:"340px",bgGradient:"linear(to-tr, #FFFF,#08830D)",animation:"animate 4s linear infinite", }}
+                    className="contact-card">
                         
                     <FormControl ref={form} onSubmit={sendEmail}>
                     <FormLabel>Full Name</FormLabel>

@@ -104,6 +104,9 @@
   transform: translateZ(0);
 }
 
+/* custom css for contact card */
+
+
 .logo,
 .thirteen {
   position: relative;
@@ -153,6 +156,9 @@
 .text-stroke {
   -webkit-text-stroke: 0.3vw #08830D;
 
+}
+.contact-card{
+  background-color: #08830D;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
