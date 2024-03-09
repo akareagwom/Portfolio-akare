@@ -12,7 +12,7 @@ export const FrameWork =[
     },
     {
         library:"Vite",
-        img:"https://logos-download.com/wp-content/uploads/2022/01/VITE_Logo.png",
+        img:"homme.png",
         desc:"Vite is a modern, fast, and lightweight build tool for JavaScript and TypeScript applications, designed to enhance development speed."
     },
     {

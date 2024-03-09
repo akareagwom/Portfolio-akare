@@ -36,12 +36,12 @@ const Partner = () => {
                         <Box
                         textAlign={'center'}
                         filter='auto'
-                        brightness={'50%'}
+                        // brightness={'50%'}
                         w={{base:"100%",lg:"100%"}}
                         h={'25vh'}
                         _hover={{ visibility:'hidden'}}
                         display={'block'}>
-                            <Text fontSize={'2xl'} color={'white'}>thick</Text>
+                        <Image borderRadius={'50%'} w={'40%'} src={framework.img} />
                         </Box>
                         
                         <Box
@@ -53,7 +53,6 @@ const Partner = () => {
                         transition ={'top 0.3s ease'}
                         bg="rgba(0,0,0,0.6)"
                         opacity="0">
-                        <Image w={'40%'} src={framework.img} />
                         <Text color="white">
                         {framework.desc}
                         </Text>
