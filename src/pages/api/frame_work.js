@@ -2,7 +2,7 @@ export const FrameWork =[
     
     {
         library:"Reactjs",
-        img:"https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+        img:"reactlogo.png",
         desc:" React is a popular JavaScript library for building user interfaces, known for its component-based architecture."
     },
     {
@@ -12,7 +12,7 @@ export const FrameWork =[
     },
     {
         library:"Vite",
-        img:"homme.png",
+        img:"vitejs-logo.svg",
         desc:"Vite is a modern, fast, and lightweight build tool for JavaScript and TypeScript applications, designed to enhance development speed."
     },
     {
@@ -27,13 +27,13 @@ export const FrameWork =[
     },
     {
         library:"MaterialUi",
-        img:"",
+        img:"materialui.png",
         desc:" Material-UI is a popular React UI framework that implements Google's Material Design guidelines, providing a rich set of pre-designed components for building visually appealing web applications."
     },
     {
         library:"SCSS",
-        img:"",
-        desc:""
+        img:"sasslogo.png",
+        desc:"Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."
     },
     {
         library:"MaterialUi",

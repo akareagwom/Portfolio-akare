@@ -41,7 +41,7 @@ const Partner = () => {
                         h={'25vh'}
                         _hover={{ visibility:'hidden'}}
                         display={'block'}>
-                        <Image borderRadius={'50%'} w={'40%'} src={framework.img} />
+                        <Image _hover={{ display:'none'}} borderRadius={'50%'} w={'40%'} src={framework.img} />
                         </Box>
                         
                         <Box
@@ -49,10 +49,11 @@ const Partner = () => {
                         top="15"
                         left="0"
                         pl="10"
-                        _hover={{opacity: 1}}
+                        _hover={{opacity: 5}}
                         transition ={'top 0.3s ease'}
                         bg="rgba(0,0,0,0.6)"
-                        opacity="0">
+                        opacity="0"
+                        >
                         <Text color="white">
                         {framework.desc}
                         </Text>
