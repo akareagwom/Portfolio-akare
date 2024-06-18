@@ -25,7 +25,7 @@ const Partner = () => {
                w="100%"
                color="white">
                <Card
-                p="8%"
+                p="2%"
                 bg="black"
                 borderRadius="20px"
                 w={{lg:'80%'}}
@@ -36,12 +36,12 @@ const Partner = () => {
                         <Box
                         textAlign={'center'}
                         filter='auto'
-                        brightness={'50%'}
+                        // brightness={'50%'}
                         w={{base:"100%",lg:"100%"}}
                         h={'25vh'}
                         _hover={{ visibility:'hidden'}}
                         display={'block'}>
-                            <Text fontSize={'2xl'} color={'white'}>thick</Text>
+                        <Image _hover={{ display:'none'}} borderRadius={'50%'} w={'40%'} src={framework.img} />
                         </Box>
                         
                         <Box
@@ -49,11 +49,11 @@ const Partner = () => {
                         top="15"
                         left="0"
                         pl="10"
-                        _hover={{opacity: 1}}
+                        _hover={{opacity: 5}}
                         transition ={'top 0.3s ease'}
                         bg="rgba(0,0,0,0.6)"
-                        opacity="0">
-                        <Image w={'40%'} src={framework.img} />
+                        opacity="0"
+                        >
                         <Text color="white">
                         {framework.desc}
                         </Text>

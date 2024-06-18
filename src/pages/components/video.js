@@ -14,10 +14,18 @@ const Video = () => {
         <>
         <Box
         // bgGradient='linear(to-r, #008080, #FFFF)'
-        bg="black"
+        bg="url(bg4.jpg) no-repeat"
+        backgroundSize={'100%'}
+        backgroundPosition={'center'}
+        //  filter = "grayscale(100%)"
+         mixBlendMode={""}
+        // backdropBlur={'md'}
+        filter='auto'
+        brightness={'40%'}
         mt="0%"
         id="home"
         >
+            
             <Box
             w={{base:"94%", lg:"94%"}}
             h="90vh"
@@ -31,10 +39,10 @@ const Video = () => {
                         <Image
                         w={{base:"150px",lg:"600px"}}
                         h={{base:"150px",lg:"90vh"}}
-                        src="homme.png"
-                        filter = "grayscale(100%)"
+                        src="astronaut.png"
+                        // filter = "grayscale(100%)"
                         mixBlendMode={""}
-                        transition='transform 2s'
+                        transition='transform 1.5s'
                         animation={'animate 4s linear infinite'}
                         _hover={{transform:" translateY(-40px)",animation:'animate 4s linear infinite'}}
                          alt="asset"/>
@@ -54,7 +62,7 @@ const Video = () => {
                         <Text
                         fontFamily={'monospace'}
                         fontSize={{base:"16px",lg:"2rem"}}>
-                            I MIGHT BE THE DEVELOPER YOU ARE LOOKING FOR
+                            I AM THE DEVELOPER YOU ARE LOOKING FOR
                         </Text>
                         <Box
                         mt="10%"
