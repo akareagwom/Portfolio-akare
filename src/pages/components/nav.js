@@ -10,18 +10,13 @@ const Nav = () => {
     
     return ( 
         <>
-            <Flex alignItems={'center'}  fontFamily={'sans-serif'} justify={'space-between'}
+            <Flex alignItems={'center'} p={2} fontFamily={'sans-serif'} justify={'space-between'}
             w="100%">
      
                 <Box mt="2">
                 <Box fontSize={'1.5rem'}  color='white' fontFamily={'Gruppo'} >
-                    <Image 
-                    transform={'translateX(0px)'}
-                    animation={'float 6s ease-out infinite'}
-                    w="30%"
-                    ml={{base:'20%',lg:"80%"}}
-                    backgroundBlendMode={'color-burn'}
-                     src="logo3.png" alt=""/>
+                    <Heading  pl={20} py={2} ml={{base:'20%',lg:"0%"}}>Akare</Heading>
+                    
                 </Box>
                 </Box>
                 <Tabs
@@ -36,23 +31,23 @@ const Nav = () => {
                     p={{base:"0"}}
                     color='white'>
                         <Link to="home" spy={true} smooth={true} offset={5} duration={700}>
-                        <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Home</Tab>
+                        <Tab _selected={{color:'gray',borderBottomColor:'2px solid gray'}}>Home</Tab>
                         </Link>
 
                         <Link to="about" spy={true} smooth={true} offset={5} duration={700}>
-                        <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>About</Tab>
+                        <Tab _selected={{color:'gray',borderBottomColor:'2px solid gray'}}>About</Tab>
                         </Link>
 
                         <Link to="portfolio" spy={true} smooth={true} offset={5} duration={700}>
-                        <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Portfolio</Tab>
+                        <Tab _selected={{color:'gray',borderBottomColor:'2px solid gray'}}>Portfolio</Tab>
                         </Link>
 
                         <Link to="skills" spy={true} smooth={true} offset={5} duration={700}>
-                        <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Skills</Tab>
+                        <Tab _selected={{color:'gray',borderBottomColor:'2px solid gray'}}>Skills</Tab>
                         </Link>
 
                         <Link to="contact" spy={true} smooth={true} offset={5} duration={700}>
-                        <Tab _selected={{color:'#08830D',borderBottomColor:'2px solid #08830D'}}>Contact</Tab>
+                        <Tab _selected={{color:'gray',borderBottomColor:'2px solid gray'}}>Contact</Tab>
                         </Link>
                         
                         

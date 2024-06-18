@@ -25,7 +25,7 @@ const Partner = () => {
                w="100%"
                color="white">
                <Card
-                p="8%"
+                p="2%"
                 bg="black"
                 borderRadius="20px"
                 w={{lg:'80%'}}
