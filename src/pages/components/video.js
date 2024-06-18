@@ -8,6 +8,7 @@ import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text,Popover,
     PopoverCloseButton,} from "@chakra-ui/react";
 import Nav from "./nav";
 import '../../styles/Home.module.css'
+import Media from "./media";
 
 const Video = () => {
     return ( 
@@ -21,7 +22,7 @@ const Video = () => {
          mixBlendMode={""}
         // backdropBlur={'md'}
         filter='auto'
-        brightness={'40%'}
+        // brightness={'40%'}
         mt="0%"
         id="home"
         >
@@ -35,12 +36,14 @@ const Video = () => {
                 justifyContent={{base:"center",lg:"space-between"}}
                 alignItems={'center'}
             >
+                <Box>
+                    <Media/>
+                </Box>
                     <Box>
                         <Image
                         w={{base:"150px",lg:"600px"}}
                         h={{base:"150px",lg:"90vh"}}
                         src="astronaut.png"
-                        // filter = "grayscale(100%)"
                         mixBlendMode={""}
                         transition='transform 1.5s'
                         animation={'animate 4s linear infinite'}
