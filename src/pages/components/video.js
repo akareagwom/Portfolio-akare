@@ -14,15 +14,7 @@ const Video = () => {
     return ( 
         <>
         <Box
-        // bgGradient='linear(to-r, #008080, #FFFF)'
-        bg="url(bg4.jpg) no-repeat"
-        backgroundSize={'100%'}
-        backgroundPosition={'center'}
-        //  filter = "grayscale(100%)"
-         mixBlendMode={""}
-        // backdropBlur={'md'}
-        filter='auto'
-        // brightness={'40%'}
+        bg={'white'}
         mt="0%"
         id="home"
         >
@@ -39,17 +31,7 @@ const Video = () => {
                 <Box>
                     <Media/>
                 </Box>
-                    <Box>
-                        <Image
-                        w={{base:"150px",lg:"600px"}}
-                        h={{base:"150px",lg:"90vh"}}
-                        src="astronaut.png"
-                        mixBlendMode={""}
-                        transition='transform 1.5s'
-                        animation={'animate 4s linear infinite'}
-                        _hover={{transform:" translateY(-40px)",animation:'animate 4s linear infinite'}}
-                         alt="asset"/>
-                    </Box>
+                   
                     <Box
                     
                     textAlign={{base:"center"}}
@@ -63,9 +45,10 @@ const Video = () => {
                             Hello I am Akare
                         </Text>
                         <Text
+                        color="black"
                         fontFamily={'monospace'}
                         fontSize={{base:"16px",lg:"2rem"}}>
-                            I AM THE DEVELOPER YOU ARE LOOKING FOR
+                            I MIGHT BE THE DEVELOPER YOU ARE LOOKING FOR
                         </Text>
                         <Box
                         mt="10%"
@@ -75,8 +58,8 @@ const Video = () => {
                         <PopoverTrigger>
                             <Button 
                             bg="transparent"
-                            border="3px solid #008080"
-                            color="#ffff"
+                            border="3px solid black"
+                            color="#000"
                             w="30%"
                             ml="5%">INTRO</Button>
                         </PopoverTrigger>
@@ -84,10 +67,34 @@ const Video = () => {
                             <PopoverArrow />
                             <PopoverCloseButton />
                             <PopoverHeader fontSize={'12px'}>Unlocking the Art of Exceptional Web Design!</PopoverHeader>
-                            <PopoverBody fontSize={'12px'}>What does exceptional web design look like? Explore my portfolio to find out.</PopoverBody>
+                            <PopoverBody fontSize={'12px'}>
+                                <Box>
+                                    <Image
+                                    w={{base:"150px",lg:"600px"}}
+                                    h={{base:"150px",lg:"90vh"}}
+                                    src="astronaut.png"
+                                    mixBlendMode={""}
+                                    transition='transform 1.5s'
+                                    animation={'animate 4s linear infinite'}
+                                    _hover={{transform:" translateY(-40px)",animation:'animate 4s linear infinite'}}
+                                    alt="asset"/>
+                                </Box>
+                                <Text>  
+                                    What does exceptional web design look like? Explore my portfolio to find out.
+                                </Text>
+                            </PopoverBody>
                         </PopoverContent>
                         </Popover>
                         </Box>
+                    </Box>
+                    <Box>
+                        <Image
+                        ml={'20%'}
+                        w={{base:"150px",lg:"600px"}}
+                        h={{base:"150px",lg:"90vh"}}
+                        src="babes.jpeg"
+                        brightness={'40%'}
+                         alt="asset"/>
                     </Box>
                 
             </Box>

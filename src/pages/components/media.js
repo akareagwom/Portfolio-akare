@@ -5,12 +5,24 @@ const Media = () => {
     return ( 
         <Box 
         bg={'black'}
-        w={'30%'}
+        w={'100%'}
+        px={4}
+        py={10}
+        borderTopRightRadius={'10px'}
+        borderBottomRightRadius={'10px'}
         >
-            <FaLinkedin />
-            <FaFacebookSquare />
-            <FaGithubSquare />
-            <FaEnvelope />
+            <Box p={2}>
+                <FaLinkedin width={'120px'} />
+            </Box>
+            <Box p={2}>
+                <FaFacebookSquare />
+            </Box>
+            <Box p={2}>
+                <FaGithubSquare />
+            </Box>
+            <Box p={2}>
+                <FaEnvelope />
+            </Box>
         </Box>
      );
 }
