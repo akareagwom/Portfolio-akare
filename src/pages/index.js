@@ -23,7 +23,7 @@ export default function Home() {
         <Box 
         w='100%'
          >
-          <Nav/>
+
            <Box
            m='0px'>
             <Video/>
