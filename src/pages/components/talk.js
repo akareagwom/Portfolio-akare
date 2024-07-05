@@ -8,7 +8,7 @@ import { Box, Button, Card, CardBody, CardHeader,FormControl,
     FormHelperText, Heading, Icon, Image, SimpleGrid, Text, Flex,keyframes,usePrefersReducedMotion } from "@chakra-ui/react";
 import {BsTelephoneFill, BsSendFill, BsGithub, BsLinkedin, BsInstagram, BsTwitter,} from "react-icons/bs" 
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from '@emailjs/browser';
 import "../../styles/Home.module.css"
 
 
