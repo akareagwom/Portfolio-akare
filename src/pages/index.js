@@ -32,10 +32,10 @@ export default function Home() {
               <Todo/>
            </Box>
            <Box borderTop={"0.5px solid gray"}>
-            <Portfolio/>
+            <Skills/>
            </Box>
            <Box borderTop={"0.5px solid gray"}>
-            <Skills/>
+            <Portfolio/>
            </Box>
            <Box borderTop={"0.5px solid gray"}>
             <Partner/>

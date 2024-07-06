@@ -1,32 +1,66 @@
-import { Box, CircularProgress, CircularProgressLabel, Heading,Flex, Text } from "@chakra-ui/react";
+import { Box, CircularProgress, CircularProgressLabel, Heading,Flex, Text, Icon } from "@chakra-ui/react";
+
+//icons
+import { IoLogoHtml5,IoLogoCss3,IoLogoJavascript,IoLogoVue } from "react-icons/io5";
+import { FaGitAlt,FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Skills = () => {
     return ( 
         <Box 
         mt={'5%'}
         mb={'10%'}
+        p={6}
         id="skills"
+        bg={'white'}
+        color={'#000'}
         >
            <Flex
            flexDir={'column'}
-           justifyContent={'center'}
-           alignItems={'center'}
+        //    justifyContent={'center'}
+        //    alignItems={'center'}
            >
             <Heading
-                fontSize="26px"
-                textAlign={{base:"center",lg:"center"}}
-                color="#ffff"
+                fontSize="26px" 
+                >My skills</Heading>
                 
-                >Skills</Heading>
-                <Text
-                textAlign={'center'}
-                mt="2"
-                w={'30%'}
-                >
-                    Tools and Practices for Growth and Mastery.Skills are the seeds of growth; with each new skill, we nourish the garden of our potential.
-                </Text>
            </Flex>
-            <Flex
+           <Flex mt="20px" w={"58%"} flexWrap={'wrap'}>
+                <Flex alignItems={'center'}>
+                    <Icon color={'orange.400'} as={IoLogoHtml5} />
+                    <Text>HTML</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'blue.400'} as={IoLogoCss3} />
+                    <Text>CSS</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'yellow.300'} as={IoLogoJavascript} />
+                    <Text>JAVASCRIPT</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'red.400'} as={FaGitAlt} />
+                    <Text>GIT</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'blue.400'} as={FaReact} />
+                    <Text>REACT</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'green.600'} as={IoLogoVue} />
+                    <Text>VUE</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'orange.400'} as={IoLogoHtml5} />
+                    <Text>TAILWIND</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'orange.400'} as={IoLogoHtml5} />
+                    <Text>CHAKRA UI</Text>
+                </Flex>
+           </Flex>
+
+            {/* <Flex
             justifyContent={'space-around'} 
             // alignItems={'end'}
             mt={'3%'}
@@ -69,7 +103,7 @@ const Skills = () => {
                     </CircularProgress>
                     <Text>Version Control</Text>
                 </Box>
-            </Flex>
+            </Flex> */}
         </Box>
      );
 }

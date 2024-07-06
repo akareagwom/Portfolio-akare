@@ -6,19 +6,29 @@ const Todo = () => {
     return ( 
         <>
         <Box
-        color="#fff"
+        color="#000"
+        bg={'white'}
         h='85vh'
         mt={'7%'}
         p="6%"
         id="about"
-        textAlign={{base:"center",lg:"start"}}
+        textAlign={{base:"left",lg:"start"}}
         >
             <Heading
             fontSize="26px"
+            fontWeight={300}
+            mt={'10%'}
+            fontFamily={'monospace'}
             >
-                What I Do
+                About me
             </Heading>
-            <Box
+            <Text mt={'6%'}>
+            Implement the user interface (UI) design provided by UX/UI designers. Ensure that the design is responsive and works well across different devices and screen sizes.
+            Enhance user experience by adding interactivity and dynamic behavior using JavaScript and JavaScript libraries or frameworks like React
+            Use version control systems like Git to collaborate with other developers and keep track of code changes.
+
+            </Text>
+            {/* <Box
             display={{base:"block",lg:"flex"}}
             justifyContent="space-evenly"
             mt="4%"
@@ -26,22 +36,19 @@ const Todo = () => {
                 <Box>
                     <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={BsFillWebcamFill}/>
                     <Text>
-                    Implement the user interface (UI) design provided by UX/UI designers. Ensure that the design is responsive and works well across different devices and screen sizes.
                     </Text>
                 </Box>
                 <Box>
                     <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={FaGlobe}/>
                     <Text>
-                    Enhance user experience by adding interactivity and dynamic behavior using JavaScript and JavaScript libraries or frameworks like React
                     </Text>
                 </Box>
                 <Box>
                     <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={FiGitMerge}/>
                     <Text>
-                    Use version control systems like Git to collaborate with other developers and keep track of code changes.
                     </Text>
                 </Box>
-            </Box>
+            </Box> */}
         </Box>
         </>
      );

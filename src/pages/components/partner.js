@@ -15,6 +15,7 @@ const Partner = () => {
              px="6%"
              //  gap={0.5}
              columnGap={3}
+             key={id}
              >
              {FrameWork.map((framework) =>
                <Box
