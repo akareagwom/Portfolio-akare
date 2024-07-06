@@ -1,6 +1,9 @@
 import { Box, Card, CardBody, CardHeader, Flex, Heading, Image, Text  } from "@chakra-ui/react";
 import Article from "./article";
 
+import {Project} from '../api/data'
+import NextLink from 'next/link'
+
 const Portfolio = () => {
     return ( 
         <Box
@@ -16,40 +19,25 @@ const Portfolio = () => {
             >
                Recent Project
             </Heading>
-            <Box
-            display={{lg:'flex'}}
-            flexDir={'row'}
-            pl={{lg:"5%"}}
-            py={{lg:"6%"}}
-            // flexWrap={'wrap'}
-            >
+           
                 <Box
-                borderTop={'4px solid #08830D'}
-                borderLeft={'4px solid #08830D'}
-                mt="-2"
-                // w={'2'}
-                w={'10'}
-                h='10'
-                p='2'
+                display={{base:'block',lg:'flex'}}
+                flexDir={{ base:'cloumn',lg:'row'}}
+                justifyContent={{base:'center',lg:'space-between'}}
                 >
+                    {Project.map((item,index)=>(
+                        <Box>
 
-                </Box>
-                <Flex>
-                    <Article />
-                </Flex>
-            </Box>
-            <Box
-                borderBottom={'4px solid #08830D'}
-                borderRight={'4px solid #08830D'}
-                // w={'2'}
-                ml='93%'
-                mt='-24'
-                w={'10'}
-                h='10'
-                p='2'
-                >
+                            <NextLink href={`/project/${item.id}`} passHref>
+                            <Image src={item.image}/>
+                            </NextLink>
+                        </Box>
+                    ))}
 
+                    {/* <Article /> */}
                 </Box>
+
+            
 
         </Box>
      );

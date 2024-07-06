@@ -31,24 +31,25 @@ const Article = () => {
         
                 {Project.map((project)=>
                 
-                <Box key={project.title} variant={'unstyled'} display='flex' mt="2" borderRadius="none" h="25vh"  >
+                <Box key={project.title} variant={'unstyled'} display={'flex'} mt="2" borderRadius="none" h="25vh"  >
                 <Link as={NextLink} href={project.url} isExternal>
                     <Box 
                     transition='transform 4s'
                     _hover={{transform:" scale(1.2)"}}
                     bg={'#323232'}
-                    w={{lg:'80%'}}
+                    // w={{lg:'80%'}}
                     mt='2'
-                    
+                    justifyContent={{base:'center',lg:'space-between'}}
                     pos="relative"
                     key={project.id} 
                     >
                         
-                        <Box>
+                        <Box
+                        >
                             <Image src={project.image} alt="assets" 
                             filter='auto'
                             brightness={'50%'}
-                            w={{base:"100%",lg:"100%"}}
+                            // w={{base:"100%",lg:"100%"}}
                             h={'25vh'}
                             display={'block'}
                             
@@ -57,7 +58,7 @@ const Article = () => {
                         
                         <Box
                         textAlign={'center'}
-                        pt='6'
+                        // pt='6'
                         pos={'absolute'}
                         top="0"
                         left="0"
@@ -66,8 +67,8 @@ const Article = () => {
                         _hover={{cursor:'pointer', opacity:'2'}}
                         w='100%'
                         h='25vh'
-                        pl={{base:"8%"}}
-                        pr={{base:"2%"}}
+                        // pl={{base:"8%"}}
+                        // pr={{base:"2%"}}
                         color={'white'}
                         >
                             <Heading fontSize={{base:"20px"}}>
