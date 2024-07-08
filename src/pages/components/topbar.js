@@ -44,11 +44,11 @@ import { BiMenuAltRight } from 'react-icons/bi';
               <ModalCloseButton p={8} fontSize={'30px'} />
                 
                 <ModalBody>
-                  <Flex pt={'25%'} color={'black'} alignItems="baseline">
+                  <Flex pt={'25%'} justifyContent={'space-between'} color={'black'} alignItems="baseline">
                     {/* Desktop Navigation */}
                       <Text
                         transform="rotate(270deg)"
-                        transformOrigin="right bottom"
+                        transformOrigin="right top"
                         display="inline-block"
                         whiteSpace="nowrap"
                         textTransform={'uppercase'}
@@ -59,16 +59,16 @@ import { BiMenuAltRight } from 'react-icons/bi';
                       </Text>
                     <Tabs variant={'none'}>
                       <TabList>
-                        <Tab>Home</Tab>
+                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
                       <TabList>
-                        <Tab>Projects</Tab>
+                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
                       </TabList>
                       <TabList>
-                        <Tab>About</Tab>
+                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
                       </TabList>
                       <TabList>
-                        <Tab>Contact</Tab>
+                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
                       </TabList>
                     </Tabs>
                   </Flex>
