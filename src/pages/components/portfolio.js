@@ -27,6 +27,7 @@ const Portfolio = () => {
                 >
                     {Project.map((item,index)=>(
                         <Box
+                        key={index}
                         // flexDir={'column'}
                         px={{base:'8'}}
                         py={{base:'4'}}
