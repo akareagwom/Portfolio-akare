@@ -8,6 +8,8 @@ import Partner from "./components/partner";
 import Talk from "./components/talk";
 import Resume from "./components/resume";
 import Skills from "./components/skills";
+import Footer from "./components/footer";
+import Button from "./components/button";
 
 
 export default function Home() {
@@ -37,6 +39,9 @@ export default function Home() {
            <Box>
             <Portfolio/>
            </Box>
+           <Box>
+            <Button/>
+           </Box>
            {/* <Box>
             <Partner/>
            </Box>
@@ -46,6 +51,9 @@ export default function Home() {
            <Box>
             <Resume/>
            </Box> */}
+           <Box>
+             <Footer/>
+           </Box>
         </Box>
 
 
