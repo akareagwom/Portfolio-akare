@@ -1,4 +1,4 @@
-import { Box, CircularProgress, CircularProgressLabel, Heading,Flex, Text, Icon } from "@chakra-ui/react";
+import { Box, CircularProgress, CircularProgressLabel, Heading,Flex, Text, Icon, Grid } from "@chakra-ui/react";
 
 //icons
 import { IoLogoHtml5,IoLogoCss3,IoLogoJavascript,IoLogoVue } from "react-icons/io5";
@@ -25,7 +25,7 @@ const Skills = () => {
                 >My skills</Heading>
                 
            </Flex>
-           <Flex gap={10} mt="20px" w={"58%"} flexWrap={'wrap'}>
+           <Grid templateColumns='repeat(2, 1fr)' gap={10} mt="20px" w={"58%"} flexWrap={'wrap'}>
                 <Flex alignItems={'center'}>
                     <Icon color={'orange.400'} as={IoLogoHtml5} />
                     <Text>HTML</Text>
@@ -58,7 +58,7 @@ const Skills = () => {
                     <Icon color={'orange.400'} as={IoLogoHtml5} />
                     <Text>CHAKRA UI</Text>
                 </Flex>
-           </Flex>
+           </Grid>
 
             {/* <Flex
             justifyContent={'space-around'} 

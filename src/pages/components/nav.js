@@ -11,13 +11,13 @@ const Nav = () => {
     return ( 
         <>
             <Flex>
-                <Tabs display={'flex'} color={'white'}>
+                <Tabs variant='none' ml={{base:'10%'}} display={'flex'} alignItems={'center'} color={'white'}>
                     <Tab>Projects</Tab>
                     <Tab>Projects</Tab>
                     <Tab>Projects</Tab>
                 </Tabs>
             </Flex>
-            <Box>
+            <Box ml={{base:'10%'}}>
                 <Text>+234 905 681 7953</Text>
                 <Text>akare9340@gmail.com</Text>
             </Box>

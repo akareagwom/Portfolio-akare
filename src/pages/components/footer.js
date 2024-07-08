@@ -6,8 +6,6 @@ const Footer =()=>{
     return(
         <Box color={'white'} py={{base:'10'}} bg={'black'}>
             <Nav/>
-            {/* <Navbar/> */}
-            <Text>hola babes</Text>
         </Box>
     )
 }
