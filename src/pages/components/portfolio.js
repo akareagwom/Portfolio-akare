@@ -14,7 +14,7 @@ const Portfolio = () => {
             <Heading
             fontSize="26px"
             textAlign={{base:"center",lg:"start"}}
-            color="#ffff"
+            color="#000"
             ml="6%"
             >
                Recent Project
@@ -28,21 +28,26 @@ const Portfolio = () => {
                     {Project.map((item,index)=>(
                         <Box
                         key={index}
+                        // bg={'black'}
+                        // brightness={'20%'}
+                        // m={8}
+                        borderRadius={10}
+                        // opacity={'40%'}
                         // flexDir={'column'}
+
                         px={{base:'8'}}
                         py={{base:'4'}}
                         pos={'relative'}
                         >
 
-                            <NextLink href={`/project/${item.id}`} passHref
-                            display={'flex'}
-                            justifyContent={'center'}
-                            >
+                            <NextLink href={`/project/${item.id}`} passHref >
                             <Image
                             alt="assets"
                             filter='auto'
-                            brightness={'40%'}
+                            brightness={'50%'}
                             pos={'center'} 
+                            objectFit={'cover'}
+                            boxSize={'100%'}
                             w={{base:'298px'}} 
                             h={{base:'382px'}}  
                             src={item.image}/>
