@@ -27,8 +27,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
                 <Spacer />
                 <IconButton
                   display={{ base: 'block', md: 'none' }}
-                  onClick={onOpen
-                  }
+                  onClick={onOpen}
                   icon={<BiMenuAltRight/>}
                   fontSize={50}
                   variant="none"
@@ -36,10 +35,10 @@ import { BiMenuAltRight } from 'react-icons/bi';
                   aria-label="Toggle menu"
                 />
             </Flex>
-            <Modal>
+            <Modal  isOpen={isOpen} onClose={onClose}>
+              <ModalContent borderRadius={0} bg='white' p={0} m={0} h={'100vh'}>
               <ModalCloseButton/>
-              <ModalContent>
-               {isOpen &&( 
+                
                 <ModalBody>
                   <Flex alignItems="center" maxW="1200px" mx="auto">
                     {/* Desktop Navigation */}
@@ -59,7 +58,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
                       </Button>
                     </Flex>
                   </Flex>
-                </ModalBody>)}
+                </ModalBody>
               </ModalContent>
             </Modal>
         
