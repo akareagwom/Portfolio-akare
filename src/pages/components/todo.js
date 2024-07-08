@@ -8,9 +8,9 @@ const Todo = () => {
         <Box
         color="#000"
         bg={'white'}
-        h='85vh'
-        mt={'7%'}
-        p="6%"
+        h='55vh'
+        // mt={'7%'}
+        px="6%"
         id="about"
         textAlign={{base:"left",lg:"start"}}
         >
@@ -28,27 +28,6 @@ const Todo = () => {
             Use version control systems like Git to collaborate with other developers and keep track of code changes.
 
             </Text>
-            {/* <Box
-            display={{base:"block",lg:"flex"}}
-            justifyContent="space-evenly"
-            mt="4%"
-            >
-                <Box>
-                    <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={BsFillWebcamFill}/>
-                    <Text>
-                    </Text>
-                </Box>
-                <Box>
-                    <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={FaGlobe}/>
-                    <Text>
-                    </Text>
-                </Box>
-                <Box>
-                    <Icon color={'black'} borderRadius='100%' bg='#08830D'  as={FiGitMerge}/>
-                    <Text>
-                    </Text>
-                </Box>
-            </Box> */}
         </Box>
         </>
      );

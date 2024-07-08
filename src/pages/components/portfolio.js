@@ -26,10 +26,25 @@ const Portfolio = () => {
                 justifyContent={{base:'center',lg:'space-between'}}
                 >
                     {Project.map((item,index)=>(
-                        <Box>
+                        <Box
+                        // flexDir={'column'}
+                        px={{base:'8'}}
+                        py={{base:'4'}}
+                        pos={'relative'}
+                        >
 
-                            <NextLink href={`/project/${item.id}`} passHref>
-                            <Image src={item.image}/>
+                            <NextLink href={`/project/${item.id}`} passHref
+                            display={'flex'}
+                            justifyContent={'center'}
+                            >
+                            <Image
+                            filter='auto'
+                            brightness={'40%'}
+                            pos={'center'} 
+                            w={{base:'298px'}} 
+                            h={{base:'382px'}}  
+                            src={item.image}/>
+                            <Text pos={'absolute'}  top={10} color={'white'}>{item.desc}</Text>
                             </NextLink>
                         </Box>
                     ))}

@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Box
       // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
-      bg="black"
+      bg="white"
       color="white"
       >
         
@@ -28,24 +28,24 @@ export default function Home() {
            m='0px'>
             <Video/>
            </Box>
-           <Box borderTop={"0.5px solid gray"}>
+           <Box>
               <Todo/>
            </Box>
-           <Box borderTop={"0.5px solid gray"}>
+           <Box>
             <Skills/>
            </Box>
-           <Box borderTop={"0.5px solid gray"}>
+           <Box>
             <Portfolio/>
            </Box>
-           <Box borderTop={"0.5px solid gray"}>
+           {/* <Box>
             <Partner/>
            </Box>
-           <Box borderTop={"0.5px solid gray"}>
+           <Box>
             <Talk/>
            </Box>
            <Box>
             <Resume/>
-           </Box>
+           </Box> */}
         </Box>
 
 

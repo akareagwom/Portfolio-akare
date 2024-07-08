@@ -8,9 +8,9 @@ import { RiTailwindCssFill } from "react-icons/ri";
 const Skills = () => {
     return ( 
         <Box 
-        mt={'5%'}
+        mt={'0%'}
         mb={'10%'}
-        p={6}
+        px={6}
         id="skills"
         bg={'white'}
         color={'#000'}
@@ -25,7 +25,7 @@ const Skills = () => {
                 >My skills</Heading>
                 
            </Flex>
-           <Flex mt="20px" w={"58%"} flexWrap={'wrap'}>
+           <Flex gap={10} mt="20px" w={"58%"} flexWrap={'wrap'}>
                 <Flex alignItems={'center'}>
                     <Icon color={'orange.400'} as={IoLogoHtml5} />
                     <Text>HTML</Text>
@@ -35,12 +35,12 @@ const Skills = () => {
                     <Text>CSS</Text>
                 </Flex>
                 <Flex alignItems={'center'}>
-                    <Icon color={'yellow.300'} as={IoLogoJavascript} />
-                    <Text>JAVASCRIPT</Text>
-                </Flex>
-                <Flex alignItems={'center'}>
                     <Icon color={'red.400'} as={FaGitAlt} />
                     <Text>GIT</Text>
+                </Flex>
+                <Flex alignItems={'center'}>
+                    <Icon color={'yellow.300'} as={IoLogoJavascript} />
+                    <Text>JAVASCRIPT</Text>
                 </Flex>
                 <Flex alignItems={'center'}>
                     <Icon color={'blue.400'} as={FaReact} />
