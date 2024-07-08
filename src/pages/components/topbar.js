@@ -11,6 +11,10 @@ import {
     ModalCloseButton,
     ModalContent,
     ModalBody,
+    Text,
+    Tabs,
+    TabList,
+    Tab,
   } from '@chakra-ui/react';
   import { HamburgerIcon } from '@chakra-ui/icons';
 import { BiMenuAltRight } from 'react-icons/bi';
@@ -37,26 +41,36 @@ import { BiMenuAltRight } from 'react-icons/bi';
             </Flex>
             <Modal  isOpen={isOpen} onClose={onClose}>
               <ModalContent borderRadius={0} bg='white' p={0} m={0} h={'100vh'}>
-              <ModalCloseButton/>
+              <ModalCloseButton p={8} fontSize={'30px'} />
                 
                 <ModalBody>
-                  <Flex alignItems="center" maxW="1200px" mx="auto">
+                  <Flex pt={'25%'} color={'black'} alignItems="baseline">
                     {/* Desktop Navigation */}
-                    <Flex
-                      as="nav"
-                      align="center"
-                      display={{ base: isOpen ? 'block' : 'none', md: 'flex' }}
-                    >
-                      <Button variant="ghost" color="white" mr={4}>
-                        Home
-                      </Button>
-                      <Button variant="ghost" color="white" mr={4}>
-                        About
-                      </Button>
-                      <Button variant="ghost" color="white">
-                        Contact
-                      </Button>
-                    </Flex>
+                      <Text
+                        transform="rotate(270deg)"
+                        transformOrigin="right bottom"
+                        display="inline-block"
+                        whiteSpace="nowrap"
+                        textTransform={'uppercase'}
+                        fontSize={'2rem'}
+                        fontWeight={500}
+                      >
+                       Menu
+                      </Text>
+                    <Tabs variant={'none'}>
+                      <TabList>
+                        <Tab>Home</Tab>
+                      </TabList>
+                      <TabList>
+                        <Tab>Projects</Tab>
+                      </TabList>
+                      <TabList>
+                        <Tab>About</Tab>
+                      </TabList>
+                      <TabList>
+                        <Tab>Contact</Tab>
+                      </TabList>
+                    </Tabs>
                   </Flex>
                 </ModalBody>
               </ModalContent>
