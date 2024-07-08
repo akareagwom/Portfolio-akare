@@ -38,6 +38,7 @@ const Portfolio = () => {
                             justifyContent={'center'}
                             >
                             <Image
+                            alt="assets"
                             filter='auto'
                             brightness={'40%'}
                             pos={'center'} 

@@ -17,6 +17,7 @@ import Media from "./media";
 //icons
 import { TbMenuDeep } from "react-icons/tb";
 import { BiMenuAltRight } from "react-icons/bi";
+import Navbar from "./topbar";
 
 const Video = () => {
     return ( 
@@ -27,10 +28,7 @@ const Video = () => {
         h={'100vh'}
         id="home"
         >
-            <Flex p={8} justifyContent={'space-between'}>
-                <Heading>hola</Heading>
-                <Icon fontSize={50} as={BiMenuAltRight} />
-            </Flex>
+            <Navbar/>
             <Box textAlign={'center'} mt={40}>
                 <Heading>Akare Azikang Agwom</Heading>
                 <Text>Frontend Developer</Text>

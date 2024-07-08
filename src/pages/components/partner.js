@@ -41,7 +41,7 @@ const Partner = () => {
                         h={'25vh'}
                         _hover={{ visibility:'hidden'}}
                         display={'block'}>
-                        <Image _hover={{ display:'none'}} borderRadius={'50%'} w={'40%'} src={framework.img} />
+                        <Image alt="assets" _hover={{ display:'none'}} borderRadius={'50%'} w={'40%'} src={framework.img} />
                         </Box>
                         
                         <Box
