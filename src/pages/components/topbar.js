@@ -18,6 +18,8 @@ import {
   } from '@chakra-ui/react';
   import { HamburgerIcon } from '@chakra-ui/icons';
 import { BiMenuAltRight } from 'react-icons/bi';
+import { MdFacebook } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
   
   function Navbar() {
     const { isOpen, onToggle,onClose,onOpen } = useDisclosure();
@@ -44,11 +46,13 @@ import { BiMenuAltRight } from 'react-icons/bi';
               <ModalCloseButton p={8} fontSize={'30px'} />
                 
                 <ModalBody>
-                  <Flex pt={'25%'} justifyContent={'space-between'} color={'black'} alignItems="baseline">
+                  <Flex pt={'25%'} justifyContent={'space-between'}  color={'black'} alignItems="baseline">
                     {/* Desktop Navigation */}
                       <Text
                         transform="rotate(270deg)"
-                        transformOrigin="right top"
+                        transformOrigin="top"
+                        // mr={40}
+                        mt={20}
                         display="inline-block"
                         whiteSpace="nowrap"
                         textTransform={'uppercase'}
@@ -57,7 +61,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
                       >
                        Menu
                       </Text>
-                    <Tabs variant={'none'}>
+                    <Tabs mb={'20%'} variant={'none'}>
                       <TabList>
                         <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
@@ -72,6 +76,10 @@ import { BiMenuAltRight } from 'react-icons/bi';
                       </TabList>
                     </Tabs>
                   </Flex>
+                  <Box>
+                    <MdFacebook/>
+                    <FaGithub/>
+                  </Box>
                 </ModalBody>
               </ModalContent>
             </Modal>
