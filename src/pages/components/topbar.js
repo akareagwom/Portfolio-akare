@@ -83,6 +83,7 @@ import { FaGithub } from 'react-icons/fa';
                 </ModalBody>
               </ModalContent>
             </Modal>
+            
       </Box>
     );
   }
