@@ -83,24 +83,6 @@ import { FaGithub } from 'react-icons/fa';
                 </ModalBody>
               </ModalContent>
             </Modal>
-        
-        
-        {/* Mobile Navigation */}
-        {/* {isOpen && (
-          <Box py={2}>
-            <VStack spacing={4} alignItems="stretch">
-              <Button variant="ghost" color="white">
-                Home
-              </Button>
-              <Button variant="ghost" color="white">
-                About
-              </Button>
-              <Button variant="ghost" color="white">
-                Contact
-              </Button>
-            </VStack>
-          </Box>
-        )} */}
       </Box>
     );
   }
