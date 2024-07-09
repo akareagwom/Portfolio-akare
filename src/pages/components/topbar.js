@@ -76,14 +76,14 @@ import { FaGithub } from 'react-icons/fa';
                       </TabList>
                     </Tabs>
                   </Flex>
-                  <Flex>
+                  <Flex justifyContent={'space-around'}>
                     <MdFacebook/>
                     <FaGithub/>
                   </Flex>
                 </ModalBody>
               </ModalContent>
             </Modal>
-            
+
       </Box>
     );
   }
