@@ -19,7 +19,7 @@ import {
   import { HamburgerIcon } from '@chakra-ui/icons';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { MdFacebook } from 'react-icons/md';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
   
   function Navbar() {
     const { isOpen, onToggle,onClose,onOpen } = useDisclosure();
@@ -79,6 +79,7 @@ import { FaGithub } from 'react-icons/fa';
                   <Flex justifyContent={'space-around'}>
                     <MdFacebook/>
                     <FaGithub/>
+                    <FaLinkedinIn/>
                   </Flex>
                 </ModalBody>
               </ModalContent>
