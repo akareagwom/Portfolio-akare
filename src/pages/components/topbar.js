@@ -76,10 +76,10 @@ import { FaGithub } from 'react-icons/fa';
                       </TabList>
                     </Tabs>
                   </Flex>
-                  <Box>
+                  <Flex>
                     <MdFacebook/>
                     <FaGithub/>
-                  </Box>
+                  </Flex>
                 </ModalBody>
               </ModalContent>
             </Modal>
