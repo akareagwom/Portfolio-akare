@@ -19,7 +19,7 @@ import {
   import { HamburgerIcon } from '@chakra-ui/icons';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { MdFacebook } from 'react-icons/md';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
   
   function Navbar() {
     const { isOpen, onToggle,onClose,onOpen } = useDisclosure();
@@ -80,6 +80,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
                     <MdFacebook/>
                     <FaGithub/>
                     <FaLinkedinIn/>
+                    <FaInstagram/>
                   </Flex>
                 </ModalBody>
               </ModalContent>
