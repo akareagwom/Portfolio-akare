@@ -42,46 +42,50 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                 />
             </Flex>
             <Modal  isOpen={isOpen} onClose={onClose}>
-              <ModalContent borderRadius={0} bg='white' p={0} m={0} h={'100vh'}>
+              <ModalContent borderRadius={0} color='#000000' bg='white' p={0} m={0} h={'100vh'}>
               <ModalCloseButton p={8} fontSize={'30px'} />
                 
-                <ModalBody>
-                  <Flex pt={'25%'} justifyContent={'space-between'}  color={'black'} alignItems="baseline">
-                    {/* Desktop Navigation */}
+                <ModalBody pos={'relative'}>
+                  <Flex  pt="25%" mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
-                        transformOrigin="top"
+                        transformOrigin="top left"
+                        
                         // mr={40}
                         mt={20}
                         display="inline-block"
-                        whiteSpace="nowrap"
+                        // whiteSpace="nowrap"
                         textTransform={'uppercase'}
-                        fontSize={'2rem'}
-                        fontWeight={500}
+                        fontSize={'20px'}
+                        fontWeight={700}
                       >
                        Menu
                       </Text>
-                    <Tabs mb={'20%'} variant={'none'}>
+                  
+                    {/* Desktop Navigation */}
+                    <Tabs mb={'20%'} lineHeight={1} variant={'none'} mt={2}>
                       <TabList>
-                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
+                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
                       <TabList>
-                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
+                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
                       </TabList>
                       <TabList>
-                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
+                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
                       </TabList>
                       <TabList>
-                        <Tab fontSize={'2rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
+                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
                       </TabList>
                     </Tabs>
+                 
+
                   </Flex>
-                  <Flex justifyContent={'space-around'}>
+                  <Text fontWeight={700}>@akare9340</Text>
+                  <Text fontWeight={700}>+234 905 681 7953</Text>
+                  <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
                     <MdFacebook/>
                     <FaGithub/>
                     <FaLinkedinIn/>
-                    <FaInstagram/>
-                    <FaEdge/>
                   </Flex>
                 </ModalBody>
               </ModalContent>
