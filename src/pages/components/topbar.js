@@ -30,9 +30,9 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                 <Heading size="lg" color="white">
                   Your Logo
                 </Heading>
-                <Spacer />
+                
                 <IconButton
-                  display={{ base: 'block', md: 'none' }}
+                  display={{ base: 'block', md: 'block' }}
                   onClick={onOpen}
                   icon={<BiMenuAltRight/>}
                   fontSize={50}
@@ -42,11 +42,11 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                 />
             </Flex>
             <Modal  isOpen={isOpen} onClose={onClose}>
-              <ModalContent borderRadius={0} color='#000000' bg='white' p={0} m={0} h={'100vh'}>
-              <ModalCloseButton p={8} fontSize={'30px'} />
+              <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'400%'}} bg='white' p={0} m={0} h={'100vh'}>
+              <ModalCloseButton onClose={onClose} fontSize={'30px'} />
                 
                 <ModalBody pos={'relative'}>
-                  <Flex  pt="25%" mr={{base:'0'}}>
+                  <Flex justifyContent={'start'} pt="25%" mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
                         transformOrigin="top left"
@@ -54,7 +54,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                         // mr={40}
                         mt={20}
                         display="inline-block"
-                        // whiteSpace="nowrap"
+                        whiteSpace="nowrap"
                         textTransform={'uppercase'}
                         fontSize={'20px'}
                         fontWeight={700}
@@ -80,13 +80,15 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                  
 
                   </Flex>
-                  <Text fontWeight={700}>@akare9340</Text>
-                  <Text fontWeight={700}>+234 905 681 7953</Text>
-                  <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
-                    <MdFacebook/>
-                    <FaGithub/>
-                    <FaLinkedinIn/>
-                  </Flex>
+                  <Box ml={{base:'2'}}>
+                    <Text fontWeight={700}>@akare9340</Text>
+                    <Text fontWeight={700}>+234 905 681 7953</Text>
+                    <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
+                      <MdFacebook/>
+                      <FaGithub/>
+                      <FaLinkedinIn/>
+                    </Flex>
+                  </Box>
                 </ModalBody>
               </ModalContent>
             </Modal>

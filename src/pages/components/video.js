@@ -25,6 +25,7 @@ const Video = () => {
         <Box
         bg={'black'}
         mt="0%"
+        w={'100%'}
         h={'100vh'}
         id="home"
         >
