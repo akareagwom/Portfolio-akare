@@ -15,7 +15,7 @@ import { useState } from "react";
 
 
 export default function Home() {
-  const [view, setView]= useState()
+  const [view, setView]= useState('project');
 
   return (
     <>
