@@ -17,6 +17,17 @@ import { useState } from "react";
 export default function Home() {
   const [view, setView]= useState('project');
 
+  const renderComponent =()=>{
+    switch (view) {
+      case project:
+        return <Project/>;
+        
+    
+      default:
+        break;
+    }
+  }
+
   return (
     <>
       <Box
@@ -33,7 +44,7 @@ export default function Home() {
            <Video/>
           </Box>
           <Box>
-            <Project/>
+            {renderComponent()}
           </Box>
 
            {/* 
