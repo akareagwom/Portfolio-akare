@@ -11,9 +11,11 @@ import Skills from "./components/skills";
 import Footer from "./components/footer";
 import Button from "./components/button";
 import Project from "./projects/project"; 
+import { useState } from "react";
 
 
 export default function Home() {
+  const [view, setView]= useState()
 
   return (
     <>
