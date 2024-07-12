@@ -10,6 +10,7 @@ import Resume from "./components/resume";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
 import Button from "./components/button";
+import Project from "./projects/project"; 
 
 
 export default function Home() {
@@ -25,11 +26,15 @@ export default function Home() {
         <Box 
         w='100%'
          >
+          <Box
+          m='0px'>
+           <Video/>
+          </Box>
+          <Box>
+            <Project/>
+          </Box>
 
-           <Box
-           m='0px'>
-            <Video/>
-           </Box>
+           {/* 
            <Box>
               <Todo/>
            </Box>
@@ -41,16 +46,8 @@ export default function Home() {
            </Box>
            <Box>
             <Button/>
-           </Box>
-           {/* <Box>
-            <Partner/>
-           </Box>
-           <Box>
-            <Talk/>
-           </Box>
-           <Box>
-            <Resume/>
            </Box> */}
+           
            <Box>
              <Footer/>
            </Box>

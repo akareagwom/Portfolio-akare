@@ -4,8 +4,9 @@ const Project =()=>{
     return(
         <Box>
             hola
-            <Box></Box>
+            <Box bg={'black'}></Box>
         </Box>
 
     )
 }
+export default Project;
