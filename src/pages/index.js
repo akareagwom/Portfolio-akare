@@ -15,16 +15,21 @@ import { useState } from "react";
 
 
 export default function Home() {
-  const [view, setView]= useState('project');
+  const [view, setView]= useState('home');
 
   const renderComponent =()=>{
     switch (view) {
-      case project:
+      case 'home':
         return <Project/>;
-        
-    
-      default:
-        break;
+        case 'about':
+                return <Todo />;
+            case 'services':
+                return <Services />;
+            case 'contact':
+                return <Contact />;
+            default:
+                return <Home />;
+      
     }
   }
 
