@@ -12,6 +12,7 @@ import Footer from "./components/footer";
 import Button from "./components/button";
 import Project from "./projects/project"; 
 import { useState } from "react";
+import About from "./About/About";
 
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
       case 'home':
         return <Project/>;
         case 'about':
-                return <Todo />;
+                return <About />;
             case 'services':
                 return <Services />;
             case 'contact':
