@@ -21,7 +21,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { MdFacebook } from 'react-icons/md';
 import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
   
-  function Navbar() {
+  function Navbar({setView}) {
     const { isOpen, onToggle,onClose,onOpen } = useDisclosure();
   
     return (
@@ -65,16 +65,16 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                     {/* Desktop Navigation */}
                     <Tabs mb={'20%'} lineHeight={1} variant={'none'} mt={2}>
                       <TabList>
-                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
+                        <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
                       <TabList>
-                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
+                        <Tab onClick={()=>setView('projects')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
                       </TabList>
                       <TabList>
-                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
+                        <Tab onClick={()=>setView('about')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
                       </TabList>
                       <TabList>
-                        <Tab fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
+                        <Tab onClick={()=>setView('contact')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
                       </TabList>
                     </Tabs>
                  

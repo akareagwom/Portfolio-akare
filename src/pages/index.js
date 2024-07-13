@@ -41,7 +41,7 @@ export default function Home() {
          >
           <Box
           m='0px'>
-           <Video/>
+           <Video setView={setView}/>
           </Box>
           <Box>
             {renderComponent()}
