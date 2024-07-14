@@ -4,15 +4,16 @@ import Footer from "./Home/components/footer";
 import Project from "./projects/project"; 
 import { useState } from "react";
 import About from "./About/About";
+import Init from "./Home/init";
 
 
 export default function Home() {
-  const [view, setView]= useState('');
+  const [view, setView]= useState('home');
 
   const renderComponent =()=>{
     switch (view) {
       case 'home':
-        return <Home/>;
+        return <Init/>;
         case 'about':
                 return <About />;
             case 'services':
@@ -20,7 +21,7 @@ export default function Home() {
             case 'contact':
                 return <Contact />;
             default:
-                return <Home />;
+                return <Init />;
       
     }
   }
