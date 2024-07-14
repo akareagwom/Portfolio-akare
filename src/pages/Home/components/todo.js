@@ -9,7 +9,11 @@ const Todo = () => {
         color="#000"
         bg={'white'}
         h='55vh'
-        // mt={'7%'}
+        display={{base:'block',lg:'flex'}}
+        flexDir={'column'}
+        // alignItems={'center'}
+        ml={{base:'0',lg:'25%'}}
+        w={{base:'',lg:'560px'}}
         px="6%"
         id="about"
         textAlign={{base:"left",lg:"start"}}
