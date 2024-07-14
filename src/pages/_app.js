@@ -1,10 +1,10 @@
-import '@/styles/globals.css';
-import '@fontsource/roboto';
-import { ChakraProvider } from '@chakra-ui/react';
+import '@fontsource/league-gothic'; 
+import theme from '../../theme'
+import { ChakraProvider} from '@chakra-ui/react';
 
 export default function App({ Component, pageProps }) {
     return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   )

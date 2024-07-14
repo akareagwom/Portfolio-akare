@@ -6,6 +6,9 @@ import { useState } from "react";
 import About from "./About/About";
 import Init from "./Home/init";
 
+//font
+import '@fontsource/league-gothic'; 
+
 
 export default function Home() {
   const [view, setView]= useState('home');
