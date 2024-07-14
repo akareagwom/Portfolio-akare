@@ -25,7 +25,7 @@ const Skills = () => {
                 >My skills</Heading>
                 
            </Flex>
-           <Grid templateColumns='repeat(2, 1fr)' gap={10} mt="20px" w={"58%"} flexWrap={'wrap'}>
+           <Grid templateColumns={{base:'repeat(2, 1fr)',lg:'repeat(4, 1fr)'}} gap={10} mt="20px" w={"58%"} flexWrap={'wrap'}>
                 <Flex alignItems={'center'}>
                     <Icon color={'orange.400'} as={IoLogoHtml5} />
                     <Text>HTML</Text>
