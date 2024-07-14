@@ -9,7 +9,7 @@ import { Box, Button, Card, CardBody, CardHeader,FormControl,
 import {BsTelephoneFill, BsSendFill, BsGithub, BsLinkedin, BsInstagram, BsTwitter,} from "react-icons/bs" 
 import React, { useRef } from 'react';
 // import emailjs from '@emailjs/browser';
-import "../../styles/Home.module.css"
+import "../../../styles/Home.module.css";
 
 
 

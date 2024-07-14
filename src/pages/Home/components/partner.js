@@ -1,6 +1,6 @@
 import { Box, Card, CardBody, SimpleGrid, Text , Image} from "@chakra-ui/react";
-import {Project} from '../api/data';
-import {FrameWork} from '../api/frame_work'
+import {Project} from '../../api/data';
+import {FrameWork} from '../../api/frame_work'
 
 const Partner = () => {
     return ( 

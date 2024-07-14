@@ -1,27 +1,18 @@
 import { Box,Heading,} from "@chakra-ui/react";
-import Nav from "./components/nav";
-import Article from "./components/article";
-import Video from "./components/video";
-import Todo from "./components/todo";
-import Portfolio from "./components/portfolio";
-import Partner from "./components/partner";
-import Talk from "./components/talk";
-import Resume from "./components/resume";
-import Skills from "./components/skills";
-import Footer from "./components/footer";
-import Button from "./components/button";
+import Video from "./Home/components/video";
+import Footer from "./Home/components/footer";
 import Project from "./projects/project"; 
 import { useState } from "react";
 import About from "./About/About";
 
 
 export default function Home() {
-  const [view, setView]= useState('home');
+  const [view, setView]= useState('');
 
   const renderComponent =()=>{
     switch (view) {
       case 'home':
-        return <Project/>;
+        return <Home/>;
         case 'about':
                 return <About />;
             case 'services':

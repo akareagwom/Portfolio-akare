@@ -15,7 +15,7 @@ return(
         </Box>
         <Box mt={6}>
             <Heading>Key Responsibilities</Heading>
-            <UnorderedList mt={2}>
+            <UnorderedList my={2}>
                 <ListItem>Building and Maintaining Web Applications: Utilizing React.js to develop dynamic and responsive web applications.</ListItem>
                 <ListItem>Working alongside product and design teams to translate user needs and design specifications into functional applications.</ListItem>
                 <ListItem>Clean Code Practices: Ensuring all code is clean, well-documented, and follows best practices for maintainability.</ListItem>

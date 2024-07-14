@@ -3,7 +3,7 @@ import { Box, Card, CardBody, CardHeader, Image, Text,Flex, Heading,Icon,Button,
 import {MdPreview} from "react-icons/md";
 import {BsBoxArrowUpRight} from "react-icons/bs";
 
-import {Project} from '../api/data'
+import {Project} from '../../api/data'
 import NextLink from 'next/link'
 // import { Link } from '@chakra-ui/react'
 

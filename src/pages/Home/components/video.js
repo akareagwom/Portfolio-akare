@@ -10,7 +10,7 @@ import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text,Popover,
     Flex,} from "@chakra-ui/react";
 
 import Nav from "./nav";
-import '../../styles/Home.module.css'
+import "../../../styles/Home.module.css";
 import Media from "./media";
 
 

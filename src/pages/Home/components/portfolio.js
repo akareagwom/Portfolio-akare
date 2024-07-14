@@ -1,7 +1,7 @@
 import { Box, Card, CardBody, CardHeader, Flex, Heading, Image, Text  } from "@chakra-ui/react";
 import Article from "./article";
 
-import {Project} from '../api/data'
+import {Project} from '../../api/data'
 import NextLink from 'next/link'
 
 const Portfolio = () => {
