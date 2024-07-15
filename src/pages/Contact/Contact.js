@@ -2,7 +2,7 @@ const { Box, Text, InputGroup, Input, Flex, Button } = require("@chakra-ui/react
 
 const Contact =()=>{
     return(
-        <Box w={{base:'301px'}} mx={8} my={6} color={'black'}>
+        <Box w={{base:'301px'}} mx={8} my={10} color={'black'}>
             <Text>Contact Me</Text>
             <Box display={{base:'block',lg:'flex'}}>
                 <Text mt={{base:'2',lg:''}}>Name</Text>
