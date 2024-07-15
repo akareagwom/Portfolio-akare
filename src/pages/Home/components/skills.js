@@ -10,6 +10,8 @@ const Skills = () => {
         <Box 
         mt={'0%'}
         mb={'10%'}
+        ml={{base:'',lg:'30%'}}
+        w={{base:'',lg:''}}
         px={6}
         id="skills"
         bg={'white'}

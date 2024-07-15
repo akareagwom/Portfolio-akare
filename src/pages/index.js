@@ -8,6 +8,7 @@ import Init from "./Home/init";
 
 //font
 import '@fontsource/league-gothic'; 
+import Contact from "./Contact/Contact";
 
 
 export default function Home() {
