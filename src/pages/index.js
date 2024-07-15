@@ -20,8 +20,6 @@ export default function Home() {
         return <Init/>;
         case 'about':
                 return <About />;
-            case 'services':
-                return <Services />;
             case 'contact':
                 return <Contact />;
             default:
