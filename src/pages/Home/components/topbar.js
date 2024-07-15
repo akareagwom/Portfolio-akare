@@ -6,7 +6,7 @@ import {
     Button,
     IconButton,
     useDisclosure,
-    VStack,
+    Image,
     Modal,
     ModalCloseButton,
     ModalContent,
@@ -28,7 +28,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
       <Box px={4} py={2}>
         <Flex p={8} justifyContent={'space-between'}>
                 <Heading size="lg" color="white">
-                  Your Logo
+                  <Image w={10} src='brand.svg' assets='hala' />
                 </Heading>
                 
                 <IconButton
