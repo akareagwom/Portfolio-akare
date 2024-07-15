@@ -40,12 +40,12 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
                   color="white"
                   aria-label="Toggle menu"
                 />
-            </Flex>
+        </Flex>
             <Modal  isOpen={isOpen} onClose={onClose}>
-              <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'400%'}} bg='white' p={0} m={0} h={'100vh'}>
+              <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
               <ModalCloseButton onClose={onClose} fontSize={'30px'} />
                 
-                <ModalBody pos={'relative'}>
+                <ModalBody  pos={'relative'}>
                   <Flex justifyContent={'start'} pt="25%" mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
