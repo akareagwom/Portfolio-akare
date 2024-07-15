@@ -19,10 +19,10 @@ import {
   import { HamburgerIcon } from '@chakra-ui/icons';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { MdFacebook } from 'react-icons/md';
-import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'react-icons/fa';
   
   function Navbar({setView}) {
-    const { isOpen, onToggle,onClose,onOpen } = useDisclosure();
+    const { isOpen,onClose,onOpen } = useDisclosure();
   
     return (
       <Box px={4} py={2}>
@@ -43,9 +43,10 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
         </Flex>
             <Modal  isOpen={isOpen} onClose={onClose}>
               <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
-              <ModalCloseButton onClose={onClose} fontSize={'30px'} />
+              {/* <FaRegWindowClose/> */}
                 
                 <ModalBody  pos={'relative'}>
+                  <ModalCloseButton cursor={'p'} fontSize={'30px'} />
                   <Flex justifyContent={'start'} pt="25%" mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
