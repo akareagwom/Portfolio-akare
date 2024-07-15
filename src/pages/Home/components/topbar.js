@@ -35,7 +35,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                   display={{ base: 'block', md: 'block' }}
                   onClick={onOpen}
                   icon={<BiMenuAltRight/>}
-                  fontSize={50}
+                  fontSize={40}
                   variant="none"
                   color="white"
                   aria-label="Toggle menu"
@@ -53,7 +53,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                         transformOrigin="top left"
                         
                         // mr={40}
-                        mt={10}
+                        mt={20}
                         display="inline-block"
                         whiteSpace="nowrap"
                         textTransform={'uppercase'}
