@@ -18,7 +18,7 @@ const Contact =()=>{
                 <Box>
                     <Input variant={'none'} placeholder={"Hello, my name is ..."} mt={{base:'2', lg:'10'}} borderRadius={'none'} borderBottom={'1px solid black'}/>
                 </Box>
-                <Button w={{base:'300px',lg:''}} mt={5} ml={{base:'0', lg:'6'}} p={6}>Send Message</Button>
+                <Button bg={'#D9D9D9'} borderRadius={'none'} w={{base:'300px',lg:''}} fontSize={'14px'} mt={5} ml={{base:'0', lg:'30%'}} p={6}>Send Message</Button>
         </Box>
     )
 }
