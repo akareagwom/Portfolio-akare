@@ -2,23 +2,23 @@ const { Box, Text, InputGroup, Input, Flex, Button } = require("@chakra-ui/react
 
 const Contact =()=>{
     return(
-        <Box w={{base:'301px'}} mx={8} my={10} color={'black'}>
-            <Text>Contact Me</Text>
-            <Box display={{base:'block',lg:'flex'}}>
-                <Text mt={{base:'2',lg:''}}>Name</Text>
-                <InputGroup variant={'none'}>
-                    <Input  placeholder={'name'} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
-                </InputGroup>
-                <Text mt={{base:'2',lg:''}}>Email</Text>
-                <InputGroup variant={'none'}>
-                    <Input  placeholder={'name'} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
-                </InputGroup>
+        <Box w={{base:'301px',lg:'1000px'}}  mx={10} my={10} color={'black'}>
+            <Text fontSize={'24px'} fontWeight={'700px'} >Contact Me</Text>
+            <Box display={{base:'block',lg:'flex'}} justifyContent={'space-between'}>
+                <Box>
+                    <Text  mt={{base:'2',lg:'4'}}>Name</Text>
+                    <Input variant={'none'} w={{base:'450px'}}  placeholder={'Name'} mt={{base:'2', lg:'10'}} borderRadius={'none'} borderBottom={'1px solid black'}/>
+                </Box>
+                <Box>
+                    <Text mt={{base:'2',lg:'4'}}>Email</Text>
+                    <Input variant={'none'} w={{base:'450px'}}  placeholder={'Email'} mt={{base:'2', lg:'10'}} borderRadius={'none'} borderBottom={'1px solid black'}/>
+                </Box>
             </Box>
-                <Text mt={{base:'2',lg:''}}>Message</Text>
-                <InputGroup variant={'none'}>
-                    <Input placeholder={'name'} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
-                </InputGroup>
-                <Button>Send Message</Button>
+                <Text mt={{base:'2',lg:'4'}}>Message</Text>
+                <Box>
+                    <Input variant={'none'} placeholder={"Hello, my name is ..."} mt={{base:'2', lg:'10'}} borderRadius={'none'} borderBottom={'1px solid black'}/>
+                </Box>
+                <Button w={{base:'300px',lg:''}} mt={5} ml={{base:'0', lg:'6'}} p={6}>Send Message</Button>
         </Box>
     )
 }
