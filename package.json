@@ -15,6 +15,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/league-gothic": "^5.0.20",
+    "@fontsource/league-spartan": "^5.0.20",
     "@fontsource/roboto": "^5.0.13",
     "emailjs-com": "^3.2.0",
     "eslint": "8.37.0",

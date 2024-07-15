@@ -1,24 +1,24 @@
-const { Box, Text, InputGroup, Input, Flex } = require("@chakra-ui/react")
+const { Box, Text, InputGroup, Input, Flex, Button } = require("@chakra-ui/react")
 
 const Contact =()=>{
     return(
-        <Box mx={8} my={6} color={'black'}>
+        <Box w={{base:'301px'}} mx={8} my={6} color={'black'}>
             <Text>Contact Me</Text>
-            <Flex>
-                <Text>Name</Text>
+            <Box display={{base:'block',lg:'flex'}}>
+                <Text mt={{base:'2',lg:''}}>Name</Text>
                 <InputGroup variant={'none'}>
-                    <Input w={{base:'',lg:'450px'}} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
+                    <Input  placeholder={'name'} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
                 </InputGroup>
-                <Text>Email</Text>
+                <Text mt={{base:'2',lg:''}}>Email</Text>
                 <InputGroup variant={'none'}>
-                    <Input w={{base:'',lg:'450px'}} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
+                    <Input  placeholder={'name'} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
                 </InputGroup>
-            </Flex>
-                <Text>Message</Text>
+            </Box>
+                <Text mt={{base:'2',lg:''}}>Message</Text>
                 <InputGroup variant={'none'}>
-                    <Input mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
+                    <Input placeholder={'name'} mt={2} borderRadius={'none'} borderBottom={'1px solid black'}/>
                 </InputGroup>
-                
+                <Button>Send Message</Button>
         </Box>
     )
 }

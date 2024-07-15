@@ -45,15 +45,15 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
               <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
               {/* <FaRegWindowClose/> */}
                 
-                <ModalBody  pos={'relative'}>
+                <ModalBody display={{base:'block',lg:'flex'}} pt={{base:'25%'}} justifyContent={'space-around'} alignItems={'end'}>
                   <ModalCloseButton cursor={'p'} fontSize={'30px'} />
-                  <Flex justifyContent={'start'} pt="25%" mr={{base:'0'}}>
+                  <Flex justifyContent={'start'}  mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
                         transformOrigin="top left"
                         
                         // mr={40}
-                        mt={20}
+                        mt={10}
                         display="inline-block"
                         whiteSpace="nowrap"
                         textTransform={'uppercase'}
@@ -64,7 +64,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                       </Text>
                   
                     {/* Desktop Navigation */}
-                    <Tabs mb={'20%'} lineHeight={1} variant={'none'} mt={2}>
+                    <Tabs mt={{base:'2'}} lineHeight={1} variant={'none'} >
                       <TabList>
                         <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
@@ -81,8 +81,8 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                  
 
                   </Flex>
-                  <Box ml={{base:'2'}}>
-                    <Text fontWeight={700}>@akare9340</Text>
+                  <Box mt={{base:'6'}} fontSize={'22px'} ml={{base:'2'}}>
+                    <Text fontWeight={700}>akare9340@gmail.com</Text>
                     <Text fontWeight={700}>+234 905 681 7953</Text>
                     <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
                       <MdFacebook/>
