@@ -10,12 +10,12 @@ const Nav = () => {
     
     return ( 
         <>
-
+            <Image src='brand1.svg' />
             <Flex>
                 <Tabs variant='none' ml={{base:'10%'}} display={'flex'} alignItems={'center'} color={'white'}>
                     <Tab>Projects</Tab>
-                    <Tab>Projects</Tab>
-                    <Tab>Projects</Tab>
+                    <Tab>About</Tab>
+                    <Tab>Contact</Tab>
                 </Tabs>
             </Flex>
             <Box ml={{base:'10%'}}>
