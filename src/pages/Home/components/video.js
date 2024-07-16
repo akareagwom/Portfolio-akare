@@ -30,7 +30,7 @@ const Video = ({setView}) => {
         id="home"
         >
             <Navbar setView={setView} />
-            <Box textAlign={'center'} py={20}>
+            <Box textAlign={'center'} pt={{lg:20,base:40}}>
                 <Heading>Akare Azikang Agwom</Heading>
                 <Text>Frontend Developer</Text>
             </Box>

@@ -4,7 +4,9 @@ const Project =()=>{
     return(
         <Box>
             hola
-            <Box bg={'black'}></Box>
+            <Box bg={'black'}>
+            
+            </Box>
         </Box>
 
     )
