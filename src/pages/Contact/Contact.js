@@ -60,7 +60,7 @@ const Contact =()=>{
                     <Text  mt={{base:'2',lg:'4'}}>Name</Text>
                     <Input
                      variant={'none'} 
-                     w={{base:'0', lg:'450px'}}  
+                     w={{base:'300px', lg:'450px'}}  
                      mt={{base:'2', lg:'10'}} 
                      borderRadius={'none'} 
                      borderBottom={'1px solid black'}
@@ -76,7 +76,7 @@ const Contact =()=>{
                     <Text mt={{base:'2',lg:'4'}}>Email</Text>
                     <Input 
                     variant={'none'} 
-                    w={{base:'0', lg:'450px'}}  
+                    w={{base:'300px', lg:'450px'}}  
                     mt={{base:'2', lg:'10'}} 
                     borderRadius={'none'} 
                     borderBottom={'1px solid black'}
