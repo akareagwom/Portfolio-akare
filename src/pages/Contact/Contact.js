@@ -67,6 +67,7 @@ const Contact =()=>{
                      type="text"
                      placeholder={'Name'}
                      name="name"
+                     required
                      value={formData.name}
                      onChange={handleChange} 
                      />
@@ -82,6 +83,7 @@ const Contact =()=>{
                     placeholder={'Email'} 
                     name="email"
                     type="email"
+                    required
                     value={formData.email}
                     onChange={handleChange}
                     />
