@@ -40,7 +40,7 @@ const Portfolio = () => {
                         pos={'relative'}
                         >
 
-                            <NextLink href={`/project/${item.id}`} passHref >
+                            <NextLink href={item.url} passHref >
                             <Image
                             alt="assets"
                             filter='auto'
@@ -48,8 +48,8 @@ const Portfolio = () => {
                             pos={'center'} 
                             objectFit={'cover'}
                             boxSize={'100%'}
-                            w={{base:'298px'}} 
-                            h={{base:'382px'}}  
+                            w={{base:'398px'}} 
+                            h={{base:'282px'}}  
                             src={item.image}/>
                             <Text pos={'absolute'}  top={10} color={'white'}>{item.desc}</Text>
                             </NextLink>
