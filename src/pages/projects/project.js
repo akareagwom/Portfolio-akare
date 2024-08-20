@@ -5,7 +5,7 @@ const Project =()=>{
         <Box>
             hola
             <Box bg={'black'}>
-            
+            hola
             </Box>
         </Box>
 
