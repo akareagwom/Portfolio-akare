@@ -40,7 +40,7 @@ const Portfolio = () => {
                         pos={'relative'}
                         >
 
-                            <NextLink href={item.url.slice(0)} passHref >
+                            <NextLink href={item.url} passHref >
                             <Image
                             alt="assets"
                             filter='auto'
