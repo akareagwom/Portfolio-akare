@@ -1,4 +1,5 @@
-import {Box} from '@chakra-ui/react'
+import {Box} from '@chakra-ui/react';
+import {Project} from '../api/data'
 
 const Project =()=>{
     return(
