@@ -1,6 +1,8 @@
 import {Box, Heading, Image, Text } from '@chakra-ui/react';
 import {Project} from '../api/data'
 
+import NextLink from 'next/link'
+
 const ProjectPage =()=>{
     return(
         <Box>
