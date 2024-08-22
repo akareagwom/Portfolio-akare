@@ -22,6 +22,8 @@ export default function Home() {
                 return <About />;
             case 'contact':
                 return <Contact />;
+            case 'project':
+              return <Project/>;
             default:
                 return <Init />;
       
