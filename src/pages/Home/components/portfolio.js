@@ -50,7 +50,7 @@ const Portfolio = () => {
                             boxSize={'100%'}
                             w={{base:'398px'}} 
                             h={{base:'282px'}}  
-                            src={item.image.slice(2)}/>
+                            src={item.image}/>
                             <Text pos={'absolute'}  top={10} color={'white'}>{item.desc.slice(0,3)}</Text>
                             </NextLink>
                         </Box>
