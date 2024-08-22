@@ -1,4 +1,4 @@
-const { Box } = require("@chakra-ui/react")
+import {Box} from '@chakra-ui/react'
 
 const Project =()=>{
     return(
