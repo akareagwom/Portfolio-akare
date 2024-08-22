@@ -47,7 +47,7 @@ const ProjectPage =()=>{
                             w={{base:'398px'}} 
                             h={{base:'282px'}}  
                             src={item.image}/>
-                            <Text pos={'absolute'}  top={10} color={'white'}>{item.desc}</Text>
+                            <Text pos={'absolute'}  top={10} color={'white'}>{item.desc.slice(0,3)}</Text>
                             </NextLink>
                         </Box>
                     ))}

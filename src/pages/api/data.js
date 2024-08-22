@@ -28,7 +28,7 @@ export const Project =[
     },
     {
         title:"Movie Box",
-        desc:"Recent Movies",
+        desc:"brr Movies",
         url:"https://warm-seahorse-bd1a7b.netlify.app/",
         image:"/lendsqr.png"
     },
