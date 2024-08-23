@@ -25,7 +25,7 @@ const Portfolio = () => {
                 flexDir={{ base:'cloumn',lg:'row'}}
                 justifyContent={{base:'center',lg:'space-between'}}
                 >
-                    {Project.map((item,index)=>(
+                    {Project.slice(0, 3).map((item, index) => (
                         <Box
                         key={index}
                         // bg={'black'}
@@ -40,7 +40,7 @@ const Portfolio = () => {
                         pos={'relative'}
                         >
 
-                            <NextLink href={item.url.slice(0,3)} passHref >
+                            <NextLink href={item.url} passHref >
                             <Image
                             alt="assets"
                             filter='auto'
@@ -50,8 +50,8 @@ const Portfolio = () => {
                             boxSize={'100%'}
                             w={{base:'398px'}} 
                             h={{base:'282px'}}  
-                            src={item.image.slice(0,3)}/>
-                            <Text pos={'absolute'}  top={10} color={'white'}>{item.desc.slice(0,3)}</Text>
+                            src={item.image}/>
+                            <Text pos={'absolute'}  top={10} color={'white'}>{item.desc}</Text>
                             </NextLink>
                         </Box>
                     ))}
