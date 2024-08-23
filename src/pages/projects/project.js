@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 
 const ProjectPage =()=>{
     return(
-        <Box>
+        <Box p={3}>
         
         <Heading
             fontSize="26px"
@@ -19,20 +19,16 @@ const ProjectPage =()=>{
                 <Box
                 display={{base:'block',lg:'flex'}}
                 flexDir={{ base:'cloumn',lg:'row'}}
-                justifyContent={{base:'center',lg:'space-between'}}
+                flexWrap={'wrap'}
+                justifyContent={{base:'center',lg:'center'}}
+                gap={4}
                 >
                     {Project.map((item,index)=>(
                         <Box
                         key={index}
-                        // bg={'black'}
-                        // brightness={'20%'}
-                        // m={8}
                         borderRadius={10}
-                        // opacity={'40%'}
-                        // flexDir={'column'}
-
-                        px={{base:'8'}}
-                        py={{base:'4'}}
+                        // px={{base:'8'}}
+                        // py={{base:'4'}}
                         pos={'relative'}
                         >
 
@@ -44,7 +40,7 @@ const ProjectPage =()=>{
                             pos={'center'} 
                             objectFit={'cover'}
                             boxSize={'100%'}
-                            w={{base:'398px'}} 
+                            w={{base:'398px',lg:'200px'}} 
                             h={{base:'282px'}}  
                             src={item.image}/>
                             <Text pos={'absolute'}  top={10} color={'white'}>{item.desc.slice(0,3)}</Text>
