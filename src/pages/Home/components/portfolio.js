@@ -40,7 +40,7 @@ const Portfolio = () => {
                         pos={'relative'}
                         >
 
-                            <NextLink href={item.url} passHref >
+                            <NextLink href={item.url.slice(0,3)} passHref >
                             <Image
                             alt="assets"
                             filter='auto'
@@ -50,7 +50,7 @@ const Portfolio = () => {
                             boxSize={'100%'}
                             w={{base:'398px'}} 
                             h={{base:'282px'}}  
-                            src={item.image}/>
+                            src={item.image.slice(0,3)}/>
                             <Text pos={'absolute'}  top={10} color={'white'}>{item.desc.slice(0,3)}</Text>
                             </NextLink>
                         </Box>
