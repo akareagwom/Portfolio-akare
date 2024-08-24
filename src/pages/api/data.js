@@ -30,7 +30,7 @@ export const Project =[
         title:"Movie Box",
         desc:"brr Movies",
         url:"https://warm-seahorse-bd1a7b.netlify.app/",
-        image:"/lendsqr.png"
+        image:"/notepal.png"
     },
 
     {
