@@ -36,14 +36,13 @@ const ProjectPage =()=>{
                             <Image
                             alt="assets"
                             filter='auto'
-                            brightness={'50%'}
-                            pos={'center'} 
+                            brightness={'50%'} 
                             objectFit={'cover'}
-                            boxSize={'100%'}
-                            w={{base:'398px',lg:'200px'}} 
-                            h={{base:'282px'}}  
+                            // boxSize={'100%'}
+                            w={{base:'398px',lg:'300px'}} 
+                            h={{base:'202px'}}  
                             src={item.image}/>
-                            <Text pos={'absolute'}  top={10} color={'white'}>{item.desc.slice(0,3)}</Text>
+                            <Text color={'white'}>{item.desc.slice(0,3)}</Text>
                             </NextLink>
                         </Box>
                     ))}
