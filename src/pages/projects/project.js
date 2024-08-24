@@ -1,17 +1,20 @@
-import {Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
-import {Project} from '../api/data'
+import {Box, Flex, Heading, Icon, Image, Stack, Text } from '@chakra-ui/react';
+import {Project} from '../api/data';
+import { FaLocationArrow } from "react-icons/fa";
 
 import NextLink from 'next/link'
 
 const ProjectPage =()=>{
     return(
-        <Box p={3}>
+        <Box p={10}>
         
         <Heading
             fontSize="26px"
             textAlign={{base:"center",lg:"start"}}
             color="#000"
-            ml="6%"
+            ml="3%"
+            mb={10}
+
             >
                Recent Project
             </Heading>
@@ -28,7 +31,6 @@ const ProjectPage =()=>{
                         key={index}
                         borderRadius={10}
                         // px={{base:'8'}}
-                        // py={{base:'4'}}
                         pos={'relative'}
                         >
 
@@ -45,9 +47,9 @@ const ProjectPage =()=>{
                             
                             </NextLink>
                             <Box bg={'black'} >
-                                <Flex>
-                                    <Heading>{item.title}</Heading>
-                                    <NextLink href={item.url} passHref>live</NextLink>
+                                <Flex justifyContent={'space-around'}>
+                                    <Heading fontSize={20}>{item.title}</Heading>
+                                    <NextLink href={item.url} passHref>live <Icon as={FaLocationArrow}/></NextLink>
                                 </Flex>
                                 <Text color={'white'}>{item.desc.slice(0,3)}</Text>
                             </Box>
