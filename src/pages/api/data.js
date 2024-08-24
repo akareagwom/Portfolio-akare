@@ -7,7 +7,7 @@ export const Project =[
     },
 
     {
-        title:"Pay Point",
+        title:"HNG TASK",
         desc:"Money point payment",
         url:"",
         image:"/hng.png"
