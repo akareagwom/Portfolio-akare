@@ -27,7 +27,7 @@ export const Project =[
         image:"/advicegen.png"
     },
     {
-        title:"Movie Box",
+        title:"Note-Pal",
         desc:"brr Movies",
         url:"https://warm-seahorse-bd1a7b.netlify.app/",
         image:"/notepal.png"
