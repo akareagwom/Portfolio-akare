@@ -1,4 +1,4 @@
-import {Box, Heading, Image, Text } from '@chakra-ui/react';
+import {Box, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import {Project} from '../api/data'
 
 import NextLink from 'next/link'
@@ -42,8 +42,15 @@ const ProjectPage =()=>{
                             w={{base:'398px',lg:'300px'}} 
                             h={{base:'202px'}}  
                             src={item.image}/>
-                            <Text bg={'black'} color={'white'}>{item.desc.slice(0,3)}</Text>
+                            
                             </NextLink>
+                            <Box bg={'black'} >
+                                <Flex>
+                                    <Heading>{item.title}</Heading>
+                                    <NextLink href={item.url} passHref>live</NextLink>
+                                </Flex>
+                                <Text color={'white'}>{item.desc.slice(0,3)}</Text>
+                            </Box>
                         </Box>
                     ))}
 
