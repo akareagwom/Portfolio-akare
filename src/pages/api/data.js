@@ -52,5 +52,11 @@ export const Project =[
         desc:"Generates advice",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/advicegen.png"
-    }
+    },
+    {
+        title:"Advice Generator",
+        desc:"Generates advice",
+        url:"https://advice-generator-app-pink-nine.vercel.app",
+        image:"/social.png"
+    },
 ]
