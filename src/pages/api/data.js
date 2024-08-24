@@ -60,7 +60,7 @@ export const Project =[
         image:"/social.png"
     },
     {
-        title:"Advice Generator",
+        title:"Pandora's Box",
         desc:"Generates advice",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/pandorabox.png"
