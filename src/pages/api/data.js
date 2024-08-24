@@ -37,7 +37,7 @@ export const Project =[
         title:"Pay Point",
         desc:"Money point payment",
         url:"",
-        image:"/hng.png"
+        image:"/easybank.png"
     },
 
     {
