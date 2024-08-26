@@ -43,12 +43,12 @@ const ProjectPage =()=>{
                             src={item.image}/>
                             
                             </NextLink>
-                            <Box w={{lg:'300px'}} bg={'black'} >
-                                <Flex justifyContent={'space-around'}>
+                            <Box p={6} w={{lg:'300px'}} bg={'black'} >
+                                <Flex justifyContent={'space-between'}>
                                     <Heading fontSize={16}>{item.title}</Heading>
                                     <NextLink href={item.url} passHref>live <Icon fontSize={10} as={FaLocationArrow}/></NextLink>
                                 </Flex>
-                                <Text p={4} fontSize={11} color={'white'}>{item.desc}</Text>
+                                <Text  fontSize={11} color={'white'}>{item.desc}</Text>
                             </Box>
                         </Box>
                     ))}
