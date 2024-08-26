@@ -51,7 +51,7 @@ const ProjectPage =()=>{
                                     <Heading fontSize={16}>{item.title}</Heading>
                                     <NextLink href={item.url} passHref>live <Icon fontSize={10} as={FaLocationArrow}/></NextLink>
                                 </Flex>
-                                <Text color={'white'}>{item.desc.slice(0,3)}</Text>
+                                <Text color={'white'}>{item.desc}</Text>
                             </Box>
                         </Box>
                     ))}
