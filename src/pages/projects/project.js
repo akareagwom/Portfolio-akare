@@ -18,7 +18,6 @@ const ProjectPage =()=>{
             >
                Recent Project
             </Heading>
-           
                 <Box
                 display={{base:'block',lg:'flex'}}
                 flexDir={{ base:'cloumn',lg:'row'}}
@@ -30,10 +29,8 @@ const ProjectPage =()=>{
                         <Box
                         key={index}
                         borderRadius={10}
-                        // px={{base:'8'}}
                         pos={'relative'}
                         >
-
                             <NextLink href={item.url} passHref >
                             <Image
                             alt="assets"
@@ -46,12 +43,12 @@ const ProjectPage =()=>{
                             src={item.image}/>
                             
                             </NextLink>
-                            <Box bg={'black'} >
+                            <Box w={{lg:'300px'}} bg={'black'} >
                                 <Flex justifyContent={'space-around'}>
                                     <Heading fontSize={16}>{item.title}</Heading>
                                     <NextLink href={item.url} passHref>live <Icon fontSize={10} as={FaLocationArrow}/></NextLink>
                                 </Flex>
-                                <Text color={'white'}>{item.desc}</Text>
+                                <Text p={4} fontSize={11} color={'white'}>{item.desc}</Text>
                             </Box>
                         </Box>
                     ))}
