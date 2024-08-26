@@ -28,7 +28,7 @@ export const Project =[
     },
     {
         title:"Note-Pal",
-        desc:"brr Movies",
+        desc:"NotePal is a powerful and intuitive online platform designed to enhance your note-taking experience. Whether you're a student, professional, or creative, NotePal provides the tools you need to organize your thoughts, manage your projects, and stay productive.",
         url:"https://warm-seahorse-bd1a7b.netlify.app/",
         image:"/notepal.png"
     },
