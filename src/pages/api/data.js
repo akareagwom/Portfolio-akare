@@ -22,7 +22,7 @@ export const Project =[
 
     {
         title:"Advice Generator",
-        desc:"Generates advice",
+        desc:"Welcome to your go-to destination for personalized guidance! Our advice generator website offers insightful and practical advice on a wide range of topics, from relationships and career choices to personal growth and everyday challenges.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/advicegen.png"
     },
