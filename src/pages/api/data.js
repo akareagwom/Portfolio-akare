@@ -47,8 +47,8 @@ export const Project =[
         image:"/lendsqr.png"
     },
     {
-        title:"Social",
-        desc:"Generates advice",
+        title:"Herosocial",
+        desc:"Herosocial is your new go-to social platform designed for seamless photo and video sharing. With a user-friendly interface, InstaConnect lets you capture and share your moments with friends, family, and followers in real-time.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/social.png"
     },
