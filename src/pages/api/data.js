@@ -8,16 +8,9 @@ export const Project =[
 
     {
         title:"HNG TASK",
-        desc:"Money point payment",
+        desc:"HNG task is a site that tells the time based on UTC and timezone",
         url:"",
         image:"/hng.png"
-    },
-
-    {
-        title:"Lendsqr",
-        desc:"Lendsqr Challenge",
-        url:"https://delicate-melomakarona-b9d7e3.netlify.app/",
-        image:"/lendsqr.png"
     },
 
     {
