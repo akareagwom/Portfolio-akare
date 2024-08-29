@@ -44,10 +44,10 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
             <Modal  isOpen={isOpen} onClose={onClose}>
               <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
               
-                <ModalBody flex m={40}>
+                <ModalBody m={{lg:40,base:120}}>
 
                   <ModalCloseButton cursor={'pointer'} fontSize={'30px'} />
-                  <Box display={'flex'} justifyContent={'space-between'} alignItems={'baseline'}>
+                  <Box display={{lg:'flex',base:'block'}} justifyContent={'space-between'} alignItems={'baseline'}>
 
                     <Flex justifyContent={'start'} alignItems={'start'}  mr={{base:'0'}}>
                         <Text
@@ -81,9 +81,9 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                   
 
                     </Flex>
-                      <Box fontSize={'22px'} fontWeight={100} mt={10} ml={{base:'2'}}>
-                        <Text fontWeight={700}>akare9340@gmail.com</Text>
-                        <Text fontWeight={700}>+234 905 681 7953</Text>
+                      <Box fontSize={'22px'} mt={10} ml={{base:'2'}}>
+                        <Text>akare9340@gmail.com</Text>
+                        <Text>+234 905 681 7953</Text>
                         <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
                           <MdFacebook/>
                           <FaGithub/>
