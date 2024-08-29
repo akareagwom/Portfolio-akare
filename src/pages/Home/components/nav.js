@@ -10,7 +10,7 @@ const Nav = () => {
     
     return ( 
         <>
-            <Image src='brand1.svg' />
+            <Image src='brand1.svg' alt="asset" />
             <Flex>
                 <Tabs variant='none' ml={{base:'10%'}} display={'flex'} alignItems={'center'} color={'white'}>
                     <Tab>Projects</Tab>
