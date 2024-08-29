@@ -47,10 +47,10 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                 
                 <ModalBody display={{base:'block',lg:'flex'}} pt={{base:'25%',lg:'0'}} justifyContent={'space-around'} alignItems={'end'}>
                   <ModalCloseButton cursor={'p'} fontSize={'30px'} />
+                  <Flex justifyContent={'start'}  mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
-                        transformOrigin="top left"
-                        pos={'absolute'}      
+                        transformOrigin="top left"     
                         display="inline-block"
                         whiteSpace="nowrap"
                         textTransform={'uppercase'}
@@ -59,10 +59,9 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                       >
                        Menu
                       </Text>
-                  <Flex justifyContent={'start'}  mr={{base:'0'}}>
                   
                     {/* Desktop Navigation */}
-                    <Tabs mt={{base:'2'}} ml={4} lineHeight={1} variant={'none'} >
+                    <Tabs mt={{base:'2'}} ml={0} lineHeight={1} variant={'none'} >
                       <TabList>
                         <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
