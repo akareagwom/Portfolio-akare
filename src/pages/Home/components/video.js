@@ -30,11 +30,22 @@ const Video = ({setView}) => {
         id="home"
         >
             <Navbar setView={setView} />
-            <Box textAlign={'center'} pt={{lg:20,base:40}}>
+            <Box data-aos='fade-up' mt={6} textAlign={'center'} pt={{lg:20,base:40}}>
                 <Heading>Akare Azikang Agwom</Heading>
                 <Text>Frontend Developer</Text>
             </Box>
-            
+            <Box
+        data-aos="fade-up"
+        bg="teal.500"
+        w="100%"
+        mt={40}
+        p={4}
+        color="white"
+        textAlign="center"
+        borderRadius="md"
+      >
+        <Text fontSize="xl">This box fades up on scroll!</Text>
+      </Box>
             
         </Box>
        
