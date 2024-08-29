@@ -19,6 +19,7 @@ import { motion } from 'framer-motion';
 import { TbMenuDeep } from "react-icons/tb";
 import { BiMenuAltRight } from "react-icons/bi";
 import Navbar from "./topbar";
+import FadeUp from "./FadeUp";
 
 const Video = ({setView}) => {
     return ( 
@@ -50,6 +51,11 @@ const Video = ({setView}) => {
       >
         <Text fontSize="xl">This box fades up on scroll!</Text>
       </Box>
+      <FadeUp>
+        <Text mt={4} color="white">
+            hola akare
+        </Text>
+      </FadeUp>
             
         </Box>
        

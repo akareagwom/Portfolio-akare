@@ -6,9 +6,9 @@ const FadeUp = ({ children, delay = 0 }) => {
   return (
     <Box
       as={motion.div}
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 3, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: delay }}
+      transition={{ duration: 1 , delay: delay }}
     >
       {children}
     </Box>
