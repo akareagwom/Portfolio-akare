@@ -28,7 +28,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
       <Box px={4} py={2}>
         <Flex p={8} justifyContent={'space-between'}>
                 <Heading size="lg" color="white">
-                  <Image w={6} src='brand1.svg' assets='hala' />
+                  <Image w={6} src='brand1.svg' alt='hala' />
                 </Heading>
                 
                 <IconButton
