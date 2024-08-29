@@ -47,48 +47,51 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                 <ModalBody flex m={40}>
 
                   <ModalCloseButton cursor={'pointer'} fontSize={'30px'} />
-                  
-                  <Flex justifyContent={'start'} alignItems={'start'}  mr={{base:'0'}}>
-                      <Text
-                        transform="rotate(270deg)"
-                        transformOrigin="top left"     
-                        display="inline-block"
-                        whiteSpace="nowrap"
-                        textTransform={'uppercase'}
-                        fontSize={'20px'}
-                        fontWeight={700}
-                        mt={16}
-                      >
-                       Menu
-                      </Text>
-                  
-                    
-                    <Tabs mt={{base:''}} ml={-10} lineHeight={1} variant={'none'} >
-                      <TabList>
-                        <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
-                      </TabList>
-                      <TabList>
-                        <Tab onClick={()=>setView('projects')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
-                      </TabList>
-                      <TabList>
-                        <Tab onClick={()=>setView('about')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
-                      </TabList>
-                      <TabList>
-                        <Tab onClick={()=>setView('contact')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
-                      </TabList>
-                    </Tabs>
-                    <Box fontSize={'22px'} ml={{base:'2'}}>
-                      <Text fontWeight={700}>akare9340@gmail.com</Text>
-                      <Text fontWeight={700}>+234 905 681 7953</Text>
-                      <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
-                        <MdFacebook/>
-                        <FaGithub/>
-                        <FaLinkedinIn/>
-                      </Flex>
-                    </Box>
-                 
+                  <Box display={'flex'} justifyContent={'space-between'} alignItems={'baseline'}>
 
-                  </Flex>
+                    <Flex justifyContent={'start'} alignItems={'start'}  mr={{base:'0'}}>
+                        <Text
+                          transform="rotate(270deg)"
+                          transformOrigin="top left"     
+                          display="inline-block"
+                          whiteSpace="nowrap"
+                          textTransform={'uppercase'}
+                          fontSize={'20px'}
+                          fontWeight={700}
+                          mt={16}
+                        >
+                        Menu
+                        </Text>
+                    
+                      
+                      <Tabs mt={{base:''}} ml={-10} lineHeight={1} variant={'none'} >
+                        <TabList>
+                          <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
+                        </TabList>
+                        <TabList>
+                          <Tab onClick={()=>setView('projects')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Projects</Tab>
+                        </TabList>
+                        <TabList>
+                          <Tab onClick={()=>setView('about')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>About</Tab>
+                        </TabList>
+                        <TabList>
+                          <Tab onClick={()=>setView('contact')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
+                        </TabList>
+                      </Tabs>
+                  
+
+                    </Flex>
+                      <Box fontSize={'22px'} fontWeight={100} mt={10} ml={{base:'2'}}>
+                        <Text fontWeight={700}>akare9340@gmail.com</Text>
+                        <Text fontWeight={700}>+234 905 681 7953</Text>
+                        <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
+                          <MdFacebook/>
+                          <FaGithub/>
+                          <FaLinkedinIn/>
+                        </Flex>
+                      </Box>
+                  </Box>
+                  
                  
                 </ModalBody>
               </ModalContent>
