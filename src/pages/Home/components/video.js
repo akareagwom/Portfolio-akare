@@ -30,7 +30,7 @@ const Video = ({setView}) => {
         id="home"
         >
             <Navbar setView={setView} />
-            <Box data-aos='fade-up' mt={6} textAlign={'center'} pt={{lg:20,base:40}}>
+            <Box data-aos='fade-up' mt={4} textAlign={'center'} pt={{lg:20,base:40}}>
                 <Heading>Akare Azikang Agwom</Heading>
                 <Text>Frontend Developer</Text>
             </Box>
