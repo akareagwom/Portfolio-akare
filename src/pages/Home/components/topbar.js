@@ -44,10 +44,11 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
             <Modal  isOpen={isOpen} onClose={onClose}>
               <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
               
-                <ModalBody m={10}>
+                <ModalBody flex m={40}>
+
                   <ModalCloseButton cursor={'pointer'} fontSize={'30px'} />
                   
-                  <Flex justifyContent={'start'}  mr={{base:'0'}}>
+                  <Flex justifyContent={'start'} alignItems={'start'}  mr={{base:'0'}}>
                       <Text
                         transform="rotate(270deg)"
                         transformOrigin="top left"     
@@ -62,7 +63,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                       </Text>
                   
                     
-                    <Tabs mt={{base:''}} ml={0} lineHeight={1} variant={'none'} >
+                    <Tabs mt={{base:''}} ml={-10} lineHeight={1} variant={'none'} >
                       <TabList>
                         <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
                       </TabList>
@@ -76,18 +77,18 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                         <Tab onClick={()=>setView('contact')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Contact</Tab>
                       </TabList>
                     </Tabs>
+                    <Box fontSize={'22px'} ml={{base:'2'}}>
+                      <Text fontWeight={700}>akare9340@gmail.com</Text>
+                      <Text fontWeight={700}>+234 905 681 7953</Text>
+                      <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
+                        <MdFacebook/>
+                        <FaGithub/>
+                        <FaLinkedinIn/>
+                      </Flex>
+                    </Box>
                  
 
                   </Flex>
-                  <Box fontSize={'22px'} ml={{base:'2'}}>
-                    <Text fontWeight={700}>akare9340@gmail.com</Text>
-                    <Text fontWeight={700}>+234 905 681 7953</Text>
-                    <Flex fontSize="25px" w={{base:'100px'}} justifyContent={'space-between'}>
-                      <MdFacebook/>
-                      <FaGithub/>
-                      <FaLinkedinIn/>
-                    </Flex>
-                  </Box>
                  
                 </ModalBody>
               </ModalContent>
