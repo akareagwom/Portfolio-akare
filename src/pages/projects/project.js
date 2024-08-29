@@ -27,6 +27,9 @@ const ProjectPage =()=>{
                 >
                     {Project.map((item,index)=>(
                         <Box
+                        as={motion.div}
+                        animate={{ x: 100 }}
+                        transition={{ type: "spring", stiffness: 100 }}
                         key={index}
                         borderRadius={10}
                         pos={'relative'}
