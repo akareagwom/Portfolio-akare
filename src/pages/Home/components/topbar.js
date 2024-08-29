@@ -44,7 +44,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
             <Modal  isOpen={isOpen} onClose={onClose}>
               <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
               
-                <ModalBody>
+                <ModalBody m={10}>
                   <ModalCloseButton cursor={'pointer'} fontSize={'30px'} />
                   
                   <Flex justifyContent={'start'}  mr={{base:'0'}}>
