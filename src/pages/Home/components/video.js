@@ -12,6 +12,7 @@ import { Box, Button, Card, CardBody, CardHeader, Heading, Image, Text,Popover,
 import Nav from "./nav";
 import "../../../styles/Home.module.css";
 import Media from "./media";
+import { motion } from 'framer-motion';
 
 
 //icons
@@ -30,15 +31,18 @@ const Video = ({setView}) => {
         id="home"
         >
             <Navbar setView={setView} />
-            <Box data-aos='fade-up' mt={4} textAlign={'center'} pt={{lg:20,base:40}}>
+            <Box data-aos='fade-up' mt={6} textAlign={'center'} pt={{lg:20,base:40}}>
                 <Heading>Akare Azikang Agwom</Heading>
                 <Text>Frontend Developer</Text>
             </Box>
             <Box
-        data-aos="fade-up"
+        as={motion.div}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0 }}
         bg="teal.500"
         w="100%"
-        mt={40}
+        mt={10}
         p={4}
         color="white"
         textAlign="center"
