@@ -1,6 +1,7 @@
 import {Box, Flex, Heading, Icon, Image, Stack, Text } from '@chakra-ui/react';
 import {Project} from '../api/data';
 import { FaLocationArrow } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 import NextLink from 'next/link'
 
