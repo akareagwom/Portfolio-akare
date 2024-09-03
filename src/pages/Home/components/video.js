@@ -25,7 +25,6 @@ const Video = ({setView}) => {
     return ( 
         <>
         <Box
-        bg={'black'}
         mt="0%"
         w={'100%'}
         h={'100vh'}
@@ -36,27 +35,6 @@ const Video = ({setView}) => {
                 <Heading>Akare Azikang Agwom</Heading>
                 <Text>Frontend Developer</Text>
             </Box>
-            <Box
-        as={motion.div}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0 }}
-        bg="teal.500"
-        w="100%"
-        mt={10}
-        p={4}
-        color="white"
-        textAlign="center"
-        borderRadius="md"
-      >
-        <Text fontSize="xl">This box fades up on scroll!</Text>
-      </Box>
-      <FadeUp>
-        <Text mt={4} color="white">
-            hola akare
-        </Text>
-      </FadeUp>
-            
         </Box>
        
         </>
