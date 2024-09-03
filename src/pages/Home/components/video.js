@@ -32,10 +32,10 @@ const Video = ({setView}) => {
         >
             <Navbar setView={setView} />
             <Box  mt={10} textAlign={'start'} w={'90%'} p={24} lineHeight={9} pt={{lg:20,base:40}}>
-                <Heading>Hey, I'm Akare</Heading>
+                <Heading >Hey, I'm Akare</Heading>
                 <Text fontFamily={'monospace'} fontSize={24} >I build websites with a focus on responsive design and accessibility.</Text>
                 <Text>I'm a Frontend Developer, Web &amp; Graphics Designer, and open-source contributor. </Text>
-                <Text>Find me on GitHub, LinkedIn, Behance, and Twitter.</Text>
+                <Text fontFamily={'fantasy'}>Find me on GitHub, LinkedIn, Behance, and Twitter.</Text>
             </Box>
         </Box>
        
