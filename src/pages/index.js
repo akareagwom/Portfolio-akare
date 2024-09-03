@@ -34,12 +34,19 @@ export default function Home() {
     <>
       <Box
       // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
-      bg="white"
+      bg="#E8DBD5"
       color="white"
+      // w='70%'
+      px={20}
+      display={'flex'}
+      flexDir={'column'}
+      alignItems={'center'}
+      justifyContent={'center'}
       >
         
         <Box 
-        w='100%'
+          bg={'#EBCDC3'}
+          boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
          >
           <Box
           m='0px'>
