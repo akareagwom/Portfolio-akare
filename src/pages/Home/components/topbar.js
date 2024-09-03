@@ -26,16 +26,17 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
   
     return (
       <Box px={4} py={2}>
-        <Flex p={8} justifyContent={'space-between'}>
-                <Heading size="lg" color="white">
-                  <Image w={6} src='brand1.svg' alt='hala' />
+        <Flex borderBottom={'2px solid white'} px={10} pt={6} mx={20} alignItems={'center'} justifyContent={'space-between'}>
+                <Heading fontSize="16px" color="white">
+                  Akare Azikang Agwom
+                  {/* <Image w={6} src='brand1.svg' alt='hala' /> */}
                 </Heading>
                 
                 <IconButton
                   display={{ base: 'block', md: 'block' }}
                   onClick={onOpen}
                   icon={<BiMenuAltRight/>}
-                  fontSize={40}
+                  fontSize="24px"
                   variant="none"
                   color="white"
                   aria-label="Toggle menu"
