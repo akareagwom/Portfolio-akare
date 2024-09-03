@@ -9,13 +9,13 @@ const Init =()=>{
     return(
         <Box>
             <Box>
-                <Todo/> 
+                <Portfolio/>
             </Box>
             <Box>
                 <Skills/>
             </Box>
             <Box>
-                <Portfolio/>
+                <Todo/> 
             </Box>
             <Box>
                 <Buttoned/>
