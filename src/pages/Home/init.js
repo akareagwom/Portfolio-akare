@@ -1,3 +1,5 @@
+import Contact from "../Contact/Contact";
+import ProjectPage from "../projects/project";
 import Buttoned from "./components/button";
 import Portfolio from "./components/portfolio";
 import Skills from "./components/skills";
@@ -9,7 +11,7 @@ const Init =()=>{
     return(
         <Box>
             <Box>
-                <Portfolio/>
+                <ProjectPage/>
             </Box>
             <Box>
                 <Skills/>
@@ -18,7 +20,7 @@ const Init =()=>{
                 <Todo/> 
             </Box>
             <Box>
-                <Buttoned/>
+                <Contact/>
             </Box>
         </Box>
     )
