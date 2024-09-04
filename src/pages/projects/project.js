@@ -7,18 +7,7 @@ import NextLink from 'next/link'
 
 const ProjectPage =()=>{
     return(
-        <Box p={10}>
-        
-        <Heading
-            fontSize="26px"
-            textAlign={{base:"center",lg:"start"}}
-            color="#000"
-            ml="3%"
-            mb={10}
-
-            >
-               Recent Project
-            </Heading>
+        <Box>
                 <Box
                 display={{base:'block',lg:'flex'}}
                 flexDir={{ base:'cloumn',lg:'row'}}
@@ -27,32 +16,22 @@ const ProjectPage =()=>{
                 gap={4}
                 >
                     {Project.map((item,index)=>(
-                        <Box
-                        as={motion.div}
-                        animate={{ x: 100 }}
-                        transition={{ type: "spring", stiffness: 100 }}
-                        key={index}
-                        borderRadius={10}
-                        pos={'relative'}
-                        >
-                            <NextLink href={item.url} passHref >
-                            <Image
-                            alt="assets"
-                            filter='auto'
-                            brightness={'50%'} 
-                            objectFit={'cover'}
-                            // boxSize={'100%'}
-                            w={{base:'398px',lg:'300px'}} 
-                            h={{base:'202px'}}  
-                            src={item.image}/>
+                        <Box>
+                            <Box p={6} w={{lg:'250px'}}
+                            // boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
+                            borderRadius='10px'
+                            _hover={{
+                                bg:'#E8DBD5',
+                                boxShadow:'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+                            }}
                             
-                            </NextLink>
-                            <Box p={6} w={{lg:'300px'}} bg={'black'} >
-                                <Flex justifyContent={'space-between'}>
+                             >
                                     <Heading fontSize={16}>{item.title}</Heading>
+                                <Text mt={2} fontSize={11} color={'white'}>{item.desc}</Text>
+                                <Flex mt={2} fontSize={14} justifyContent={'space-between'}>
+                                    <NextLink href={item.url} passHref>Github <Icon fontSize={10} as={FaLocationArrow}/></NextLink>
                                     <NextLink href={item.url} passHref>live <Icon fontSize={10} as={FaLocationArrow}/></NextLink>
                                 </Flex>
-                                <Text  fontSize={11} color={'white'}>{item.desc}</Text>
                             </Box>
                         </Box>
                     ))}
