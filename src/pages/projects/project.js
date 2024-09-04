@@ -16,7 +16,7 @@ const ProjectPage =()=>{
                 gap={4}
                 >
                     {Project.map((item,index)=>(
-                        <Box>
+                        <Box key={index}>
                             <Box p={6} w={{lg:'250px'}}
                             // boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
                             borderRadius='10px'
