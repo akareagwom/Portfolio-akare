@@ -1,17 +1,17 @@
 export const Project =[
-    {
-        title:"Movie Box",
-        desc:"Recent Movies",
-        url:"https://warm-seahorse-bd1a7b.netlify.app/",
-        image:"/lendsqr.png"
-    },
+    // {
+    //     title:"Movie Box",
+    //     desc:"Recent Movies",
+    //     url:"https://warm-seahorse-bd1a7b.netlify.app/",
+    //     image:"/lendsqr.png"
+    // },
 
-    {
-        title:"HNG TASK",
-        desc:"HNG task is a site that tells the time based on UTC and timezone",
-        url:"",
-        image:"/hng.png"
-    },
+    // {
+    //     title:"HNG TASK",
+    //     desc:"HNG task is a site that tells the time based on UTC and timezone. HNG task ",
+    //     url:"",
+    //     image:"/hng.png"
+    // },
 
     {
         title:"Advice Generator",
@@ -26,16 +26,16 @@ export const Project =[
         image:"/notepal.png"
     },
 
-    {
-        title:"Easybank",
-        desc:"Money point payment",
-        url:"",
-        image:"/easybank.png"
-    },
+    // {
+    //     title:"Easybank",
+    //     desc:"Money point payment",
+    //     url:"",
+    //     image:"/easybank.png"
+    // },
 
     {
-        title:"Lendsqr",
-        desc:"Lendsqr Challenge",
+        title:"Ecommerce Product Page",
+        desc:"Ecommerce Product page is an ecommerce component that allows you to view a particular product, add several products to the cart and you can view your product that has been added to cart.",
         url:"https://delicate-melomakarona-b9d7e3.netlify.app/",
         image:"/lendsqr.png"
     },
@@ -47,19 +47,19 @@ export const Project =[
     },
     {
         title:"Pandora's Box",
-        desc:"Generates advice",
+        desc:"Pandora's box is an e-learning platform which enables users to signup and take various courses and test themselves with the quiz, it also allows admins to upload their resources so that their students can have access to it.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/pandorabox.png"
     },
     {
         title:"Robo Friends",
-        desc:"Generates advice",
+        desc:"Robo-friends is a react project that displays various names and images of these robots and it also allos a user to be able to search for a particular robot and its name.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/robo.png"
     },
     {
         title:"Interactive Card",
-        desc:"Generates advice",
+        desc:"Interactive card is a card that allows you to type in your card details, when you enter each input your details are displayed on it such as the CVV, card number, name and the date of expiration.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
         image:"/interactivecard.png"
     }
