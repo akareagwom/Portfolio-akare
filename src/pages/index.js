@@ -34,7 +34,7 @@ export default function Home() {
     <>
       <Box
       // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
-      bg="#E8DBD5"
+      bg="#CEAA9A"
       color="white"
       // w='70%'
       px={20}
@@ -45,7 +45,7 @@ export default function Home() {
       >
         
         <Box 
-          bg={'#EBCDC3'}
+          bg={'#B5927F'}
           boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
          >
           <Box
