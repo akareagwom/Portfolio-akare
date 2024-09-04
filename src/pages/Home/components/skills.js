@@ -25,59 +25,35 @@ const Skills = () => {
                 
            </Flex>
            <Flex color={'white'} pl={20} gap={10} mt="20px"  flexWrap={'wrap'}>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoHtml5} />
                     <Text fontSize={14}>HTML</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoCss3} />
                     <Text fontSize={14}>CSS</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={FaGitAlt} />
                     <Text fontSize={14}>GIT</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoJavascript} />
                     <Text fontSize={14}>JAVASCRIPT</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={FaReact} />
                     <Text fontSize={14}>REACT</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoVue} />
                     <Text fontSize={14}>VUE</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoHtml5} />
                     <Text fontSize={14}>TAILWIND</Text>
                 </Flex>
-                <Flex _hover={{
-        transform: 'scale(1.3)',
-        boxShadow: 'lg',
-      }} bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoHtml5} />
                     <Text fontSize={14}>CHAKRA UI</Text>
                 </Flex>
