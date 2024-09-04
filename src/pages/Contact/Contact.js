@@ -51,19 +51,20 @@ const Contact =()=>{
     
 
     return(
-        <Box w={{base:'301px',lg:'1000px'}}  mx={10} my={10}  color={'black'}>
-            <Text fontSize={'24px'} fontWeight={'700px'} >Contact Me</Text>
+        <Box w={''} px={20} my={10}  color={'black'}>
+            {/* <Text fontSize={'24px'} fontWeight={'700px'} >Contact Me</Text> */}
             <form onSubmit={handleSubmit}>
 
-            <Box display={{base:'block',lg:'flex'}} mt={{base:'2', lg:'8'}} justifyContent={'space-between'}>
+            <Box color={'white'}  display={{base:'block',lg:'flex'}} mt={{base:'2', lg:'8'}} justifyContent={'space-between'}>
                 <Box>
                     <Text  mt={{base:'2',lg:'4'}}>Name</Text>
                     <Input
                      variant={'none'} 
-                     w={{base:'300px', lg:'450px'}}  
+                     w={{base:'300px', lg:'300px'}}  
                      mt={{base:'2', lg:'10'}} 
                      borderRadius={'none'} 
-                     borderBottom={'1px solid black'}
+                     bg={'none'}
+                     borderBottom={'2px solid white'}
                      type="text"
                      placeholder={'Name'}
                      name="name"
@@ -76,11 +77,12 @@ const Contact =()=>{
                     <Text mt={{base:'2',lg:'4'}}>Email</Text>
                     <Input 
                     variant={'none'} 
-                    w={{base:'300px', lg:'450px'}}  
+                    w={{base:'300px', lg:'300px'}}  
                     mt={{base:'2', lg:'10'}} 
                     borderRadius={'none'} 
-                    borderBottom={'1px solid black'}
+                    borderBottom={'2px solid white'}
                     placeholder={'Email'} 
+                    bg={'none'}
                     name="email"
                     type="email"
                     required
@@ -89,17 +91,19 @@ const Contact =()=>{
                     />
                 </Box>
             </Box>
-                <Text mt={{base:'2',lg:'10'}}>Message</Text>
+                <Text color={'white'} mt={{base:'2',lg:'10'}}>Message</Text>
                 <Box>
                     <Input
                     value={formData.message}
                     onChange={handleChange}
                     name="message" 
                     variant={'none'} 
+                    bg={'none'}
+                    w={{base:'300px', lg:'780px'}}  
                     placeholder={"Hello, my name is ..."} 
                     mt={{base:'2', lg:'10'}} 
                     borderRadius={'none'} 
-                    borderBottom={'1px solid black'}
+                    borderBottom={'2px solid white'}
                     />
                 </Box>
                 <Button bg={'#D9D9D9'} borderRadius={'none'} w={{base:'300px',lg:''}} fontSize={'14px'} mt={5} ml={{base:'0', lg:'30%'}} p={6} type="submit" isLoading={isSubmitting}>Send Message</Button>
