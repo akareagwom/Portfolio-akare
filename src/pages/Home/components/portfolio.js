@@ -55,6 +55,7 @@ const Portfolio = () => {
                             h={{base:'282px'}}  
                             src={item.image}/> */}
                             <Text color={'white'}>{item.desc}</Text>
+                            
                             </NextLink>
                         </Box>
                     ))}
