@@ -8,13 +8,12 @@ import { RiTailwindCssFill } from "react-icons/ri";
 const Skills = () => {
     return ( 
         <Box 
-        mt={'0%'}
+        mt={6}
         mb={'10%'}
-        ml={{base:'',lg:'30%'}}
+        // ml={{base:'',lg:'30%'}}
         w={{base:'',lg:''}}
-        px={6}
+        // px={20}
         id="skills"
-        bg={'white'}
         color={'#000'}
         >
            <Flex
@@ -22,45 +21,43 @@ const Skills = () => {
         //    justifyContent={'center'}
         //    alignItems={'center'}
            >
-            <Heading
-                fontSize="26px" 
-                >My skills</Heading>
+
                 
            </Flex>
-           <Grid templateColumns={{base:'repeat(2, 1fr)',lg:'repeat(4, 1fr)'}} gap={10} mt="20px" w={"58%"} flexWrap={'wrap'}>
-                <Flex alignItems={'center'}>
-                    <Icon color={'orange.400'} as={IoLogoHtml5} />
-                    <Text>HTML</Text>
+           <Flex color={'white'} pl={20} gap={10} mt="20px"  flexWrap={'wrap'}>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={IoLogoHtml5} />
+                    <Text fontSize={14}>HTML</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'blue.400'} as={IoLogoCss3} />
-                    <Text>CSS</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={IoLogoCss3} />
+                    <Text fontSize={14}>CSS</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'red.400'} as={FaGitAlt} />
-                    <Text>GIT</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={FaGitAlt} />
+                    <Text fontSize={14}>GIT</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'yellow.300'} as={IoLogoJavascript} />
-                    <Text>JAVASCRIPT</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={IoLogoJavascript} />
+                    <Text fontSize={14}>JAVASCRIPT</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'blue.400'} as={FaReact} />
-                    <Text>REACT</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={FaReact} />
+                    <Text fontSize={14}>REACT</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'green.600'} as={IoLogoVue} />
-                    <Text>VUE</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={IoLogoVue} />
+                    <Text fontSize={14}>VUE</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'orange.400'} as={IoLogoHtml5} />
-                    <Text>TAILWIND</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={IoLogoHtml5} />
+                    <Text fontSize={14}>TAILWIND</Text>
                 </Flex>
-                <Flex alignItems={'center'}>
-                    <Icon color={'orange.400'} as={IoLogoHtml5} />
-                    <Text>CHAKRA UI</Text>
+                <Flex bg={'#E8DBD5'} w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                    <Icon as={IoLogoHtml5} />
+                    <Text fontSize={14}>CHAKRA UI</Text>
                 </Flex>
-           </Grid>
+           </Flex>
 
             {/* <Flex
             justifyContent={'space-around'} 
