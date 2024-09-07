@@ -64,7 +64,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                         Menu
                         </Text>
                     
-                      
+                      {/* navigation */}
                       <Tabs mt={{base:''}} ml={-10} lineHeight={1} variant={'none'} >
                         <TabList>
                           <Tab onClick={()=>setView('home')} fontSize={'2.5rem'} textTransform={'uppercase'} fontWeight={700}>Home</Tab>
