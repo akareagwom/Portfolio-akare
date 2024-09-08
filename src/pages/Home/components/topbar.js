@@ -29,7 +29,6 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
         <Flex borderBottom={'2px solid white'} px={10} pt={6} mx={20} alignItems={'center'} justifyContent={'space-between'}>
                 <Heading fontSize="16px" color="white">
                   Akare Azikang Agwom
-                  {/* <Image w={6} src='brand1.svg' alt='hala' /> */}
                 </Heading>
                 
                 <IconButton
