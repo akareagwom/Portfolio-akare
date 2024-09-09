@@ -38,10 +38,7 @@ export default function Home() {
       color="white"
       // w='70%'
       px={20}
-      display={'flex'}
-      flexDir={'column'}
-      alignItems={'center'}
-      justifyContent={'center'}
+      
       >
         
         <Box 

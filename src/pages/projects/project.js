@@ -10,11 +10,17 @@ const ProjectPage =()=>{
     return(
         <Box>
                 <Flex
-                // flexWrap={'wrap'}
+                // justifyContent={'space-between'}
+                w={'100%'}
+                alignItems={'center'}
+                gap={4}
+                flexWrap={'wrap'}
                 >
                     {Project.map((item,index)=>(
                         <Box  key={index}>
                             <Box 
+                            p={2}
+                            w={'200px'}
                             // boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
                             borderRadius='10px'
                             _hover={{
