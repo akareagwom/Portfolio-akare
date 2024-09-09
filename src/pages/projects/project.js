@@ -11,6 +11,7 @@ const ProjectPage =()=>{
         <Box>
                 <Flex
                 // justifyContent={'space-between'}
+                justifyContent={'center'}
                 w={'100%'}
                 alignItems={'center'}
                 gap={4}

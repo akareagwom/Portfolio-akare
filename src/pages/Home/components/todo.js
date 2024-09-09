@@ -12,7 +12,6 @@ const Todo = () => {
         display={{base:'block',lg:'flex'}}
         flexDir={'column'}
         // alignItems={'center'}
-        ml={{base:'0',lg:'25%'}}
         w={{base:'',lg:'560px'}}
         px="6%"
         id="about"
