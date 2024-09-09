@@ -9,16 +9,12 @@ import NextLink from 'next/link'
 const ProjectPage =()=>{
     return(
         <Box>
-                <Box
-                display={{base:'block',lg:'flex'}}
-                flexDir={{ base:'cloumn',lg:'row'}}
-                flexWrap={'wrap'}
-                justifyContent={{base:'center',lg:'center'}}
-                gap={4}
+                <Flex
+                // flexWrap={'wrap'}
                 >
                     {Project.map((item,index)=>(
-                        <Box key={index}>
-                            <Box p={6} w={{lg:'250px'}}
+                        <Box  key={index}>
+                            <Box 
                             // boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
                             borderRadius='10px'
                             _hover={{
@@ -37,7 +33,7 @@ const ProjectPage =()=>{
                         </Box>
                     ))}
 
-            </Box>
+            </Flex>
         </Box>
 
     )
