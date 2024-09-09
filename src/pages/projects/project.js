@@ -1,4 +1,4 @@
-import {Box, Flex, Heading, Icon, Image, Stack, Text } from '@chakra-ui/react';
+import {Box,Flex, Heading, Icon, Image, Stack, Text,Grid, GridItem  } from '@chakra-ui/react';
 import {Project} from '../api/data';
 import { FaLocationArrow } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
@@ -9,7 +9,8 @@ import NextLink from 'next/link'
 const ProjectPage =()=>{
     return(
         <Box>
-                <Flex
+                <Grid
+                templateColumns='repeat(3, 1fr)'
                 // justifyContent={'space-between'}
                 justifyContent={'center'}
                 w={'100%'}
@@ -40,7 +41,7 @@ const ProjectPage =()=>{
                         </Box>
                     ))}
 
-            </Flex>
+            </Grid>
         </Box>
 
     )
