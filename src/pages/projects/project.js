@@ -10,13 +10,9 @@ const ProjectPage =()=>{
     return(
         <Box>
                 <Grid
-                templateColumns='repeat(3, 1fr)'
-                // justifyContent={'space-between'}
-                justifyContent={'center'}
-                w={'100%'}
-                alignItems={'center'}
+                templateColumns={{base:'repeat(1, 1fr)', md:'repeat(3, 1fr)'}}
                 gap={4}
-                flexWrap={'wrap'}
+                p={16}
                 >
                     {Project.map((item,index)=>(
                         <Box  key={index}>
