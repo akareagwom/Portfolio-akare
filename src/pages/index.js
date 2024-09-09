@@ -36,7 +36,7 @@ export default function Home() {
       // bgGradient="linear(to-l,#FF9CD4,#9EC2FF)"
       bg="#CEAA9A"
       color="white"
-      // w='70%'
+      w='100%'
       px={20}
       
       >
