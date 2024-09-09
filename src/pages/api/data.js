@@ -17,12 +17,12 @@ export const Project =[
         title:"Advice Generator",
         desc:"Welcome to your go-to destination for personalized guidance! Our advice generator website offers insightful and practical advice on a wide range of topics, from relationships and career choices to personal growth and everyday challenges.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
-        githubUrl:'',
+        githubUrl:'https://github.com/akareagwom/advice-generator-app',
         image:"/advicegen.png"
     },
     {
         title:"Note-Pal",
-        desc:"NotePal is a powerful and intuitive online platform designed to enhance your note-taking experience. Whether you're a student, professional, or creative, NotePal provides the tools you need to organize your thoughts, manage your projects, and stay productive.",
+        desc:"NotePal is a powerful and intuitive online platform designed to enhance your note-taking experience. Whether you're a student, professional, or creative, NotePal provides the tools you need to organize your thoughts, manage your projects, and stay productive. It is still a work in progress!!",
         url:"https://warm-seahorse-bd1a7b.netlify.app/",
         githubUrl:'',
         image:"/notepal.png"
