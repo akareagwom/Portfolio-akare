@@ -39,7 +39,7 @@ export const Project =[
         title:"Ecommerce Product Page",
         desc:"Ecommerce Product page is an ecommerce component that allows you to view a particular product, add several products to the cart and you can view your product that has been added to cart.",
         url:"https://remarkable-strudel-7df487.netlify.app/",
-        // githubUrl:'https://github.com/akareagwom/ecommerce-product-page',
+        githubUrl:'https://github.com/akareagwom/ecommerce-product-page',
         image:"/lendsqr.png"
     },
     {
