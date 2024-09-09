@@ -24,7 +24,7 @@ export const Project =[
         title:"Note-Pal",
         desc:"NotePal is a powerful and intuitive online platform designed to enhance your note-taking experience. Whether you're a student, professional, or creative, NotePal provides the tools you need to organize your thoughts, manage your projects, and stay productive. It is still a work in progress!!",
         url:"https://warm-seahorse-bd1a7b.netlify.app/",
-        githubUrl:'',
+        githubUrl:'https://github.com/akareagwom/note-pal',
         image:"/notepal.png"
     },
 
@@ -38,8 +38,8 @@ export const Project =[
     {
         title:"Ecommerce Product Page",
         desc:"Ecommerce Product page is an ecommerce component that allows you to view a particular product, add several products to the cart and you can view your product that has been added to cart.",
-        url:"https://delicate-melomakarona-b9d7e3.netlify.app/",
-        githubUrl:'',
+        url:"https://remarkable-strudel-7df487.netlify.app/",
+        // githubUrl:'https://github.com/akareagwom/ecommerce-product-page',
         image:"/lendsqr.png"
     },
     {
