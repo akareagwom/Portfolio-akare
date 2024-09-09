@@ -14,7 +14,7 @@ const Init =()=>{
                 <ProjectPage/>
             </Box>
             <Box>
-                {/* <Skills/> */}
+                <Skills/>
             </Box>
             <Box>
                 <Todo/> 
