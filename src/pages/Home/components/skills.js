@@ -4,7 +4,7 @@ import { Box, CircularProgress, CircularProgressLabel, Heading,Flex, Text, Icon,
 import { IoLogoHtml5,IoLogoCss3,IoLogoJavascript,IoLogoVue } from "react-icons/io5";
 import { FaGitAlt,FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiChakraui } from "react-icons/si";
 
 
 const Skills = () => {
@@ -56,7 +56,7 @@ const Skills = () => {
                     <Text fontSize={14}>TAILWIND</Text>
                 </Flex>
                 <Flex bg={'#CEAA9A'}  w={150} p={2} borderRadius={10} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
-                    <Icon as={IoLogoHtml5} />
+                    <Icon as={ SiChakraui } />
                     <Text fontSize={14}>CHAKRA UI</Text>
                 </Flex>
            </Flex>
