@@ -4,7 +4,7 @@ import { Box, CircularProgress, CircularProgressLabel, Heading,Flex, Text, Icon,
 import { IoLogoHtml5,IoLogoCss3,IoLogoJavascript,IoLogoVue } from "react-icons/io5";
 import { FaGitAlt,FaReact, FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTailwindcss, SiChakraui } from "react-icons/si";
+import { SiTailwindcss, SiChakraui, SiVercel } from "react-icons/si";
 import { BiLogoNetlify } from "react-icons/bi";
 
 
