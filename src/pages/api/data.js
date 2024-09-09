@@ -45,14 +45,14 @@ export const Project =[
     {
         title:"Herosocial",
         desc:"Herosocial is your new go-to social platform designed for seamless photo and video sharing. With a user-friendly interface, InstaConnect lets you capture and share your moments with friends, family, and followers in real-time.",
-        url:"https://advice-generator-app-pink-nine.vercel.app",
-        githubUrl:'',
+        url:"https://social-henna.vercel.app/",
+        githubUrl:'https://github.com/akareagwom/social',
         image:"/social.png"
     },
     {
         title:"Pandora's Box",
         desc:"Pandora's box is an e-learning platform which enables users to signup and take various courses and test themselves with the quiz, it also allows admins to upload their resources so that their students can have access to it.",
-        url:"https://advice-generator-app-pink-nine.vercel.app",
+        // url:"https://pandora.nhubnigeria.ng/",
         githubUrl:'',
         image:"/pandorabox.png"
     },
@@ -69,5 +69,11 @@ export const Project =[
         url:"https://advice-generator-app-pink-nine.vercel.app",
         githubUrl:'',
         image:"/interactivecard.png"
+    },
+    {
+        title:"nHub Foundation",
+        desc:"nHub Foundation is born from the deep desire to create an equal opportunity for growth and development regardless of gender, ethnic, religious background, through several impact-driven initiatives.",
+        url:"https://nhubfoundation.org/",
+        githubUrl:'https://github.com/nHubNg/nhubfoundation',
     }
 ]
