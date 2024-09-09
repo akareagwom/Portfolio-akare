@@ -52,7 +52,7 @@ export const Project =[
     {
         title:"Pandora's Box",
         desc:"Pandora's box is an e-learning platform which enables users to signup and take various courses and test themselves with the quiz, it also allows admins to upload their resources so that their students can have access to it.",
-        // url:"https://pandora.nhubnigeria.ng/",
+        url:"https://pandora.nhubnigeria.ng/",
         githubUrl:'',
         image:"/pandorabox.png"
     },
