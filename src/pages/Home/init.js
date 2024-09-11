@@ -9,7 +9,7 @@ const { Box } = require("@chakra-ui/react")
 
 const Init =()=>{
     return(
-        <Box w={'80%'}>
+        <Box w={''}>
             <Box>
                 <ProjectPage/>
             </Box>

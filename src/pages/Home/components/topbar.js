@@ -27,11 +27,12 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
     return (
       <Box px={4} py={2}>
         <Flex borderBottom={'2px solid white'} px={10} pt={6} mx={20} alignItems={'center'} justifyContent={'space-between'}>
-                <Heading fontSize="16px" color="white">
+                <Heading fontSize="26px" color="white">
                   Akare Azikang Agwom
                 </Heading>
+                <IconButton variant="none" icon={<BiMenuAltRight/>} />
                 
-                <IconButton
+                {/* <IconButton
                   display={{ base: 'block', md: 'block' }}
                   onClick={onOpen}
                   icon={<BiMenuAltRight/>}
@@ -39,7 +40,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                   variant="none"
                   color="white"
                   aria-label="Toggle menu"
-                />
+                /> */}
         </Flex>
             <Modal  isOpen={isOpen} onClose={onClose}>
               <ModalContent variant="none" borderRadius={0} color='#000000' w={{base:"100%",lg:'100vw'}} maxWidth={{ lg: "none" }} bg='white' p={0} m={0} h={'100vh'}>
