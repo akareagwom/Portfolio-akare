@@ -27,7 +27,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
     const { isOpen,onClose,onOpen } = useDisclosure();
   
     return (
-      <Box px={4} py={0}>
+      <Box px={2} py={0}>
         <Flex borderBottom={'2px solid white'} px={10} pt={6} mx={20} alignItems={'center'} justifyContent={'space-between'}>
                 <Heading fontSize="26px" color="white">
                   Akare Azikang Agwom
