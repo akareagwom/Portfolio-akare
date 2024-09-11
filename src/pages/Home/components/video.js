@@ -28,7 +28,7 @@ const Video = ({setView}) => {
         flexDir={'column'}
         justifyContent={'space-between'}
         mt="0%"
-        h={'auto'}
+        h={'100vh'}
         w={'100%'}
         id="home"
         >
