@@ -30,7 +30,7 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                 <Heading fontSize="26px" color="white">
                   Akare Azikang Agwom
                 </Heading>
-                <IconButton variant="none" icon={<BiMenuAltRight/>} />
+                <IconButton fontSize="26px" variant="none" icon={<FaGithub/>} />
                 
                 {/* <IconButton
                   display={{ base: 'block', md: 'block' }}
