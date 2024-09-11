@@ -26,7 +26,7 @@ const Video = ({setView}) => {
         <>
         <Flex
         flexDir={'column'}
-        justifyContent={'space-between'}
+        // justifyContent={'space-between'}
         mt="0%"
         h={'100vh'}
         w={'100%'}
