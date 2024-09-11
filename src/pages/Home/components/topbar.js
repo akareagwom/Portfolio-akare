@@ -15,11 +15,13 @@ import {
     Tabs,
     TabList,
     Tab,
+    Link
   } from '@chakra-ui/react';
   import { HamburgerIcon } from '@chakra-ui/icons';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { MdFacebook } from 'react-icons/md';
 import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'react-icons/fa';
+// import { Link } from 'react-router-dom';
   
   function Navbar({setView}) {
     const { isOpen,onClose,onOpen } = useDisclosure();
@@ -30,7 +32,9 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                 <Heading fontSize="26px" color="white">
                   Akare Azikang Agwom
                 </Heading>
-                <IconButton fontSize="26px" variant="none" icon={<FaGithub/>} />
+                <Link href='https://github.com/akareagwom'>
+                   <IconButton fontSize="26px" variant="none" icon={<FaGithub/>} />
+                </Link>
                 
                 {/* <IconButton
                   display={{ base: 'block', md: 'block' }}
