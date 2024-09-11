@@ -18,7 +18,7 @@ const ProjectPage =()=>{
                         <Box  key={index}>
                             <Box 
                             p={2}
-                            w={'200px'}
+                            w={'210px'}
                             // boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
                             borderRadius='10px'
                             _hover={{
@@ -27,9 +27,9 @@ const ProjectPage =()=>{
                             }}
                             
                              >
-                                    <Heading fontSize={16}>{item.title}</Heading>
-                                <Text mt={2} fontSize={11} color={'white'}>{item.desc}</Text>
-                                <Flex mt={2} fontSize={14} justifyContent={'space-between'}>
+                                    <Heading>{item.title}</Heading>
+                                <Text mt={2} color={'white'}>{item.desc}</Text>
+                                <Flex mt={2} justifyContent={'space-between'}>
                                     <NextLink href={item.url} passHref>Github <Icon fontSize={10} as={IoIosLink}/></NextLink>
                                     <NextLink href={item.url} passHref>live <Icon fontSize={10} as={IoIosLink}/></NextLink>
                                 </Flex>
