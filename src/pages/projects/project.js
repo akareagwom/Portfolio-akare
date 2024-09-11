@@ -11,8 +11,8 @@ const ProjectPage =()=>{
         <Box>
                 <Grid
                 templateColumns={{base:'repeat(1, 1fr)', md:'repeat(3, 1fr)'}}
-                gap={4}
-                p={16}
+                gap={2}
+                p={2}
                 >
                     {Project.map((item,index)=>(
                         <Box  key={index}>
@@ -27,8 +27,8 @@ const ProjectPage =()=>{
                             }}
                             
                              >
-                                    <Heading>{item.title}</Heading>
-                                <Text mt={2} color={'white'}>{item.desc}</Text>
+                                    <Heading fontSize={'20px'}>{item.title}</Heading>
+                                <Text fontSize={'20px'} mt={2} color={'white'}>{item.desc}</Text>
                                 <Flex mt={2} justifyContent={'space-between'}>
                                     <NextLink href={item.url} passHref>Github <Icon fontSize={10} as={IoIosLink}/></NextLink>
                                     <NextLink href={item.url} passHref>live <Icon fontSize={10} as={IoIosLink}/></NextLink>
