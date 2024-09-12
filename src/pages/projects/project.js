@@ -8,7 +8,7 @@ import NextLink from 'next/link'
 
 const ProjectPage =()=>{
     return(
-        <Box>
+        <Box pt={4}>
                 <Grid
                 templateColumns={{base:'repeat(1, 1fr)', md:'repeat(3, 1fr)'}}
                 gap={4}
