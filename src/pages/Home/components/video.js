@@ -33,11 +33,11 @@ const Video = ({setView}) => {
         id="home"
         >
             <Navbar setView={setView} />
-            <Box  mt={5} textAlign={'start'}  p={10} lineHeight={9} pt={{lg:0,base:20}}>
+            <Box  mt={5} textAlign={'start'}  p={10} lineHeight={9}  pt={{lg:0,base:20}}>
                 <Heading >Hey, I'm Akare</Heading>
-                <Text fontSize={24} fontFamily={'monospace'}  >I build websites with a focus on responsive design and accessibility.</Text>
-                <Text fontSize={24} >I'm a Frontend Developer, Web &amp; Graphics Designer, and open-source contributor. </Text>
-                <Text fontSize={24}  fontFamily={'fantasy'}>Find me on GitHub, LinkedIn, Behance, and Twitter.</Text>
+                <Text fontSize={24} mt={0} >I'm a Frontend Developer, Web Designer, and open-source contributor. </Text>
+                <Text fontSize={24} mt={4} fontFamily={'monospace'}  >I build websites with a focus on responsive design and accessibility.</Text>
+                <Text fontSize={24} mt={4}  fontFamily={'fantasy'}>Find me on GitHub, LinkedIn, Behance, and Twitter.</Text>
             </Box>
         </Flex>
        
