@@ -29,8 +29,8 @@ const ProjectPage =()=>{
                                     <Heading fontSize={16}>{item.title}</Heading>
                                 <Text mt={2} fontSize={14} color={'white'}>{item.desc}</Text>
                                 <Flex mt={2} fontSize={14} justifyContent={'space-between'}>
-                                    <NextLink href={item.url} passHref>Github <Icon fontSize={10} as={IoIosLink}/></NextLink>
-                                    <NextLink href={item.url} passHref>live <Icon fontSize={10} as={IoIosLink}/></NextLink>
+                                    <NextLink href={item.githubUrl} passHref>Github <Icon fontSize={10} as={IoIosLink}/></NextLink>
+                                    <NextLink href={item.url} passHref>Live <Icon fontSize={10} as={IoIosLink}/></NextLink>
                                 </Flex>
                             </Box>
                         </Box>
