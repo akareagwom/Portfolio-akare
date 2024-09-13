@@ -53,14 +53,14 @@ export const Project =[
         title:"Pandora's Box",
         desc:"Pandora's box is an e-learning platform which enables users to signup and take various courses and test themselves with the quiz, it also allows admins to upload their resources so that their students can have access to it.",
         url:"https://pandora.nhubnigeria.ng/",
-        githubUrl:'',
+        githubUrl:'https://github.com/Desmond-Fon/pandora-box',
         image:"/pandorabox.png"
     },
     {
         title:"Robo Friends",
         desc:"Robo-friends is a react project that displays various names and images of these robots and it also allos a user to be able to search for a particular robot and its name.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
-        githubUrl:'',
+        githubUrl:'https://github.com/akareagwom/robo-friend',
         image:"/robo.png"
     },
     {
