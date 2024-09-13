@@ -12,6 +12,7 @@ const ProjectPage =()=>{
                 <Grid
                 templateColumns={{base:'repeat(1, 1fr)', md:'repeat(3, 1fr)'}}
                 gap={4}
+                px={2}
                 >
                     {Project.map((item,index)=>(
                         <Box  key={index}>
