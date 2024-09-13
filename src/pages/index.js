@@ -37,7 +37,7 @@ export default function Home() {
       bg="#101010"
       color="white"
       w='100%'
-      px={20}
+      px={{base:0, md:20}}
       
       >
         
