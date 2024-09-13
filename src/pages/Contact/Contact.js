@@ -55,7 +55,7 @@ const Contact =()=>{
             {/* <Text fontSize={'24px'} fontWeight={'700px'} >Contact Me</Text> */}
             <form onSubmit={handleSubmit}>
 
-            <Box color={'white'}  display={{base:'block',lg:'flex'}} mt={{base:'2', lg:'8'}} justifyContent={'space-between'}>
+            <Box color={'white'}   mt={{base:'2', lg:'8'}}>
                 <Box>
                     <Text  mt={{base:'2',lg:'4'}}>Name</Text>
                     <Input
