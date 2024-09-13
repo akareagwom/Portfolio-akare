@@ -27,7 +27,7 @@ const Skills = () => {
 
                 
            </Flex>
-           <Flex color={'white'} pl={20} gap={6} mt="20px"  flexWrap={'wrap'}>
+           <Flex color={'white'} pl={20} gap={6} mt="100px"  flexWrap={'wrap'}>
                 <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoHtml5} />
                     <Text fontSize={14}>HTML</Text>
