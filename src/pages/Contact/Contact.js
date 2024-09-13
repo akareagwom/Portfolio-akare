@@ -51,7 +51,7 @@ const Contact =()=>{
     
 
     return(
-        <Box w={'100%'} px={{md:20, base:5}} my={10}  color={'black'}>
+        <Box w={'100%'} px={{md:20, base:5}} my={10}  color={'white'}>
             {/* <Text fontSize={'24px'} fontWeight={'700px'} >Contact Me</Text> */}
             <form onSubmit={handleSubmit}>
 
