@@ -27,52 +27,52 @@ const Skills = () => {
 
                 
            </Flex>
-           <Flex color={'white'} pl={20} gap={6} mt="100px"  flexWrap={'wrap'}>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+           <Flex color={'white'} pl={{base:14, md:20}} gap={6} mt="100px"  flexWrap={'wrap'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoHtml5} />
                     <Text fontSize={14}>HTML</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoCss3} />
                     <Text fontSize={14}>CSS</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={FaGitAlt} />
                     <Text fontSize={14}>GIT</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoJavascript} />
                     <Text fontSize={14}>JAVASCRIPT</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={SiTypescript} />
                     <Text fontSize={14}>TYPESCRIPT</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={FaReact} />
                     <Text fontSize={14}>REACT</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={IoLogoVue} />
                     <Text fontSize={14}>VUE</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={SiTailwindcss} />
                     <Text fontSize={14}>TAILWIND</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={ SiChakraui } />
                     <Text fontSize={14}>CHAKRA UI</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={ FaGithub } />
                     <Text fontSize={14}>GITHUB</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={ SiNetlify } />
                     <Text fontSize={14}>NETLIFY</Text>
                 </Flex>
-                <Flex bg={'#101010'}  w={150} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
+                <Flex bg={'#101010'}  w={{base:250, md:150}} p={2} borderRadius={7} boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'} justifyContent={'space-between'} alignItems={'center'}>
                     <Icon as={ SiVercel } />
                     <Text fontSize={14}>VERCEL</Text>
                 </Flex>
