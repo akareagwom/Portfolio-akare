@@ -32,9 +32,9 @@ const Todo = () => {
             <Text mt={'6%'}>
             Hello! I'm a passionate and skilled frontend developer with a robust background in creating responsive and user-friendly interfaces. My journey into the world of web development has been fueled by my love for technology and creativity. With a solid foundation in React.js, HTML, CSS, and JavaScript, I thrive on turning complex problems into elegant, user-centric solutions.
             </Text>
-            <Flex py={4} justifyContent={'space-between'}>
+            <Flex py={4} gap={2} justifyContent={'space-between'}>
                 <VStack>
-                    <Heading fontSize="20px">Background</Heading>
+                    <Heading fontSize={{md:"20px", base:'16px'}}>Background</Heading>
                     <Flex alignItems={'center'}>
                         <Icon as={CiSliderVertical} w={10} h={10}/>
                         
@@ -59,7 +59,7 @@ const Todo = () => {
                     
                 </VStack>
                 <VStack>
-                    <Heading fontSize="20px">Key Responsibilities</Heading>
+                    <Heading fontSize={{md:"20px", base:'16px'}}>Key Responsibilities</Heading>
                     <Flex alignItems={'center'}>
                         <Icon as={CiSliderVertical} w={10} h={10}/>
                         <Box>
