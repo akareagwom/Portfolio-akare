@@ -27,13 +27,13 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
     const { isOpen,onClose,onOpen } = useDisclosure();
   
     return (
-      <Box px={2} py={0}>
-        <Flex borderBottom={'2px solid white'} px={10} pt={6} mx={20} alignItems={'center'} justifyContent={'space-between'}>
-                <Heading fontSize="26px" color="white">
+      <Box px={{md:2, base:0}} py={0}>
+        <Flex borderBottom={'2px solid white'} px={{md:10, base:2}} pt={6} mx={{base :0,md:20}} alignItems={'center'} justifyContent={'space-between'}>
+                <Heading fontSize={{md:"26px",base:'20px'}} color="white">
                   Akare Azikang Agwom
                 </Heading>
                 <Link href='https://github.com/akareagwom'>
-                   <IconButton fontSize="26px" variant="none" icon={<FaGithub/>} />
+                   <IconButton fontSize={{md:"26px",base:'20px'}} variant="none" icon={<FaGithub/>} />
                 </Link>
                 
                 {/* <IconButton
