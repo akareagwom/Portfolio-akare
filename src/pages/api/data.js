@@ -67,7 +67,7 @@ export const Project =[
         title:"Interactive Card",
         desc:"Interactive card is a card that allows you to type in your card details, when you enter each input your details are displayed on it such as the CVV, card number, name and the date of expiration.",
         url:"https://advice-generator-app-pink-nine.vercel.app",
-        githubUrl:'',
+        githubUrl:'https://github.com/akareagwom/interactive-card',
         image:"/interactivecard.png"
     },
     {
