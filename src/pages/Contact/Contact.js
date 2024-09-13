@@ -51,7 +51,7 @@ const Contact =()=>{
     
 
     return(
-        <Box w={''} px={20} my={10}  color={'black'}>
+        <Box w={'100%'} px={20} my={10}  color={'black'}>
             {/* <Text fontSize={'24px'} fontWeight={'700px'} >Contact Me</Text> */}
             <form onSubmit={handleSubmit}>
 
@@ -60,7 +60,7 @@ const Contact =()=>{
                     <Text  mt={{base:'2',lg:'4'}}>Name</Text>
                     <Input
                      variant={'none'} 
-                     w={{base:'300px', lg:'300px'}}  
+                    //  w={{base:'300px', lg:'300px'}}  
                      mt={{base:'2', lg:'10'}} 
                      borderRadius={'none'} 
                      bg={'none'}
@@ -77,7 +77,7 @@ const Contact =()=>{
                     <Text mt={{base:'2',lg:'4'}}>Email</Text>
                     <Input 
                     variant={'none'} 
-                    w={{base:'300px', lg:'300px'}}  
+                    // w={{base:'300px', lg:'300px'}}  
                     mt={{base:'2', lg:'10'}} 
                     borderRadius={'none'} 
                     borderBottom={'2px solid white'}
@@ -99,14 +99,14 @@ const Contact =()=>{
                     name="message" 
                     variant={'none'} 
                     bg={'none'}
-                    w={{base:'300px', lg:'780px'}}  
+                    // w={{base:'300px', lg:'780px'}}  
                     placeholder={"Hello, my name is ..."} 
                     mt={{base:'2', lg:'10'}} 
                     borderRadius={'none'} 
                     borderBottom={'2px solid white'}
                     />
                 </Box>
-                <Button bg={'#D9D9D9'} borderRadius={'none'} w={{base:'300px',lg:''}} fontSize={'14px'} mt={5} ml={{base:'0', lg:'30%'}} p={6} type="submit" isLoading={isSubmitting}>Send Message</Button>
+                <Button bg={'#D9D9D9'} borderRadius={'none'} w={'100%'} fontSize={'14px'} mt={10} ml={{base:'0', lg:'30%'}} p={6} type="submit" isLoading={isSubmitting}>Send Message</Button>
             </form>
         </Box>
     )
