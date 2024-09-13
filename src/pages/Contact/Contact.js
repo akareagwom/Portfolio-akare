@@ -106,7 +106,7 @@ const Contact =()=>{
                     borderBottom={'2px solid white'}
                     />
                 </Box>
-                <Button bg={'#D9D9D9'} borderRadius={'none'} w={'100%'} fontSize={'14px'} mt={10} ml={{base:'0', lg:'30%'}} p={6} type="submit" isLoading={isSubmitting}>Send Message</Button>
+                <Button bg={'#D9D9D9'} borderRadius={'none'} w={'100%'} fontSize={'14px'} mt={10} p={6} type="submit" isLoading={isSubmitting}>Send Message</Button>
             </form>
         </Box>
     )
