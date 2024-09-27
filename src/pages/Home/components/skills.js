@@ -21,8 +21,6 @@ const Skills = () => {
         >
            <Flex
            flexDir={'column'}
-        //    justifyContent={'center'}
-        //    alignItems={'center'}
            >
 
                 
