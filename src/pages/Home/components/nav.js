@@ -9,7 +9,7 @@ const Nav = () => {
 
     
     return ( 
-        <>
+        <Box display={{lg:'flex'}} justifyContent={{lg:'space-between'}} px={{lg:20}}>
             <Image src='brand1.svg' alt="asset" />
             <Flex>
                 <Tabs variant='none' ml={{base:'10%'}} display={'flex'} alignItems={'center'} color={'white'}>
@@ -115,7 +115,7 @@ const Nav = () => {
                     
                 </Tabs>
             </Flex> */}
-        </>
+        </Box>
      );
 }
  
