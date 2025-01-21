@@ -1,4 +1,4 @@
-import { Box,Heading,} from "@chakra-ui/react";
+import { Box,Button,Heading,} from "@chakra-ui/react";
 import Video from "./Home/components/video";
 import Footer from "./Home/components/footer";
 import ProjectPage from "./projects/project";
@@ -13,6 +13,7 @@ import Contact from "./Contact/Contact";
 
 export default function Home() {
   const [view, setView]= useState('home');
+  const [toggle, setToggle] = useState(0)
 
   const renderComponent =()=>{
     switch (view) {
@@ -30,6 +31,9 @@ export default function Home() {
     }
   }
 
+  const lightTheme = () =>{
+    setToggle(toggle + 1)
+  }
   return (
     <>
       <Box
@@ -45,6 +49,9 @@ export default function Home() {
           bg={'#080808'}
           boxShadow={'0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}
          >
+          <Button onClick={lightTheme}>
+            {toggle}
+          </Button>
           <Box
           m='0px'>
            <Video setView={setView}/>
