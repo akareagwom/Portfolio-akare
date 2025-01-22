@@ -21,10 +21,18 @@ import {
 import { BiMenuAltRight } from 'react-icons/bi';
 import { MdFacebook } from 'react-icons/md';
 import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'react-icons/fa';
+import { MdOutlineLightMode, MdNightlight } from "react-icons/md";
+import { useState } from 'react';
 // import { Link } from 'react-router-dom';
   
   function Navbar({setView}) {
     const { isOpen,onClose,onOpen } = useDisclosure();
+    const [isToggle, setIsToggle] = useState(false);
+
+
+    const ToggleLightTheme = ()=>{
+      setIsToggle(!isToggle)
+    }
   
     return (
       <Box px={{md:2, base:0}} py={0}>
@@ -35,6 +43,8 @@ import { FaEdge, FaGithub, FaInstagram, FaLinkedinIn, FaRegWindowClose } from 'r
                 <Link href='https://github.com/akareagwom'>
                    <IconButton fontSize={{md:"26px",base:'20px'}} variant="none" icon={<FaGithub/>} />
                 </Link>
+                <IconButton fontSize={{md:"26px",base:'20px'}} variant="none" icon={<MdOutlineLightMode/>} />
+                <IconButton fontSize={{md:"26px",base:'20px'}} variant="none" icon={<MdNightlight/>} />
                 
                 {/* <IconButton
                   display={{ base: 'block', md: 'block' }}
