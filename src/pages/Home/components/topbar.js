@@ -43,10 +43,10 @@ import { useState } from 'react';
                 <Link href='https://github.com/akareagwom'>
                    <IconButton fontSize={{md:"26px",base:'20px'}} variant="none" icon={<FaGithub/>} />
                 </Link>
-                {isToggle ? 
+                {/* {isToggle ? 
                 <IconButton onClick={ToggleLightTheme}  fontSize={{md:"26px",base:'20px'}} variant="none" icon={<MdOutlineLightMode/>} />:
                 <IconButton onClick={ToggleLightTheme} fontSize={{md:"26px",base:'20px'}} variant="none" icon={<MdNightlight/>} />
-                }
+                } */}
                 
                 {/* <IconButton
                   display={{ base: 'block', md: 'block' }}
