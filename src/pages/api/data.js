@@ -59,14 +59,14 @@ export const Project =[
     {
         title:"Robo Friends",
         desc:"Robo-friends is a react project that displays various names and images of these robots and it also allos a user to be able to search for a particular robot and its name.",
-        url:"https://advice-generator-app-pink-nine.vercel.app",
+        url:"https://robo-friend-mu.vercel.app",
         githubUrl:'https://github.com/akareagwom/robo-friend',
         image:"/robo.png"
     },
     {
         title:"Interactive Card",
         desc:"Interactive card is a card that allows you to type in your card details, when you enter each input your details are displayed on it such as the CVV, card number, name and the date of expiration.",
-        url:"https://advice-generator-app-pink-nine.vercel.app",
+        url:"https://interactive-card-beige.vercel.app/",
         githubUrl:'https://github.com/akareagwom/interactive-card',
         image:"/interactivecard.png"
     },
